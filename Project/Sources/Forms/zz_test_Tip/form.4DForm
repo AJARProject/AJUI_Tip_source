@@ -1,0 +1,1435 @@
+﻿{
+	"destination": "detailScreen",
+	"formSizeAnchor": "size",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 439,
+					"left": 494,
+					"width": 698,
+					"height": 519
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 288,
+					"left": 11,
+					"width": 193,
+					"height": 104,
+					"text": "Animation"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 322,
+					"left": 40,
+					"width": 137,
+					"height": 45,
+					"fill": "transparent",
+					"strokeDashArray": "1 1"
+				},
+				"Test_tip": {
+					"type": "input",
+					"top": 620,
+					"left": 775,
+					"width": 174,
+					"height": 81,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Test_tip.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"AJUI_Tip_sf": {
+					"type": "subform",
+					"top": 1272,
+					"left": 19,
+					"width": 376,
+					"height": 138,
+					"visibility": "hidden",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 751,
+					"left": 34,
+					"width": 217,
+					"height": 369,
+					"dataSource": "JSON Stringify:C1217(Form:C1466.tip;*)",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"size": {
+					"type": "rectangle",
+					"top": 1233,
+					"left": 1500,
+					"width": 10,
+					"height": 10,
+					"visibility": "hidden",
+					"fill": "#FF0000",
+					"stroke": "#FF0000"
+				},
+				"Bouton8": {
+					"type": "button",
+					"top": 25,
+					"left": 73,
+					"width": 74,
+					"height": 36,
+					"text": "top-left",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton9": {
+					"type": "button",
+					"top": 25,
+					"left": 166,
+					"width": 112,
+					"height": 36,
+					"text": "bottom-left",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton10": {
+					"type": "button",
+					"top": 25,
+					"left": 298,
+					"width": 87,
+					"height": 36,
+					"text": "left-top",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton11": {
+					"type": "button",
+					"top": 65,
+					"left": 73,
+					"width": 74,
+					"height": 36,
+					"text": "top-center",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton12": {
+					"type": "button",
+					"top": 65,
+					"left": 166,
+					"width": 112,
+					"height": 36,
+					"text": "bottom-center",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton13": {
+					"type": "button",
+					"top": 65,
+					"left": 298,
+					"width": 87,
+					"height": 36,
+					"text": "left-middle",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton16": {
+					"type": "button",
+					"top": 105,
+					"left": 73,
+					"width": 74,
+					"height": 36,
+					"text": "top-right",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton17": {
+					"type": "button",
+					"top": 105,
+					"left": 166,
+					"width": 112,
+					"height": 36,
+					"text": "bottom-right",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton17.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton18": {
+					"type": "button",
+					"top": 105,
+					"left": 298,
+					"width": 87,
+					"height": 36,
+					"text": "left-bottom",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton18.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton14": {
+					"type": "button",
+					"top": 25,
+					"left": 398,
+					"width": 87,
+					"height": 36,
+					"text": "right-top",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton15": {
+					"type": "button",
+					"top": 65,
+					"left": 398,
+					"width": 87,
+					"height": 36,
+					"text": "right-middle",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton19": {
+					"type": "button",
+					"top": 105,
+					"left": 398,
+					"width": 87,
+					"height": 36,
+					"text": "right-bottom",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton19.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton24": {
+					"type": "button",
+					"top": 25,
+					"left": 528,
+					"width": 74,
+					"height": 36,
+					"text": "Arrow T/L",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton24.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton25": {
+					"type": "button",
+					"top": 65,
+					"left": 528,
+					"width": 74,
+					"height": 36,
+					"text": "Arrow M/C",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton25.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton26": {
+					"type": "button",
+					"top": 105,
+					"left": 528,
+					"width": 74,
+					"height": 36,
+					"text": "Arrow B/R",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton26.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton27": {
+					"type": "button",
+					"top": 977,
+					"left": 1238,
+					"width": 172,
+					"height": 35,
+					"text": "Switch SF/Text",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton27.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 317,
+					"left": 1420,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.target.margin.top",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 277,
+					"left": 1420,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.target.offset",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 153,
+					"left": 1418,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.arrow.offset",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 113,
+					"left": 1418,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.borderSize",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 74,
+					"left": 1418,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.cornerRadius",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 35,
+					"left": 1418,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.padding.top",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 25,
+					"left": 1238,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "Padding+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 25,
+					"left": 1338,
+					"width": 74,
+					"height": 36,
+					"text": "Padding-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 65,
+					"left": 1238,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "Radius+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton3": {
+					"type": "button",
+					"top": 65,
+					"left": 1338,
+					"width": 74,
+					"height": 36,
+					"text": "Radius-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton4": {
+					"type": "button",
+					"top": 105,
+					"left": 1238,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "Border+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton5": {
+					"type": "button",
+					"top": 105,
+					"left": 1338,
+					"width": 74,
+					"height": 36,
+					"text": "Border-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton6": {
+					"type": "button",
+					"top": 145,
+					"left": 1238,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "ArrowOff+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton7": {
+					"type": "button",
+					"top": 145,
+					"left": 1336,
+					"width": 74,
+					"height": 36,
+					"text": "ArrowOff-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton20": {
+					"type": "button",
+					"top": 269,
+					"left": 1240,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "TargetOff+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton20.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton21": {
+					"type": "button",
+					"top": 269,
+					"left": 1338,
+					"width": 74,
+					"height": 36,
+					"text": "TargetOff-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton21.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton22": {
+					"type": "button",
+					"top": 309,
+					"left": 1240,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "Margin+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton22.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton23": {
+					"type": "button",
+					"top": 309,
+					"left": 1338,
+					"width": 74,
+					"height": 36,
+					"text": "Margin-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton23.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 195,
+					"left": 1420,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.arrow.height",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton28": {
+					"type": "button",
+					"top": 187,
+					"left": 1238,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "ArrowH+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton28.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton29": {
+					"type": "button",
+					"top": 187,
+					"left": 1338,
+					"width": 74,
+					"height": 36,
+					"text": "ArrowH-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton29.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 237,
+					"left": 1422,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.arrow.width",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton30": {
+					"type": "button",
+					"top": 229,
+					"left": 1240,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "ArrowW+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton30.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton31": {
+					"type": "button",
+					"top": 229,
+					"left": 1340,
+					"width": 74,
+					"height": 36,
+					"text": "ArrowW-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton31.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton32": {
+					"type": "button",
+					"top": 1101,
+					"left": 1240,
+					"width": 170,
+					"height": 36,
+					"text": "SVG viewer",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton32.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton33": {
+					"type": "button",
+					"top": 1017,
+					"left": 1238,
+					"width": 170,
+					"height": 35,
+					"text": "Hide/Show area",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton33.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton34": {
+					"type": "button",
+					"top": 1060,
+					"left": 1240,
+					"width": 170,
+					"height": 35,
+					"text": "Hide/Show CB",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton34.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 420,
+					"left": 1338,
+					"width": 139,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.backgroundColor",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 420,
+					"left": 1240,
+					"width": 96,
+					"height": 17,
+					"text": "BG Color"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 500,
+					"left": 1338,
+					"width": 139,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.text.fontColor",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 500,
+					"left": 1240,
+					"width": 96,
+					"height": 17,
+					"text": "Font Color"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 540,
+					"left": 1338,
+					"width": 139,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.borderColor",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 540,
+					"left": 1240,
+					"width": 96,
+					"height": 17,
+					"text": "Font Name"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 460,
+					"left": 1338,
+					"width": 139,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.borderColor",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 460,
+					"left": 1240,
+					"width": 96,
+					"height": 17,
+					"text": "Border Color"
+				},
+				"Bouton35": {
+					"type": "button",
+					"top": 25,
+					"left": 528,
+					"width": 75,
+					"height": 36,
+					"text": "Arrow T/L",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton35.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton36": {
+					"type": "button",
+					"top": 65,
+					"left": 528,
+					"width": 75,
+					"height": 36,
+					"text": "Arrow M/C",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton36.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton37": {
+					"type": "button",
+					"top": 235,
+					"left": 73,
+					"width": 74,
+					"height": 36,
+					"text": "Jump",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton37.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton38": {
+					"type": "button",
+					"top": 195,
+					"left": 73,
+					"width": 74,
+					"height": 36,
+					"text": "Blink",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton38.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"top": {
+					"type": "input",
+					"top": 317,
+					"left": 85,
+					"width": 48,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.animation.coordinate.top",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"left": {
+					"type": "input",
+					"top": 337,
+					"left": 25,
+					"width": 48,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.animation.coordinate.left",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"right": {
+					"type": "input",
+					"top": 337,
+					"left": 144,
+					"width": 48,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.animation.coordinate.right",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bottom": {
+					"type": "input",
+					"top": 356,
+					"left": 85,
+					"width": 48,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.animation.coordinate.bottom",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 580,
+					"left": 1338,
+					"width": 139,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.maxHeight",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 580,
+					"left": 1240,
+					"width": 96,
+					"height": 17,
+					"text": "Max height"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 620,
+					"left": 1338,
+					"width": 139,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.maxWidth",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 620,
+					"left": 1240,
+					"width": 96,
+					"height": 17,
+					"text": "Max width"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 25,
+					"left": 642,
+					"width": 96,
+					"height": 17,
+					"text": "Opacity BG"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 85,
+					"left": 642,
+					"width": 96,
+					"height": 17,
+					"text": "Opacity Border"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 145,
+					"left": 642,
+					"width": 96,
+					"height": 17,
+					"text": "Opacity text"
+				},
+				"opacityBG_obj": {
+					"type": "ruler",
+					"top": 33,
+					"left": 755,
+					"width": 456,
+					"height": 12,
+					"dataSource": "Form:C1466.tip.container.backgroundOpacity",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"max": 100,
+					"graduationStep": 10,
+					"step": 5,
+					"numberFormat": "### ##0",
+					"method": "ObjectMethods/opacityBG_obj.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Règle2": {
+					"type": "ruler",
+					"top": 153,
+					"left": 755,
+					"width": 456,
+					"height": 12,
+					"dataSource": "Form:C1466.tip.text.opacity",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"max": 100,
+					"graduationStep": 10,
+					"step": 5,
+					"numberFormat": "### ##0",
+					"method": "ObjectMethods/Règle2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Règle1": {
+					"type": "ruler",
+					"top": 93,
+					"left": 755,
+					"width": 456,
+					"height": 12,
+					"dataSource": "Form:C1466.tip.container.borderOpacity",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"max": 100,
+					"graduationStep": 10,
+					"step": 5,
+					"numberFormat": "### ##0",
+					"method": "ObjectMethods/Règle1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 195,
+					"left": 182,
+					"width": 69,
+					"height": 17,
+					"text": "Blink on"
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 255,
+					"left": 182,
+					"width": 69,
+					"height": 17,
+					"text": "Jump on"
+				},
+				"opacityBG_obj1": {
+					"type": "ruler",
+					"top": 203,
+					"left": 255,
+					"width": 168,
+					"height": 12,
+					"dataSource": "Form:C1466.tip.animation.blink.on",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"max": 100,
+					"graduationStep": 20,
+					"step": 10,
+					"numberFormat": "### ##0",
+					"events": [
+						"onClick"
+					]
+				},
+				"Règle3": {
+					"type": "ruler",
+					"top": 263,
+					"left": 255,
+					"width": 168,
+					"height": 12,
+					"dataSource": "Form:C1466.tip.animation.jump.on",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"max": 100,
+					"graduationStep": 20,
+					"step": 10,
+					"numberFormat": "### ##0",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 357,
+					"left": 1420,
+					"width": 55,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.animation.jump.offset",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton39": {
+					"type": "button",
+					"top": 349,
+					"left": 1240,
+					"width": 74,
+					"height": 36,
+					"sizingX": "move",
+					"text": "JumpOff+",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton39.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton40": {
+					"type": "button",
+					"top": 349,
+					"left": 1338,
+					"width": 74,
+					"height": 36,
+					"text": "JumpOff-",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton40.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 494,
+					"left": 61,
+					"width": 130,
+					"height": 23,
+					"dataSource": "Form:C1466.tip.animation.fade.in",
+					"text": "FadeIn",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 526,
+					"left": 61,
+					"width": 130,
+					"height": 23,
+					"dataSource": "Form:C1466.tip.animation.fade.out",
+					"text": "Fade Out",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Règle4": {
+					"type": "ruler",
+					"top": 602,
+					"left": 73,
+					"width": 168,
+					"height": 12,
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"max": 10,
+					"graduationStep": 1,
+					"numberFormat": "### ##0",
+					"method": "ObjectMethods/Règle4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 233,
+					"left": 519,
+					"width": 330,
+					"height": 177,
+					"dataSource": "Form:C1466.tip.text.value",
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 233,
+					"left": 862,
+					"width": 330,
+					"height": 177,
+					"dataSource": "Form:C1466.tip.text.value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton41": {
+					"type": "button",
+					"top": 179,
+					"left": 519,
+					"width": 74,
+					"height": 36,
+					"text": "Show",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton41.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton42": {
+					"type": "button",
+					"top": 1141,
+					"left": 1238,
+					"width": 170,
+					"height": 36,
+					"text": "Add Shadow",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton42.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 660,
+					"left": 1338,
+					"width": 139,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.text.rotation",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 660,
+					"left": 1240,
+					"width": 96,
+					"height": 17,
+					"text": "Text rotation"
+				},
+				"shadowOffset_obj": {
+					"type": "input",
+					"top": 1149,
+					"left": 1418,
+					"width": 65,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.container.shadowOffset",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/shadowOffset_obj.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton43": {
+					"type": "button",
+					"top": 179,
+					"left": 606,
+					"width": 74,
+					"height": 36,
+					"text": "Hide",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton43.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 721,
+					"left": 1238,
+					"width": 130,
+					"height": 23,
+					"dataSource": "Form:C1466.tip.arrow.curved",
+					"text": "Curved",
+					"focusable": false,
+					"method": "ObjectMethods/Check Box2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 759,
+					"left": 1398,
+					"width": 45,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.arrow.arrowCurve",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 759,
+					"left": 1240,
+					"width": 143,
+					"height": 17,
+					"text": "Arrow curve"
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 839,
+					"left": 1398,
+					"width": 45,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.arrow.cornerCurveEnd",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 839,
+					"left": 1240,
+					"width": 143,
+					"height": 17,
+					"text": "End corner curve"
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 799,
+					"left": 1398,
+					"width": 45,
+					"height": 17,
+					"dataSource": "Form:C1466.tip.arrow.cornerCurveStart",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable21.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 799,
+					"left": 1240,
+					"width": 143,
+					"height": 17,
+					"text": "Start corner curve"
+				}
+			},
+			"entryOrder": [
+				"Test_tip",
+				"AJUI_Tip_sf",
+				"Variable",
+				"Bouton8",
+				"Bouton9",
+				"Bouton10",
+				"Bouton11",
+				"Bouton12",
+				"Bouton13",
+				"Bouton16",
+				"Bouton17",
+				"Bouton18",
+				"Bouton14",
+				"Bouton15",
+				"Bouton19",
+				"Bouton24",
+				"Bouton25",
+				"Bouton26",
+				"Bouton27",
+				"Variable1",
+				"Variable2",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"Bouton",
+				"Bouton1",
+				"Bouton2",
+				"Bouton3",
+				"Bouton4",
+				"Bouton5",
+				"Bouton6",
+				"Bouton7",
+				"Bouton20",
+				"Bouton21",
+				"Bouton22",
+				"Bouton23",
+				"Variable7",
+				"Bouton28",
+				"Bouton29",
+				"Variable8",
+				"Bouton30",
+				"Bouton31",
+				"Bouton32",
+				"Bouton33",
+				"Bouton34",
+				"Variable9",
+				"Variable10",
+				"Variable11",
+				"Variable12",
+				"Bouton35",
+				"Bouton36",
+				"Bouton37",
+				"Bouton38",
+				"top",
+				"left",
+				"right",
+				"bottom",
+				"Variable13",
+				"Variable14",
+				"opacityBG_obj",
+				"Règle2",
+				"Règle1",
+				"opacityBG_obj1",
+				"Règle3",
+				"Variable15",
+				"Bouton39",
+				"Bouton40",
+				"Check Box",
+				"Check Box1",
+				"Règle4",
+				"Variable17",
+				"Variable18",
+				"Bouton41",
+				"Bouton42",
+				"Variable16",
+				"shadowOffset_obj",
+				"Bouton43",
+				"Check Box2",
+				"Variable19",
+				"Variable20",
+				"Variable21"
+			]
+		}
+	]
+}

@@ -1,0 +1,1608 @@
+﻿{
+	"Sources/Methods/New AJUI_Tip.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 39,
+		"lastSelectedLine": 39,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.031Z"
+	},
+	"Sources/Methods/AJUI_Tip_init_attributes.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 77,
+		"lastSelectedLine": 77,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.032Z"
+	},
+	"Sources/Methods/AJUI_Tip_init_formulas.4dm": {
+		"startSelection": 46,
+		"endSelection": 46,
+		"firstSelectedLine": 40,
+		"lastSelectedLine": 40,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.033Z"
+	},
+	"Sources/Methods/AJUI_Tip_setName.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.033Z"
+	},
+	"Sources/Methods/AJUI_Tip_setText.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.034Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTextRotation.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 37,
+		"lastSelectedLine": 37,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.035Z"
+	},
+	"Sources/Methods/AJUI_Tip_setFontSize.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.035Z"
+	},
+	"Sources/Methods/AJUI_Tip_setFontName.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.036Z"
+	},
+	"Sources/Methods/AJUI_Tip_setFontColor.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.036Z"
+	},
+	"Sources/Methods/AJUI_Tip_setBackgroundColor.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.037Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTargetName.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.037Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTipPosition.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 146,
+		"lastSelectedLine": 146,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.038Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTargetOffset.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.039Z"
+	},
+	"Sources/Methods/AJUI_Tip_setCornerRadius.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.039Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTipboxMaxWidth.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.040Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTipboxMaxHeight.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.041Z"
+	},
+	"Sources/Methods/AJUI_Tip_activeAutoPosition.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 24,
+		"lastSelectedLine": 24,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.041Z"
+	},
+	"Sources/Methods/AJUI_Tip_setPadding.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 33,
+		"lastSelectedLine": 33,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.042Z"
+	},
+	"Sources/Methods/AJUI_Tip_setMargin.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 67,
+		"lastSelectedLine": 67,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.043Z"
+	},
+	"Sources/Methods/AJUI_Tip_setArrowWidth.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.043Z"
+	},
+	"Sources/Methods/AJUI_Tip_setArrowHeight.4dm": {
+		"startSelection": 19,
+		"endSelection": 19,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.044Z"
+	},
+	"Sources/Methods/AJUI_Tip_setArrowPosition.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 52,
+		"lastSelectedLine": 52,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.044Z"
+	},
+	"Sources/Methods/AJUI_Tip_setArrowOffset.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.045Z"
+	},
+	"Sources/Methods/AJUI_Tip_setBorderSize.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.045Z"
+	},
+	"Sources/Methods/AJUI_Tip_setBorderColor.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.046Z"
+	},
+	"Sources/Methods/AJUI_Tip_setCloseBoxDisplay.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.046Z"
+	},
+	"Sources/Methods/AJUI_Tip_setSubformName.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.047Z"
+	},
+	"Sources/Methods/AJUI_Tip_setCloseBoxSize.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.047Z"
+	},
+	"Sources/Methods/AJUI_Tip_templateExport.4dm": {
+		"startSelection": 36,
+		"endSelection": 36,
+		"firstSelectedLine": 11,
+		"lastSelectedLine": 11,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.048Z"
+	},
+	"Sources/Methods/AJUI_Tip_templateImport.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 70,
+		"lastSelectedLine": 70,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.048Z"
+	},
+	"Sources/Methods/AJUI_Tip_hide.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 39,
+		"lastSelectedLine": 39,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.049Z"
+	},
+	"Sources/Methods/AJUI_Tip_CheckRebuild.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 19,
+		"lastSelectedLine": 19,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.050Z"
+	},
+	"Sources/Methods/AJUI_Tip_setAutoRebuild.4dm": {
+		"startSelection": 14,
+		"endSelection": 25,
+		"firstSelectedLine": 24,
+		"lastSelectedLine": 24,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.050Z"
+	},
+	"Sources/Methods/AJUI_Tip_buildTip.4dm": {
+		"startSelection": 27,
+		"endSelection": 56,
+		"firstSelectedLine": 45,
+		"lastSelectedLine": 45,
+		"folding": [
+			121
+		],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.051Z"
+	},
+	"Sources/Methods/AJUI_Tip_targetDefined.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.052Z"
+	},
+	"Sources/Methods/AJUI_Tip_draw.4dm": {
+		"startSelection": 19,
+		"endSelection": 38,
+		"firstSelectedLine": 61,
+		"lastSelectedLine": 61,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.052Z"
+	},
+	"Sources/Methods/AJUI_Tip_tipBoxDefined.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 18,
+		"lastSelectedLine": 18,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.053Z"
+	},
+	"Sources/Methods/AJUI_Tip_generateTipbox.4dm": {
+		"startSelection": 15,
+		"endSelection": 15,
+		"firstSelectedLine": 43,
+		"lastSelectedLine": 43,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.053Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTargetCoordinates.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 65,
+		"lastSelectedLine": 65,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.053Z"
+	},
+	"Sources/Methods/AJUI_Tip_formToUseExist.4dm": {
+		"startSelection": 32,
+		"endSelection": 32,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.054Z"
+	},
+	"Sources/Methods/AJUI_Tip_drawTipbox.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 625,
+		"lastSelectedLine": 625,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.055Z"
+	},
+	"Sources/Methods/AJUI_Tip_getStyleForTextArea.4dm": {
+		"startSelection": 16,
+		"endSelection": 0,
+		"firstSelectedLine": 32,
+		"lastSelectedLine": 19,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.056Z"
+	},
+	"Sources/Methods/AJUI_Tip_calcSizeTextArea.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.056Z"
+	},
+	"Sources/Methods/AJUI_Tip_translateArrowPosition.4dm": {
+		"startSelection": 25,
+		"endSelection": 25,
+		"firstSelectedLine": 33,
+		"lastSelectedLine": 33,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.057Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTextOpacity.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.057Z"
+	},
+	"Sources/Methods/AJUI_Tip_setBorderOpacity.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 28,
+		"lastSelectedLine": 28,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.057Z"
+	},
+	"Sources/Methods/AJUI_Tip_setBackgroundOpacity.4dm": {
+		"startSelection": 4,
+		"endSelection": 17,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.058Z"
+	},
+	"Sources/Methods/AJUI_Tip_objectToShared.4dm": {
+		"startSelection": 28,
+		"endSelection": 28,
+		"firstSelectedLine": 15,
+		"lastSelectedLine": 15,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.058Z"
+	},
+	"Sources/Methods/AJUI_Tip_collectionToShared.4dm": {
+		"startSelection": 30,
+		"endSelection": 30,
+		"firstSelectedLine": 15,
+		"lastSelectedLine": 15,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.059Z"
+	},
+	"Sources/Methods/AJUI_Tip_sharedToObject.4dm": {
+		"startSelection": 0,
+		"endSelection": 14,
+		"firstSelectedLine": 33,
+		"lastSelectedLine": 33,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.059Z"
+	},
+	"Sources/Methods/AJUI_Tip_sharedToCollection.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.060Z"
+	},
+	"Sources/Methods/AJUI_Tip_onClickCB.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 24,
+		"lastSelectedLine": 24,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.060Z"
+	},
+	"Sources/Methods/AJUI_Tip_eventHandlerCB.4dm": {
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 21,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.061Z"
+	},
+	"Sources/Methods/AJUI_Tip_init_animation.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 104,
+		"lastSelectedLine": 104,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.061Z"
+	},
+	"Sources/Methods/AJUI_Tip_animationHandler.4dm": {
+		"startSelection": 42,
+		"endSelection": 60,
+		"firstSelectedLine": 126,
+		"lastSelectedLine": 126,
+		"folding": [
+			176
+		],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.062Z"
+	},
+	"Sources/Methods/AJUI_Tip_animationWrk.4dm": {
+		"startSelection": 49,
+		"endSelection": 49,
+		"firstSelectedLine": 40,
+		"lastSelectedLine": 40,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.062Z"
+	},
+	"Sources/Methods/AJUI_Tip_animation.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 45,
+		"lastSelectedLine": 45,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T15:06:00.746Z"
+	},
+	"Sources/Methods/AJUI_Tip_activeAnimation.4dm": {
+		"startSelection": 23,
+		"endSelection": 23,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.063Z"
+	},
+	"Sources/Methods/AJUI_TIP_setBlinkNumber.4dm": {
+		"startSelection": 8,
+		"endSelection": 8,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.064Z"
+	},
+	"Sources/Methods/AJUI_Tip_setBlinkDuration.4dm": {
+		"startSelection": 8,
+		"endSelection": 19,
+		"firstSelectedLine": 28,
+		"lastSelectedLine": 28,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.064Z"
+	},
+	"Sources/Methods/AJUI_TIp_setBlinkOn.4dm": {
+		"startSelection": 8,
+		"endSelection": 8,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.065Z"
+	},
+	"Sources/Methods/AJUI_Tip_setJumpNumber.4dm": {
+		"startSelection": 8,
+		"endSelection": 8,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.066Z"
+	},
+	"Sources/Methods/AJUI_Tip_setJumpOn.4dm": {
+		"startSelection": 7,
+		"endSelection": 0,
+		"firstSelectedLine": 30,
+		"lastSelectedLine": 18,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.066Z"
+	},
+	"Sources/Methods/AJUI_Tip_setJumpDuration.4dm": {
+		"startSelection": 8,
+		"endSelection": 8,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.067Z"
+	},
+	"Sources/Methods/AJUI_TIP_setJumpOffset.4dm": {
+		"startSelection": 8,
+		"endSelection": 17,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.067Z"
+	},
+	"Sources/Methods/AJUI_Tip_setAnimRefresh.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 15,
+		"lastSelectedLine": 15,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.068Z"
+	},
+	"Sources/Methods/AJUI_Tip_buildComponent.4dm": {
+		"startSelection": 4,
+		"endSelection": 4,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.068Z"
+	},
+	"Sources/Methods/AJUI_Tip_loadTemplates.4dm": {
+		"startSelection": 27,
+		"endSelection": 27,
+		"firstSelectedLine": 54,
+		"lastSelectedLine": 54,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.069Z"
+	},
+	"Sources/Methods/AJUI_Tip_higherOpacity.4dm": {
+		"startSelection": 14,
+		"endSelection": 14,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.070Z"
+	},
+	"Sources/Methods/AJUI_Tip_fadeInHandler.4dm": {
+		"startSelection": 50,
+		"endSelection": 50,
+		"firstSelectedLine": 40,
+		"lastSelectedLine": 40,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.070Z"
+	},
+	"Sources/Methods/AJUI_Tip_fadeOutHandler.4dm": {
+		"startSelection": 63,
+		"endSelection": 63,
+		"firstSelectedLine": 44,
+		"lastSelectedLine": 44,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.071Z"
+	},
+	"Sources/Methods/AJUI_Tip_firstGeneration_proc.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.072Z"
+	},
+	"Sources/Methods/GoInDesignMode.4dm": {
+		"startSelection": 30,
+		"endSelection": 30,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.072Z"
+	},
+	"Sources/Methods/Tool_autoLaunchBuild.4dm": {
+		"startSelection": 14,
+		"endSelection": 25,
+		"firstSelectedLine": 23,
+		"lastSelectedLine": 23,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.073Z"
+	},
+	"Sources/Methods/Tool_LaunchBuild.4dm": {
+		"startSelection": 16,
+		"endSelection": 16,
+		"firstSelectedLine": 11,
+		"lastSelectedLine": 11,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.073Z"
+	},
+	"Sources/Methods/AJUI_Tip_setGlobalOpacity.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 30,
+		"lastSelectedLine": 30,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.074Z"
+	},
+	"Sources/Methods/AJUI_Tip_activeFadeIn.4dm": {
+		"startSelection": 15,
+		"endSelection": 15,
+		"firstSelectedLine": 24,
+		"lastSelectedLine": 24,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.074Z"
+	},
+	"Sources/Methods/AJUI_Tip_activateFadeOut.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.075Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTimerFadeIn.4dm": {
+		"startSelection": 23,
+		"endSelection": 23,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.076Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTimerFadeOut.4dm": {
+		"startSelection": 23,
+		"endSelection": 23,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.076Z"
+	},
+	"Sources/Methods/AJUI_Tip_setTipDuration.4dm": {
+		"startSelection": 23,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.077Z"
+	},
+	"Sources/Methods/AJUI_Tip_activateShadow.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.078Z"
+	},
+	"Sources/Methods/AJUI_Tip_setShadowOffset.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.078Z"
+	},
+	"Sources/Methods/AJUI_Tip_subformContext.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.079Z"
+	},
+	"Sources/Methods/AJUI_Tip_setCurrentLvl.4dm": {
+		"startSelection": 23,
+		"endSelection": 23,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.080Z"
+	},
+	"Sources/Methods/AJUI_Tip_show.4dm": {
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.081Z"
+	},
+	"Sources/Methods/AJUI_Tip_calcDelayFade.4dm": {
+		"startSelection": 12,
+		"endSelection": 12,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.082Z"
+	},
+	"Sources/Methods/AJUI_Tip_clearCache.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 22,
+		"lastSelectedLine": 22,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.082Z"
+	},
+	"Sources/Methods/AJUI_Tip_durationHandler.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 21,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.083Z"
+	},
+	"Sources/Methods/AJUI_Tip_anyAnimationActivated.4dm": {
+		"startSelection": 94,
+		"endSelection": 94,
+		"firstSelectedLine": 22,
+		"lastSelectedLine": 22,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.083Z"
+	},
+	"Sources/Methods/AJUI_Tip_getsetCurved.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 28,
+		"lastSelectedLine": 28,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.084Z"
+	},
+	"Sources/Methods/AJUI_Tip_GetSetCornerCurveStart.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 21,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.084Z"
+	},
+	"Sources/Methods/AJUI_Tip_GetSetCornerCurveEnd.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 21,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.085Z"
+	},
+	"Sources/Methods/AJUI_Tip_GetSetArrowCurve.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 20,
+		"lastSelectedLine": 20,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.085Z"
+	},
+	"Sources/DatabaseMethods/onStartup.4dm": {
+		"startSelection": 5,
+		"endSelection": 5,
+		"firstSelectedLine": 10,
+		"lastSelectedLine": 10,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.086Z"
+	},
+	"Sources/DatabaseMethods/onExit.4dm": {
+		"startSelection": 0,
+		"endSelection": 5,
+		"firstSelectedLine": 10,
+		"lastSelectedLine": 10,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.086Z"
+	},
+	"Sources/Forms/zz_test_Tip/method.4dm": {
+		"startSelection": 51,
+		"endSelection": 56,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.095Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Test_tip.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.109Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton8.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.110Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton9.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.111Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton10.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.111Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton11.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.111Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton12.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.112Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton13.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.112Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton16.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.113Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton17.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.113Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton18.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.114Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton14.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.114Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton15.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.114Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton19.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.115Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton24.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.115Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton25.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.116Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton26.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.116Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton27.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.116Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton.4dm": {
+		"startSelection": 16,
+		"endSelection": 16,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.117Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton1.4dm": {
+		"startSelection": 16,
+		"endSelection": 16,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.117Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton2.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.118Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton3.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.118Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton4.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.129Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton5.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.135Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton6.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.136Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton7.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.137Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton20.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.137Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton21.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.138Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton22.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.138Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton23.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.139Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton28.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.139Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton29.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.139Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton30.4dm": {
+		"startSelection": 19,
+		"endSelection": 19,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.140Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton31.4dm": {
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.140Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton32.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.141Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton33.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.141Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton34.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 11,
+		"lastSelectedLine": 11,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.141Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable9.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.142Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable10.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.142Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable11.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.143Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable12.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.143Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton35.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.143Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton36.4dm": {
+		"startSelection": 21,
+		"endSelection": 21,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.144Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton37.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.144Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton38.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 10,
+		"lastSelectedLine": 10,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.145Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable13.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.145Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable14.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.146Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/opacityBG_obj.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.146Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Règle2.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.146Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Règle1.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.147Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton39.4dm": {
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.148Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton40.4dm": {
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.149Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Règle4.4dm": {
+		"startSelection": 40,
+		"endSelection": 40,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.149Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton41.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.149Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton42.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.150Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable16.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.151Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/shadowOffset_obj.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.155Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Bouton43.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.156Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Check Box2.4dm": {
+		"startSelection": 23,
+		"endSelection": 9,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.156Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable19.4dm": {
+		"startSelection": 23,
+		"endSelection": 23,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.156Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable20.4dm": {
+		"startSelection": 23,
+		"endSelection": 23,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.157Z"
+	},
+	"Sources/Forms/zz_test_Tip/ObjectMethods/Variable21.4dm": {
+		"startSelection": 23,
+		"endSelection": 23,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.158Z"
+	},
+	"Sources/Forms/AJUI_Tip_container/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.160Z"
+	},
+	"Sources/Forms/AJUI_Tip_container/ObjectMethods/AJUI_Tip_container_pict.4dm": {
+		"startSelection": 0,
+		"endSelection": 23,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.160Z"
+	},
+	"Sources/Forms/zz_fakeCalendar/method.4dm": {
+		"startSelection": 16,
+		"endSelection": 16,
+		"firstSelectedLine": 13,
+		"lastSelectedLine": 13,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.162Z"
+	},
+	"Sources/Forms/zz_fakeCalendar/ObjectMethods/title.4dm": {
+		"startSelection": 13,
+		"endSelection": 13,
+		"firstSelectedLine": 10,
+		"lastSelectedLine": 10,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.162Z"
+	},
+	"Sources/Forms/zz_fakeCalendar/ObjectMethods/notes.4dm": {
+		"startSelection": 13,
+		"endSelection": 13,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.163Z"
+	},
+	"Sources/Forms/zz_test_GI/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.164Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/var3.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.165Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/var1.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.165Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/var2.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.229Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/var5.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.231Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/var4.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.231Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/Button2.4dm": {
+		"startSelection": 29,
+		"endSelection": 29,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.232Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/Button3.4dm": {
+		"startSelection": 30,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.232Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/Button.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.233Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/Button1.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.233Z"
+	},
+	"Sources/Forms/zz_test_GI/ObjectMethods/Button4.4dm": {
+		"startSelection": 10,
+		"endSelection": 10,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.234Z"
+	},
+	"Sources/Forms/zz_test_GI_main/method.4dm": {
+		"startSelection": 18,
+		"endSelection": 18,
+		"firstSelectedLine": 5,
+		"lastSelectedLine": 5,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.236Z"
+	},
+	"Sources/Forms/zz_test_GI_main/ObjectMethods/Button.4dm": {
+		"startSelection": 8,
+		"endSelection": 8,
+		"firstSelectedLine": 5,
+		"lastSelectedLine": 5,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.236Z"
+	},
+	"Sources/Forms/zz_test_GI_main/ObjectMethods/Button1.4dm": {
+		"startSelection": 13,
+		"endSelection": 13,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T07:59:20.237Z"
+	},
+	"Sources/Methods/AJUI_Tip_info.4dm": {
+		"startSelection": 16,
+		"endSelection": 16,
+		"firstSelectedLine": 12,
+		"lastSelectedLine": 12,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-01-21T10:57:05.003Z"
+	}
+}

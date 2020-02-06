@@ -1,0 +1,98 @@
+﻿{
+	"Sources/Methods/New AJUI_Tip.4dm": {
+		"left": 840,
+		"top": 431,
+		"width": 1445,
+		"height": 1035
+	},
+	"Sources/Methods/AJUI_Tip_init_attributes.4dm": {
+		"left": 503,
+		"top": 216,
+		"width": 1762,
+		"height": 1200
+	},
+	"Sources/Methods/AJUI_Tip_init_formulas.4dm": {
+		"left": 136,
+		"top": 310,
+		"width": 1762,
+		"height": 1106
+	},
+	"Sources/Methods/AJUI_Tip_templateExport.4dm": {
+		"left": 136,
+		"top": 310,
+		"width": 1762,
+		"height": 1106
+	},
+	"Sources/Methods/AJUI_Tip_templateImport.4dm": {
+		"left": 770,
+		"top": 420,
+		"width": 1445,
+		"height": 1035
+	},
+	"Sources/Methods/AJUI_Tip_buildTip.4dm": {
+		"left": 217,
+		"top": 458,
+		"width": 1599,
+		"height": 933
+	},
+	"Sources/Methods/AJUI_Tip_drawTipbox.4dm": {
+		"left": 1421,
+		"top": 258,
+		"width": 1339,
+		"height": 1200
+	},
+	"Sources/Methods/AJUI_Tip_buildComponent.4dm": {
+		"left": 688,
+		"top": 469,
+		"width": 1599,
+		"height": 933
+	},
+	"Sources/Methods/AJUI_Tip_info.4dm": {
+		"left": 819,
+		"top": 591,
+		"width": 1117,
+		"height": 832
+	},
+	"Sources/Methods/AJUI_Tip_loadTemplates.4dm": {
+		"left": 60,
+		"top": 207,
+		"width": 1762,
+		"height": 1200
+	},
+	"Sources/Methods/AJUI_Tip_higherOpacity.4dm": {
+		"left": 1096,
+		"top": 480,
+		"width": 681,
+		"height": 604
+	},
+	"Sources/Methods/AJUI_Tip_fadeOutHandler.4dm": {
+		"left": 932,
+		"top": 383,
+		"width": 1000,
+		"height": 604
+	},
+	"Sources/Methods/AJUI_Tip_show.4dm": {
+		"left": 894,
+		"top": 452,
+		"width": 1339,
+		"height": 1200
+	},
+	"Sources/DatabaseMethods/onStartup.4dm": {
+		"left": 217,
+		"top": 458,
+		"width": 1067,
+		"height": 567
+	},
+	"Sources/Methods/AJUI_Tip_animation.4dm": {
+		"left": 655,
+		"top": 411,
+		"width": 2299,
+		"height": 1126
+	},
+	"Sources/Methods/AJUI_Tip_animationHandler.4dm": {
+		"left": 1058,
+		"top": 368,
+		"width": 1708,
+		"height": 1182
+	}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="LogStyleSheet.xsl"?>
+<verifylog operation="Build" name="AJ_Tools_4D_Doc" structure="Macintosh HD:Users:gabriel:Documents:AJAR:4D Resources:Bases Personelles:AJ:AJ_Tools:AJ_Tools_4D_Doc:AJ_Tools_4D_Doc.4dbase:AJ_Tools_4D_Doc.4DB" data="" os="macOS Version 10.14.2 (Build 18C54)">
+<start_timer time="2019-01-22T10:10:32+01:00"/>
+<stop_timer time="2019-01-22T10:10:34+01:00" success="true" user_canceled="false"/>
+<step title="Building component">
+<step title="Start compilation [2019-01-22T10:10:32]"></step>
+<step title="Start copying files : Macintosh HD:Users:gabriel:Documents:AJAR:4D Resources:Bases Personelles:AJ:AJ_Tools:AJ_Tools_4D_Doc:4D_Doc_Build:Components:AJ_Tools_4D_Doc.4dbase:AJ_Tools_4D_Doc.4DC"></step>
+<step title="End copying files : Macintosh HD:Users:gabriel:Documents:AJAR:4D Resources:Bases Personelles:AJ:AJ_Tools:AJ_Tools_4D_Doc:4D_Doc_Build:Components:AJ_Tools_4D_Doc.4dbase:AJ_Tools_4D_Doc.4DC"></step>
+<step title="End compilation [2019-01-22T10:10:34]"></step>
+</step>
+</verifylog>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+
+	<!--#4DCODE
+	$methods:=$1
+	$darkMode:=$2
+	$applicationName:=$3
+	array text($_method_name;0)
+	OB GET PROPERTY NAMES($methods;$_method_name)
+	SORT ARRAY($_method_name)
+	-->
+	<title><!--#4DTEXT $applicationName--></title>
+
+	<style>
+		body {
+			font-family: "Menlo", sans-serif;
+			font-size: 13px;
+			<!--#4DIF ($darkMode=True)-->
+			background-color: #132231;
+			color:white;
+			<!--#4DELSE-->
+			background-color: white;
+			color:black;
+			<!--#4DENDIF-->
+		}
+		h1{
+			padding:10px;
+		}
+		#mainContainer{
+		    width: 100%;
+
+		}
+		#sidenav{
+			position: fixed;
+			width: 280px;
+			overflow: scroll;
+			padding: 10px;
+			height:100%;
+		}
+		#sidenav a, h3 {
+			display:block;
+			font-weight: bold;
+			<!--#4DIF ($darkMode=True)-->
+			color:#efc825;
+			<!--#4DELSE-->
+			color:#000099;
+			<!--#4DENDIF-->
+			font-style: italic;
+		}
+
+		#main{
+			margin-left: 280px;
+			position: fixed;
+			overflow: scroll;
+			padding: 10px;
+			height:93%;
+		}
+		.method{
+			margin:5px;
+			padding:3px;
+		}
+		.shortDescription{
+			font-style: italic;
+			font-size:12px;
+		}
+		.description{
+			font-size:13px;
+		}
+		.params{
+			color:#1287ff;
+		}
+	</style>
+	</head>
+	<body>
+
+		<h1><!--#4DTEXT $applicationName--> Documentation</h1>
+
+		<div id="mainContainer">
+			<div id="sidenav">
+				<!--#4DEVAL $i:=1-->
+				<!--#4DLOOP ($i<=size of array($_method_name))-->
+				<!--#4DIF ($methods[$_method_name{$i}].shortDescription#null) | ($methods[$_method_name{$i}].description#null) | ($methods[$_method_name{$i}].params#null) | ($methods[$_method_name{$i}].return#null)-->
+				<a href="#<!--#4DEVAL $_method_name{$i}-->"><!--#4DEVAL $_method_name{$i}--></a>
+				<!--#4DENDIF-->
+				<!--#4DEVAL $i:=$i+1-->
+				<!--#4DENDLOOP-->
+			</div>
+
+			<div id="main">
+				<!--#4DEVAL $i:=1-->
+				<!--#4DLOOP ($i<=size of array($_method_name))-->
+				<!--#4DIF ($methods[$_method_name{$i}].shortDescription#null) | ($methods[$_method_name{$i}].description#null) | ($methods[$_method_name{$i}].params#null) | ($methods[$_method_name{$i}].return#null)-->
+				<div class="method" id="<!--#4DEVAL $_method_name{$i}-->">
+					<h3><!--#4DEVAL $_method_name{$i}--></h3>
+					<!--#4DIF ($methods[$_method_name{$i}].shortDescription#null)-->
+						<p class="shortDescription"><!--#4DEVAL replace string($methods[$_method_name{$i}].shortDescription;"\r";"<br />")--></p>
+					<!--#4DENDIF-->
+					<!--#4DIF ($methods[$_method_name{$i}].params#null) | ($methods[$_method_name{$i}].return#null)-->
+
+					<!--#4DIF ($darkMode=True)-->
+					<table class="table table-striped table-dark">
+					<!--#4DELSE-->
+					<table class="table table-striped table-light">
+					<!--#4DENDIF-->
+					<!--#4DIF ($darkMode=True)-->
+						<thead class="thead-dark">
+					<!--#4DELSE-->
+						<thead class="thead-light">
+					<!--#4DENDIF-->
+							<tr><th>#</th><th>Name</th><th>Type</th><th>Optional</th><th>Description</th></tr>
+						</thead>
+						<!--#4DIF ($methods[$_method_name{$i}].return#null)-->
+						<tr><th class="params">$0</th><td><!--#4DEVAL $methods[$_method_name{$i}].return.name--></td><td><!--#4DEVAL $methods[$_method_name{$i}].return.type--></td><td> - </td><td><!--#4DEVAL $methods[$_method_name{$i}].return.description--></td></tr>
+						<!--#4DENDIF-->
+						<!--#4DIF ($methods[$_method_name{$i}].params#null)-->
+						<!--#4DEVAL $j:=0-->
+						<!--#4DLOOP ($j<$methods[$_method_name{$i}].params.length)-->
+						<tr><th class="params">$<!--#4DEVAL $j+1--></th><td><!--#4DEVAL $methods[$_method_name{$i}].params[$j].name--></td><td><!--#4DEVAL $methods[$_method_name{$i}].params[$j].type--></td><td><!--#4DEVAL string($methods[$_method_name{$i}].params[$j].optional)--></td><td><!--#4DEVAL $methods[$_method_name{$i}].params[$j].description--></td></tr>
+						<!--#4DEVAL $j:=$j+1-->
+						<!--#4DENDLOOP-->
+						<!--#4DENDIF-->
+					</table>
+					<!--#4DENDIF-->
+					<!--#4DIF ($methods[$_method_name{$i}].description#null)-->
+						<p class="description"><!--#4DEVAL replace string(replace string(replace string(replace string($methods[$_method_name{$i}].description;"<";"&lt;");">";"&gt;");" ";"&nbsp;");"\r";"<br />")--></p>
+					<!--#4DENDIF-->
+					<!--#4DIF ($methods[$_method_name{$i}].modifications#null)-->
+					<b><u>Modifications</u></b>
+					<!--#4DEVAL $j:=0-->
+					<!--#4DLOOP ($j<$methods[$_method_name{$i}].modifications.length)-->
+					<!--#4DIF ($methods[$_method_name{$i}].modifications[$j].comment#null)&($methods[$_method_name{$i}].modifications[$j].comment#"")-->
+						<p><!--#4DEVAL replace string($methods[$_method_name{$i}].modifications[$j].comment;"\r";"<br />")--></p>
+					<!--#4DENDIF-->
+					<!--#4DEVAL $j:=$j+1-->
+					<!--#4DENDLOOP-->
+					<!--#4DENDIF-->
+				</div>
+				<!--#4DENDIF-->
+				<!--#4DEVAL $i:=$i+1-->
+				<!--#4DENDLOOP-->
+		</div>
+	</body>
+</html>

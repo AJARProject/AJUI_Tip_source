@@ -1,0 +1,594 @@
+﻿{
+	"methods": {
+		"AJUI_Tip_setCornerRadius": {
+			"timeStamp": "2020-01-21T07:59:20.039Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setTargetOffset": {
+			"timeStamp": "2020-01-21T07:59:20.039Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setCurrentLvl": {
+			"timeStamp": "2020-01-21T07:59:20.080Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_fadeInHandler": {
+			"timeStamp": "2020-01-21T07:59:20.070Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setTipPosition": {
+			"timeStamp": "2020-01-21T07:59:20.038Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_onClickCB": {
+			"timeStamp": "2020-01-21T07:59:20.060Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setArrowHeight": {
+			"timeStamp": "2020-01-21T07:59:20.044Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_activeAnimation": {
+			"timeStamp": "2020-01-21T07:59:20.063Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_TIP_setBlinkNumber": {
+			"timeStamp": "2020-01-21T07:59:20.064Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_clearCache": {
+			"timeStamp": "2020-01-21T07:59:20.082Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"AJUI_Tip_setArrowOffset": {
+			"timeStamp": "2020-01-21T07:59:20.045Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setTimerFadeIn": {
+			"timeStamp": "2020-01-21T07:59:20.076Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Tool_autoLaunchBuild": {
+			"timeStamp": "2020-01-21T07:59:20.073Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_activeFadeIn": {
+			"timeStamp": "2020-01-21T07:59:20.074Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_objectToShared": {
+			"timeStamp": "2020-01-21T07:59:20.058Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setCloseBoxDisplay": {
+			"timeStamp": "2020-01-21T07:59:20.046Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_collectionToShared": {
+			"timeStamp": "2020-01-21T07:59:20.059Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setGlobalOpacity": {
+			"timeStamp": "2020-01-21T07:59:20.074Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_info": {
+			"timeStamp": "2020-01-21T15:06:04.510Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true,
+				"lang": "en"
+			}
+		},
+		"AJUI_Tip_setAnimRefresh": {
+			"timeStamp": "2020-01-21T07:59:20.068Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_calcSizeTextArea": {
+			"timeStamp": "2020-01-21T07:59:20.056Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Tool_LaunchBuild": {
+			"timeStamp": "2020-01-21T07:59:20.073Z",
+			"attributes": {
+				"invisible": true,
+				"executedOnServer": true
+			}
+		},
+		"AJUI_Tip_anyAnimationActivated": {
+			"timeStamp": "2020-01-21T07:59:20.083Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setTimerFadeOut": {
+			"timeStamp": "2020-01-21T07:59:20.076Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_calcDelayFade": {
+			"timeStamp": "2020-01-21T07:59:20.082Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_getFirstFontAvailable": {
+			"timeStamp": "2020-01-21T07:59:20.049Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setAutoRebuild": {
+			"timeStamp": "2020-01-21T07:59:20.050Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setTipboxMaxHeight": {
+			"timeStamp": "2020-01-21T07:59:20.041Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_init_attributes": {
+			"timeStamp": "2020-01-21T07:59:20.032Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_animationWrk": {
+			"timeStamp": "2020-01-21T07:59:20.062Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setText": {
+			"timeStamp": "2020-01-21T07:59:20.034Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setBlinkDuration": {
+			"timeStamp": "2020-01-21T07:59:20.064Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_draw": {
+			"timeStamp": "2020-01-21T07:59:20.052Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_buildComponent": {
+			"timeStamp": "2020-01-21T07:59:20.068Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_formToUseExist": {
+			"timeStamp": "2020-01-21T07:59:20.054Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_TIP_setJumpOffset": {
+			"timeStamp": "2020-01-21T07:59:20.067Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setSubformName": {
+			"timeStamp": "2020-01-21T07:59:20.047Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"GoInDesignMode": {
+			"timeStamp": "2020-01-21T07:59:20.072Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setFontName": {
+			"timeStamp": "2020-01-21T07:59:20.036Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_show": {
+			"timeStamp": "2020-01-21T07:59:20.081Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_targetDefined": {
+			"timeStamp": "2020-01-21T07:59:20.052Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_getStyleForTextArea": {
+			"timeStamp": "2020-01-21T07:59:20.056Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setName": {
+			"timeStamp": "2020-01-21T07:59:20.033Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_sharedToObject": {
+			"timeStamp": "2020-01-21T07:59:20.059Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setTargetName": {
+			"timeStamp": "2020-01-21T07:59:20.037Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_GetSetCornerCurveStart": {
+			"timeStamp": "2020-01-21T07:59:20.084Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_init_formulas": {
+			"timeStamp": "2020-01-21T07:59:20.033Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setBackgroundOpacity": {
+			"timeStamp": "2020-01-21T07:59:20.058Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_TIp_setBlinkOn": {
+			"timeStamp": "2020-01-21T07:59:20.065Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setJumpOn": {
+			"timeStamp": "2020-01-21T07:59:20.066Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_getsetCurved": {
+			"timeStamp": "2020-01-21T07:59:20.084Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_durationHandler": {
+			"timeStamp": "2020-01-21T07:59:20.083Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_sharedToCollection": {
+			"timeStamp": "2020-01-21T07:59:20.060Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_generateTipbox": {
+			"timeStamp": "2020-01-21T07:59:20.053Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setJumpDuration": {
+			"timeStamp": "2020-01-21T07:59:20.067Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_higherOpacity": {
+			"timeStamp": "2020-01-21T07:59:20.070Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setFontSize": {
+			"timeStamp": "2020-01-21T07:59:20.035Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setTextOpacity": {
+			"timeStamp": "2020-01-21T07:59:20.057Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setArrowWidth": {
+			"timeStamp": "2020-01-21T07:59:20.043Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_templateImport": {
+			"timeStamp": "2020-01-21T07:59:20.048Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"AJUI_Tip_setTargetCoordinates": {
+			"timeStamp": "2020-01-21T07:59:20.053Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setBorderColor": {
+			"timeStamp": "2020-01-21T07:59:20.046Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_tipBoxDefined": {
+			"timeStamp": "2020-01-21T07:59:20.053Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setArrowPosition": {
+			"timeStamp": "2020-01-21T07:59:20.044Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_buildTip": {
+			"timeStamp": "2020-01-21T07:59:20.051Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_animationHandler": {
+			"timeStamp": "2020-01-21T07:59:20.062Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_activateFadeOut": {
+			"timeStamp": "2020-01-21T07:59:20.075Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setBorderOpacity": {
+			"timeStamp": "2020-01-21T07:59:20.057Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_eventHandlerCB": {
+			"timeStamp": "2020-01-21T07:59:20.061Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_activateShadow": {
+			"timeStamp": "2020-01-21T07:59:20.078Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setBorderSize": {
+			"timeStamp": "2020-01-21T07:59:20.045Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setMargin": {
+			"timeStamp": "2020-01-21T07:59:20.043Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"New AJUI_Tip": {
+			"timeStamp": "2020-01-21T07:59:20.031Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"AJUI_Tip_setTextRotation": {
+			"timeStamp": "2020-01-21T07:59:20.035Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_activeAutoPosition": {
+			"timeStamp": "2020-01-21T07:59:20.041Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setCloseBoxSize": {
+			"timeStamp": "2020-01-21T07:59:20.047Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_GetSetCornerCurveEnd": {
+			"timeStamp": "2020-01-21T07:59:20.085Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setFontColor": {
+			"timeStamp": "2020-01-21T07:59:20.036Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setShadowOffset": {
+			"timeStamp": "2020-01-21T07:59:20.078Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_hide": {
+			"timeStamp": "2020-01-21T07:59:20.049Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setTipDuration": {
+			"timeStamp": "2020-01-21T07:59:20.077Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_subformContext": {
+			"timeStamp": "2020-01-21T07:59:20.079Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setBackgroundColor": {
+			"timeStamp": "2020-01-21T07:59:20.037Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_loadTemplates": {
+			"timeStamp": "2020-01-21T07:59:20.069Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"AJUI_Tip_setTipboxMaxWidth": {
+			"timeStamp": "2020-01-21T07:59:20.040Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_fadeOutHandler": {
+			"timeStamp": "2020-01-21T07:59:20.071Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_init_animation": {
+			"timeStamp": "2020-01-21T07:59:20.061Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_init_methods": {
+			"timeStamp": "2020-01-21T07:59:20.079Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_templateExport": {
+			"timeStamp": "2020-01-21T07:59:20.048Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"AJUI_Tip_translateArrowPosition": {
+			"timeStamp": "2020-01-21T07:59:20.057Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setJumpNumber": {
+			"timeStamp": "2020-01-21T07:59:20.066Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_CheckRebuild": {
+			"timeStamp": "2020-01-21T07:59:20.050Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_drawTipbox": {
+			"timeStamp": "2020-01-21T07:59:20.055Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_setPadding": {
+			"timeStamp": "2020-01-21T07:59:20.042Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_GetSetArrowCurve": {
+			"timeStamp": "2020-01-21T07:59:20.085Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_animation": {
+			"timeStamp": "2020-01-21T15:06:00.746Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"AJUI_Tip_firstGeneration_proc": {
+			"timeStamp": "2020-01-21T07:59:20.072Z",
+			"attributes": {
+				"invisible": true
+			}
+		}
+	}
+}

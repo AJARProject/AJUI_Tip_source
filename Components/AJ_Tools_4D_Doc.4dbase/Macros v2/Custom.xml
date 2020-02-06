@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+<macros>
+
+<macro name="AJ_Tools_4D_Doc_header" in_menu="true" type_ahead="true" type_ahead_text="AJ_header">
+<text>// <method_name/> ( param1 { ; param2 } ) -> return
+//
+// param1 : (text) description
+// param2 : (text) (optional) description
+// return : (text) (return) return value
+//
+// short_description
+
+if(false)
+// ----------------------------------------------------
+// User name (OS): <user_os/>
+// Date and time: <date format="0"/>, <time format="0"/>
+// ----------------------------------------------------
+// Method: <method_name/>
+// Description
+// <caret/>
+//
+// ----------------------------------------------------
+end if
+</text>
+</macro>
+
+<macro name="AJ_Tools_CodeModif" type_ahead_text="AJ_codeModif">
+<text>// Modified by: <user_os/> (<date format="4"/> - <time format="1"/>) Modification Description</text>
+</macro>
+  
+</macros>
+

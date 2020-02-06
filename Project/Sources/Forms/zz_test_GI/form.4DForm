@@ -1,0 +1,244 @@
+﻿{
+	"destination": "detailScreen",
+	"formSizeAnchor": "Rectangle",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"AJUI_Tip_sf": {
+					"type": "subform",
+					"top": 420,
+					"left": 32,
+					"width": 118,
+					"height": 138,
+					"detailForm": "AJUI_Tip_container",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 224,
+					"left": 423,
+					"width": 30,
+					"height": 30,
+					"visibility": "hidden",
+					"fill": "#DC143C",
+					"stroke": "transparent"
+				},
+				"var3": {
+					"type": "input",
+					"top": 14,
+					"left": 20,
+					"width": 169,
+					"height": 30,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/var3.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"var1": {
+					"type": "input",
+					"top": 72,
+					"left": 25,
+					"width": 169,
+					"height": 30,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/var1.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"var2": {
+					"type": "input",
+					"top": 67,
+					"left": 241,
+					"width": 169,
+					"height": 30,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/var2.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"var5": {
+					"type": "input",
+					"top": 122,
+					"left": 32,
+					"width": 169,
+					"height": 30,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/var5.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"var4": {
+					"type": "input",
+					"top": 117,
+					"left": 272,
+					"width": 169,
+					"height": 30,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 24,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/var4.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 219,
+					"left": 13,
+					"width": 58,
+					"height": 27,
+					"text": "Fade In",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 219,
+					"left": 83,
+					"width": 58,
+					"height": 27,
+					"text": "Fade out",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 219,
+					"left": 160,
+					"width": 73,
+					"height": 27,
+					"text": "Hide",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 219,
+					"left": 239,
+					"width": 69,
+					"height": 27,
+					"text": "Show",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 14,
+					"left": 231,
+					"width": 69,
+					"height": 27,
+					"text": "Fake var 2",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

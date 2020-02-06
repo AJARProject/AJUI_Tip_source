@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="7">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<compiler>
+			<typage default_for_numeric="1"/>
+			<options error_file="true" fat_binary="true" symbol_file="true"/>
+		</compiler>
+		<interface>
+			<user can_change_password="false" default_user="3" display_list="false"/>
+		</interface>
+		<server>
+			<network>
+				<client_server use_encryption="false"/>
+			</network>
+		</server>
+	</com.4d>
+</preferences>
