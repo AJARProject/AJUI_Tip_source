@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true}
   // AJUI_Tip_templateImport ( $fileName_t ) -> return
   //
   // $fileName_t : (text) File name e.g. "MyTip.json"

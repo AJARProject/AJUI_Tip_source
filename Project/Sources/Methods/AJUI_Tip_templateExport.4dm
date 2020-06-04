@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true}
   // AJUI_Tip_templateExport ( $tip_instance_obj )
   //
   // $tip_instance_obj : (object) Tip to export in json
