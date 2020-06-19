@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setArrowHeight ( $size_l ) 
+  // AJUI_Tip_setArrowHeight ( {$size_l} ) -> height
   //
-  // $size_l : (longint) Arrow height
+  // $1 : (longint) (optional) height
+  // $0 : (longint) (return) current arrow height
   //
   // Setter/Getter of the height size of the arrow
 

@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setArrowPosition ( $arrowPosition_t} ) 
+  // AJUI_Tip_setArrowPosition ( {$arrowPosition_t} ) -> position
   //
-  // $arrowPosition_t : (text) Positon arrow
+  // $1 : (text) (optional) position
+  // $0 : (text) (return) current arrow position
   //
   // Setter/Getter of the position of the arrow
 

@@ -1,11 +1,10 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_GetSetCornerCurveEnd ( param1 { ; param2 } ) -> return
+  // AJUI_Tip_GetSetCornerCurveEnd (  { $curve } ) -> end curve
   //
-  // param1 : (text) description
-  // param2 : (text) (optional) description
-  // return : (text) (return) return value
+  // $1 : (real) (optional) end curve
+  // $0 : (real) (return) current end curve
   //
-  // short_description
+  // Setter/Getter of the end curve
 
 If (False:C215)
 	  // ----------------------------------------------------

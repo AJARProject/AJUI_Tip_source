@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setJumpDuration ( $duration_r ) 
+  // AJUI_Tip_setJumpDuration ( {$duration_r} ) -> duration
   //
-  // $duration_r : (real) $duration_r
+  // $1 : (longint) (optional) duration
+  // $0 : (longint) (return) curr
   //
   // Setter/Getter to enter the duration between each jump
 
@@ -17,7 +18,7 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_REAL:C285($0;$1;$duration_r)
+C_LONGINT:C283($0;$1;$duration_r)
 
 If (Count parameters:C259=0)
 	$0:=This:C1470.animation.jump.duration

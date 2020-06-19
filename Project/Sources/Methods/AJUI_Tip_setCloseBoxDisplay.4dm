@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setCloseBoxDisplay ( $display_b )
+  // AJUI_Tip_setCloseBoxDisplay ( {$display_b} ) -> displayed ?
   //
-  // $display_b : (boolean) CloseBox displayed
+  // $1 : (boolean) (optional) show/hide closebox
+  // $0 : (boolean) (return) closebox displayed ?
   //
   // Setter/Getter to define is the closeBox will be displayed
 

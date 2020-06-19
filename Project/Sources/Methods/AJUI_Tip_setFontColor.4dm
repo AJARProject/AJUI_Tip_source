@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setFontColor ( $color_t )
+  // AJUI_Tip_setFontColor ( {$color_t} ) -> color
   //
-  // $color_t : (text) Font color
+  // $1 : (text) (optional) color
+  // $0 : (text) (return) current font color
   //
   // Setter/Getter of the font color for the text
 

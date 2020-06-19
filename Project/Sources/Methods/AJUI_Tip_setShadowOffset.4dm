@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setShadowOffset ( $offset_l ) 
+  // AJUI_Tip_setShadowOffset ( {$offset_l} ) -> offset
   //
-  // $offset_l : (longint) offset value
+  // $1 : (longint) (optional) offset
+  // $0 : (longint) (return) current offset
   //
   // Setter/Getter for the offset of the shadow
 

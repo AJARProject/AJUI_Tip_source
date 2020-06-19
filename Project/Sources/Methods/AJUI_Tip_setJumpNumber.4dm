@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setJumpNumber ( $number_l ) 
+  // AJUI_Tip_setJumpNumber ( {$number_l} ) -> jump
   //
-  // $number_l : (longint) number
+  // $1 : (longint) (optional) number
+  // $0 : (longint) (return) current number of jump
   //
   // Setter/Getter to enter the number of time the tip must jump
 

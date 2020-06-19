@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_hide ( $tip_instance_obj  )   
+  // AJUI_Tip_hide ( {$tip_instance_obj}  )   
   //
-  // $tip_instance_obj : (object) (optionnal) tip instance
+  // $1 : (object) (optional) tip instance
   //
   //  Hide the tip form object
 

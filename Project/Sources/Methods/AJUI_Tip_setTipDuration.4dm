@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setTipDuration ( $duration_r ) -> return
+  // AJUI_Tip_setTipDuration ( {$duration_r} ) -> duration
   //
-  // $duration_r : (real) duration
+  // $1 : (real) (optional) duration
+  // $0 : (real) (return) current duration
   //
   // Setter/Getter of the tip duration
 

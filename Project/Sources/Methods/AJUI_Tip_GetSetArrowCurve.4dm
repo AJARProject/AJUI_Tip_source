@@ -1,11 +1,10 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_GetSetArrowCurve ( param1 { ; param2 } ) -> return
+  // AJUI_Tip_GetSetArrowCurve (  {  $curve } ) -> curve
   //
-  // param1 : (text) description
-  // param2 : (text) (optional) description
-  // return : (text) (return) return value
+  // $1 : (real) (optional) curve
+  // $0 : (real) (return) current curve
   //
-  // short_description
+  // Setter/Getter of the arrow curve
 
 If (False:C215)
 	  // ----------------------------------------------------

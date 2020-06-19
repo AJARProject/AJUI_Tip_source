@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_activeAnimation ( $isActive_b ) $isActive_b
+  // AJUI_Tip_activeAnimation ( {$isActive_b} ) -> activated ?
   //
-  // $isActive_b : (boolean) activate
+  // $1 : (boolean) (optional) activate/inactive
+  // $0 : (boolean) (return) animation activated ?
   //
   // Setter/Getter to activate animations
 

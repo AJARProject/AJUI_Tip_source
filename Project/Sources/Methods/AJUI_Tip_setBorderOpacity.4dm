@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_SetBorderOpacity ( $opacity_l } ) 
+  // AJUI_Tip_SetBorderOpacity ( {$opacity_l } ) -> opacity
   //
-  // $opacity_l : (longint) value opacity
+  // $1 : (longint) (optional) opacity
+  // $0 : (longint) (return) current Border opacity
   //
   // Setter/Getter to fix the opacity of the container border
 

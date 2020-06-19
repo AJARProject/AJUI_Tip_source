@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setTargetName ( $name_t )
+  // AJUI_Tip_setTargetName ( {$name_t} ) -> name
   //
-  // $name : (text) Target name object
+  // $1 : (text) (optional) name
+  // $0 : (text) (return) current target name
   //
   // Setter/Getter of the name of the target
 

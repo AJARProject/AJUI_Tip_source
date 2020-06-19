@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_onClickCB ( $onClick_b ) 
+  // AJUI_Tip_onClickCB ( {$onClick_b} ) -> on click activated ? 
   //
-  // $onClick_b : (boolean) activate on click
+  // $1 : (boolean) (optional) Activate/inactivate on click callback
+  // $0 : (boolean) (return) on callback activate ?
   //
   // Setter/Getter closeBox on click available
 

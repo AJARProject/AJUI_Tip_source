@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setName ( $name_t )
+  // AJUI_Tip_setName ( {$name_t} ) -> name
   //
-  // $name_t : (text) name of the tip
+  // $1 : (text) (optional) name
+  // $0 : (text) (return) current name of the tip
   //
   // Setter/Getter of the name of the tip
 

@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setTipboxMaxWidth ( $maxWidth_l )
+  // AJUI_Tip_setTipboxMaxWidth ( {$maxWidth_l} ) -> max width
   //
-  // $maxWidth_l : (longint) Max width ot the text container
+  // $1 : (longint) (optional) max width
+  // $0 : (longint) (return) current max width
   //
   // Setter/Getter of the max width of the tipbox (text container)
 

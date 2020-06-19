@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setSubformName ( $name_t ) 
+  // AJUI_Tip_setSubformName ( {$name_t} ) -> name
   //
-  // $name_t : (text) Subform name
+  // $1 : (text) (optional) name
+  // $0 : (text) (return) current subform name
   //
   // Setter/Getter of name of the subform object
 

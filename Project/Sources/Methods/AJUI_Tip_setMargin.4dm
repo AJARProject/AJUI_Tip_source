@@ -1,10 +1,11 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setMargin ( $left_l { ; $top_l {; $right_l ; $bottom_l}} )
+  // AJUI_Tip_setMargin ( $left_l { ; $top_l {; $right_l ; $bottom_l}} ) -> margins
   //
-  // $left_l : (longint) left or all margin size
-  // $top_l : (longint) (optional) top margin size
-  // $right_l : (longint) (optional) right margin size
-  // $bottom_l : (longint) (optional) bottom margin size
+  // $1 : (longint) left or all margin size
+  // $2 : (longint) (optional) top margin size
+  // $3 : (longint) (optional) right margin size
+  // $4 : (longint) (optional) bottom margin size
+  // $0 : (object) (return) current margins
   //
   // Setter/Getter to defined the size of the margin of the space between the external tipbox area and the target.
 

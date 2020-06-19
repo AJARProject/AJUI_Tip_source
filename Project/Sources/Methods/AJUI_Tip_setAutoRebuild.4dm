@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setAutoRebuild ( $autoRebuild_b )
+  // AJUI_Tip_setAutoRebuild ( {$autoRebuild_b} ) -> auto rebuild ?
   //
-  // $autoRebuild_b : (boolean) auto rebuild
+  // $1 : (boolean) (optional) activate/inactivate
+  // $0 : (boolean) (return) auto rebuild ?
   //
   // Setter/Getter to activate or desactivate the auto rebuild of the tip when displayed
 

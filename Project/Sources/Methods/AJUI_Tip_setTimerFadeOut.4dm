@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setTimerFadeOut ( $milliseconds_l ) 
+  // AJUI_Tip_setTimerFadeOut ( {$milliseconds_l} ) -> timer
   //
-  // $milliseconds_l : (longint) duration
+  // $1 : (longint) (optional) timer (ms)
+  // $0 : (longint) (return) current timer
   //
   // setter/Getter for the fade out timer
 

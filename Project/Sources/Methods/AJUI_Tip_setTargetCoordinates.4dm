@@ -1,10 +1,11 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setTargetCoordinates ( $left_l { ; $top_l {; $right_l ; $bottom_l}} )
+  // AJUI_Tip_setTargetCoordinates ( $left_l { ; $top_l {; $right_l ; $bottom_l}} ) -> coordinates
   //
-  // $left_l : (longint) left or all margin size
-  // $top_l : (longint) (optional) top margin size
-  // $right_l : (longint) (optional) right margin size
-  // $bottom_l : (longint) (optional) bottom margin size
+  // $1 : (longint) left or all coordinates
+  // $2 : (longint) (optional) top coordinate
+  // $3 : (longint) (optional) right coordinate
+  // $4 : (longint) (optional) bottom coordinate
+  // $0 : (object) (return) current target coordinates
   //
   // Setter/Getter to defined the coordinates of the target
 

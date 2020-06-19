@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setArrowWidth ( $size_l ) 
+  // AJUI_Tip_setArrowWidth ( $size_l ) -> width
   //
-  // $size_l : (longint) Arrow width
+  // $1 : (longint) (optional) width
+  // $0 : (longint) (return) current arrow width
   //
   // Setter/Getter of the width size of the arrow
 

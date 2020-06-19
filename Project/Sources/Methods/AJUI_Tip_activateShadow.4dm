@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_activateShadow ( $isActive_b ) 
+  // AJUI_Tip_activateShadow ( {$isActive_b} ) -> shadow ?
   //
-  // $isActive_b : (boolean) activate
+  // $1 : (boolean) (optional) activate/inactivate
+  // $0 : (boolean) (return) shadow ?
   //
   // Setter/Getter to activate the shadow effect with the tipbox
 

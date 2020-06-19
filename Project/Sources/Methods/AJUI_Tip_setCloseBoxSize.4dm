@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setCloseBoxSize ( $size_l ) 
+  // AJUI_Tip_setCloseBoxSize ( {$size_l} ) -> size
   //
-  // $size_l : (longint) CloseBox size
+  // $1 : (longint) (optional) size
+  // $0 : (longint) (return) current size
   //
   // Setter/Getter of the size of the closeBox
 

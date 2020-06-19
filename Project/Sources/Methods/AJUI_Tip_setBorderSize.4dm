@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setBorderSize ( $size_l ) 
+  // AJUI_Tip_setBorderSize ( {$size_l} ) -> size
   //
-  // $size_l : (longint) Border size
+  // $1 : (longint) (optional) size
+  // $0 : (longint) (return) current Border size
   //
   // Setter/Getter of the border size. No border if you pass zero
 

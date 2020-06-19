@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setText ( $label_t )
+  // AJUI_Tip_setText ( {$label_t} ) -> label
   //
-  // $label_t : (text) Label in the tip
+  // $1 : (text) (optional) label
+  // $0 : (text) (return) current label  
   //
   // Setter/Getter of the label in the tip
 

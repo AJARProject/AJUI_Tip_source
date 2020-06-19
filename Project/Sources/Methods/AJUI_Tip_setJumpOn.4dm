@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setJumpOn ( $percentage_r ) 
+  // AJUI_Tip_setJumpOn ( {$percentage_r} ) -> percentage
   //
-  // $percentage_r : (real) duration
+  // $1 : (longint) (optional) percentage
+  // $0 : (longint) (return) current percentage
   //
   // Setter/Getter of the percentage related to the duration for the time the arrow reaches its highest point
 
@@ -17,7 +18,7 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_REAL:C285($0;$1;$percentage_r)
+C_LONGINT:C283($0;$1;$percentage_r)
 
 If (Count parameters:C259=0)
 	$0:=This:C1470.animation.jump.on

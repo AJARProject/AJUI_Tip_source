@@ -1,11 +1,10 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_getsetCurved ( param1 { ; param2 } ) -> return
+  // AJUI_Tip_getsetCurved ( { $curved_b } ) -> curved arrow ?
   //
-  // param1 : (text) description
-  // param2 : (text) (optional) description
-  // return : (text) (return) return value
+  // $1 : (boolean) (optional) Activate/inactivate curve
+  // $0 : (boolean) (return) curved arrow ?
   //
-  // short_description
+  // Setter/Getter to activate/inactivate the curved arrow
 
 If (False:C215)
 	  // ----------------------------------------------------

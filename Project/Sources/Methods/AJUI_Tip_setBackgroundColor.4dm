@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setBackgroundColor ( $color_t ) 
+  // AJUI_Tip_setBackgroundColor ( {$color_t} ) -> color
   //
-  // $color_t : (text) Background color
+  // $1 : (text) (optional) color
+  // $0 : (text) (return) current BG color
   //
   // Setter/Getter of the background color
 

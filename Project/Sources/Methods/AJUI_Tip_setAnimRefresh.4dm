@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setAnimRefresh ( $number_l ) 
+  // AJUI_Tip_setAnimRefresh ( {$number_l} ) -> number of refresh
   //
-  // $number_l : (longint) number
+  // $1 : (longint) (optional) number of refresh
+  // $0 : (longint) (return) current number of refresh
   //
   // Setter/Getter of the number of display by seconde for a jump
 

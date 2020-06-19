@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_TIP_setBlinkNumber ( $number_l ) 
+  // AJUI_TIP_setBlinkNumber ( {$number_l} ) -> number
   //
-  // $number_l : (longint) number
+  // $1 : (longint) (optional) number
+  // $0 : (longint) (return) current number of blink
   //
   // Setter/Getter to enter the number of time the tip must blink
 

@@ -1,7 +1,9 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setTipPosition ( $tipPosition_t )
+  // AJUI_Tip_setTipPosition ( {$tipPosition_t ; {$defaut_arrow_b}} ) -> position
   //
-  // $tipPosition_t : (text) Position tipbox
+  // $1 : (text) (optional) position
+  // $2 : (boolean) (optional) default arrow position ?
+  // $0 : (text) (return) current target current position
   //
   // Setter/Getter of the position of the tipbox, will also set the arrow position accordind to the tip position
 

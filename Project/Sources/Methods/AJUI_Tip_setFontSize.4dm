@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setFontSize ( $size_l)
+  // AJUI_Tip_setFontSize ( {$size_l} ) -> size
   //
-  // $size_l : (longint) Font size
+  // $1 : (longint) (optional) font size
+  // $0 : (longint) (return) current font size
   //
   // Setter/Getter of the font size for the text
 

@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setBorderColor ( $color_t )
+  // AJUI_Tip_setBorderColor ( {$color_t} ) -> color
   //
-  // $color_t : (text) Border color
+  // $1 : (text) (optional) color
+  // $0 : (text) (return) current border color
   //
   // Setter/Getter of the border color
 

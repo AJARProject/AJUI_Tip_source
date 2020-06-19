@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
   // AJUI_Tip_setGlobalOpacity ( $opacity_l) 
   //
-  // $opacity_l : (longint) % of opacity
+  // $1 : (longint) % of opacity
   //
   // Global setter to fix all opacity properties in the same value
 

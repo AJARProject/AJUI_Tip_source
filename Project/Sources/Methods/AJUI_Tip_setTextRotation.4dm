@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setTextRotation ( $rotation_t)
+  // AJUI_Tip_setTextRotation ( {$rotation_t} ) -> rotation
   //
-  // $rotation_t : (text) Text rotation
+  // $1 : (text) (optional) rotation
+  // $0 : (text) (return) current rotation
   //
   // Setter/Getter of the rotation of the text in the tip, the value available are right, left and ""
 

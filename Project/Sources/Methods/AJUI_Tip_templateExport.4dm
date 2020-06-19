@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_templateExport ( $tip_instance_obj )
+  // AJUI_Tip_templateExport ( $templateName ; {$exportPath} )
   //
-  // $tip_instance_obj : (object) Tip to export in json
+  // $templateName : (text) template name
+  // $exportPath : (text) (optional) folder path
   //
   // Export the tip object into a json file in the folder "AJUI_Tip_Templates" located in the ressource folder
 

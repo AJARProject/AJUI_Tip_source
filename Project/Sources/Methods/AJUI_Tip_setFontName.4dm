@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setFontName ( $name_t)
+  // AJUI_Tip_setFontName ( {$name_t} ) -> name
   //
-  // $name_t : (text) Font name
+  // $1 : (text) (optional) font name
+  // $0 : (text) (return) current font name
   //
   // Setter/Getter of the font name for the text, you can ask one or more font e.g. "Arial,MS Sans Sherif,..." No space allowed between each font
 

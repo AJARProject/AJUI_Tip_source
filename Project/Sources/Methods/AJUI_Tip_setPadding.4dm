@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setPadding ( $size_l )
+  // AJUI_Tip_setPadding ( {$size_l} ) -> padding
   //
-  // $size_l : (longint) padding size
+  // $1 : (longint) (optional) padding
+  // $0 : (longint) (return) current padding
   //
   // Setter/Getter to defined the size of the padding, it will be applied to each side
 
@@ -20,8 +21,6 @@ End if
 C_LONGINT:C283($0;$1;$size_l)
 
 
-
-
 If (Count parameters:C259=0)
 	$0:=This:C1470.container.padding.left
 Else 
@@ -34,8 +33,6 @@ Else
 		This:C1470.CheckRebuild()
 		
 	End if 
-	
-	
 End if 
 
 

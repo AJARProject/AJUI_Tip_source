@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setArrowOffset ( $offset_l )
+  // AJUI_Tip_setArrowOffset ( {$offset_l} ) -> offset
   //
-  // $offset_l : (longint) arrow offset
+  // $1 : (longint) (optional) offset
+  // $0 : (longint) (return) current arrow offset
   //
   // Setter/Getter to the offset between the arrow and the border of the tipbox
 

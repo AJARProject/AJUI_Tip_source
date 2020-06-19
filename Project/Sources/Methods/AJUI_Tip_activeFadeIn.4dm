@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_activeFadeIn ( $isActive_b )
+  // AJUI_Tip_activeFadeIn ( {$isActive_b} ) -> activated ?
   //
-  // $isActive_b : (boolean) activate
+  // $1 : (boolean) (optional) activate/inactivate
+  // $0 : (boolean) (return) Fade In activated ?
   //
   // Setter/Getter to activate fade in animation
 

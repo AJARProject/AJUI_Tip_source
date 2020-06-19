@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_TIP_setJumpOffset ( $offset_l ) 
+  // AJUI_TIP_setJumpOffset ( {$offset_l} ) -> offset
   //
-  // $offset_l : (longint) value offset
+  // $1 : (longint) (optional) offset
+  // $0 : (longint) (return) current offset
   //
   // Setter/Getter to enter the offset of the jump
 

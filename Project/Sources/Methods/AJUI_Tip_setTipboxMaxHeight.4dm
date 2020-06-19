@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setTipboxMaxHeight ( $maxHeight_l )
+  // AJUI_Tip_setTipboxMaxHeight ( {$maxHeight_l} ) -> max height
   //
-  // $maxHeight_l : (longint) max height of the text container
+  // $1 : (longint) (optional) max height
+  // $0 : (longint) (return) max current height
   //
   // Setter/Getter of the max height of the tipbox (text container)
 

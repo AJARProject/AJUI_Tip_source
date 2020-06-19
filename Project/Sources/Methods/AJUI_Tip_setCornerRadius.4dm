@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setCornerRadius ( $radius_l )
+  // AJUI_Tip_setCornerRadius ( $radius_l ) -> corner radius
   //
-  // $radius_l : (longint) Corner radius
+  // $1 : (longint) (optional) corner radius
+  // $0 : (longint) (return) current corner radius
   //
   // Setter/Getter of the radius for the rouding of the tip's corners
 

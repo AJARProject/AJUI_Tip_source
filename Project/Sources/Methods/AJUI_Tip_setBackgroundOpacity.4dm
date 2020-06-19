@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_setBackgroundOpacity ( $opacity_l } ) 
+  // AJUI_Tip_setBackgroundOpacity ( {$opacity_l } ) -> opacity
   //
-  // $opacity_l : (longint) value opacity
+  // $1 : (longint) (optional) opacity
+  // $0 : (longint) (return) current BG opacity
   //
   // Setter/Getter to fix the opacity of the container background
 

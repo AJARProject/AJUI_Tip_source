@@ -1,11 +1,10 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_GetSetCornerCurveStart ( param1 { ; param2 } ) -> return
+  // AJUI_Tip_GetSetCornerCurveStart ( { $curve } ) -> start curve
   //
-  // param1 : (text) description
-  // param2 : (text) (optional) description
-  // return : (text) (return) return value
+  // $1 : (real) (optional) start curve
+  // $0 : (real) (return) current start curve
   //
-  // short_description
+  // Setter/Getter of the start curve
 
 If (False:C215)
 	  // ----------------------------------------------------
