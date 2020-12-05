@@ -1,20 +1,20 @@
 //%attributes = {"invisible":true}
-  // AJUI_Tip_init_attributes ( $tip_instance ) 
-  //
-  // $tip_instance : (object) tip instance object to initialize the attributes
-  //
-  // Initialize the attributes of a tip instance
+// AJUI_Tip_init_attributes ( $tip_instance ) 
+//
+// $tip_instance : (object) tip instance object to initialize the attributes
+//
+// Initialize the attributes of a tip instance
 
 If (False:C215)
-	  // ----------------------------------------------------
-	  // User name (OS): gabriel inzirillo
-	  // Date and time: 22.01.19, 13:36:04
-	  // ----------------------------------------------------
-	  // Method: AJUI_Tip_init_attributes
-	  // Description
-	  // 
-	  //
-	  // ----------------------------------------------------
+	// ----------------------------------------------------
+	// User name (OS): gabriel inzirillo
+	// Date and time: 22.01.19, 13:36:04
+	// ----------------------------------------------------
+	// Method: AJUI_Tip_init_attributes
+	// Description
+	// 
+	//
+	// ----------------------------------------------------
 End if 
 
 C_OBJECT:C1216($1;$tip_instance_obj)
@@ -26,26 +26,26 @@ $tip_instance_obj:=$1
 $pict:=$pict*0
 
 
-  // ----------------------
-  // Internal reference storage
-  // To sync the object when we loose the references by using external processes
-  // ----------------------
+// ----------------------
+// Internal reference storage
+// To sync the object when we loose the references by using external processes
+// ----------------------
 If (<>AJUI_Tip_Storage=Null:C1517)
 	<>AJUI_Tip_Storage:=New object:C1471
 End if 
 $UUID:=Generate UUID:C1066
 <>AJUI_Tip_Storage[$UUID]:=$tip_instance_obj
-  // Store all the tip instances UUID's of the current process
-  // This to be able to do a cleanup with the AJUI_Tip_clearCache
+// Store all the tip instances UUID's of the current process
+// This to be able to do a cleanup with the AJUI_Tip_clearCache
 If (AJUI_Tip_instances_uuid=Null:C1517)
 	AJUI_Tip_instances_uuid:=New collection:C1472
 End if 
 AJUI_Tip_instances_uuid.push($UUID)
 
 
-  // ----------------------
-  // Personal use
-  // ----------------------
+// ----------------------
+// Personal use
+// ----------------------
 If ($tip_instance_obj.pu=Null:C1517)
 	$tip_instance_obj.pu:=New object:C1471
 End if 
@@ -68,9 +68,9 @@ $tip_instance_obj.pu.isPictureTip:=True:C214  // Picture Tip or Subform Tip
 
 
 
-  // ----------------------
-  // Global
-  // ----------------------
+// ----------------------
+// Global
+// ----------------------
 If ($tip_instance_obj.global=Null:C1517)
 	$tip_instance_obj.global:=New object:C1471
 End if 
@@ -85,9 +85,9 @@ $tip_instance_obj.global.tipDurationHandlerActive:=False:C215
 $tip_instance_obj.global.UUID:=$UUID
 
 
-  // ----------------------
-  // Text
-  // ----------------------
+// ----------------------
+// Text
+// ----------------------
 If ($tip_instance_obj.text=Null:C1517)
 	$tip_instance_obj.text:=New object:C1471
 End if 
@@ -111,9 +111,9 @@ If ($tip_instance_obj.text.opacity=Null:C1517)
 End if 
 
 
-  // ----------------------
-  // Target
-  // ----------------------
+// ----------------------
+// Target
+// ----------------------
 If ($tip_instance_obj.target=Null:C1517)
 	$tip_instance_obj.target:=New object:C1471
 End if 
@@ -164,9 +164,9 @@ If ($tip_instance_obj.target.margin.bottom=Null:C1517)
 End if 
 
 
-  // ----------------------
-  // Container
-  // ----------------------
+// ----------------------
+// Container
+// ----------------------
 If ($tip_instance_obj.container=Null:C1517)
 	$tip_instance_obj.container:=New object:C1471
 End if 
@@ -192,7 +192,7 @@ If ($tip_instance_obj.container.backgroundOpacity=Null:C1517)
 	$tip_instance_obj.container.backgroundOpacity:=50
 End if 
 
-  // container border
+// container border
 If ($tip_instance_obj.container.borderColor=Null:C1517)
 	$tip_instance_obj.container.borderColor:="gray"
 End if 
@@ -203,7 +203,7 @@ If ($tip_instance_obj.container.borderSize=Null:C1517)
 	$tip_instance_obj.container.borderSize:=1
 End if 
 
-  // Container Coordinates
+// Container Coordinates
 If ($tip_instance_obj.container.coordinate=Null:C1517)
 	$tip_instance_obj.container.coordinate:=New object:C1471
 End if 
@@ -222,7 +222,7 @@ End if
 If ($tip_instance_obj.container.autoPosition=Null:C1517)
 	$tip_instance_obj.container.autoPosition:=False:C215
 End if 
-  // Container Padding
+// Container Padding
 If ($tip_instance_obj.container.padding=Null:C1517)
 	$tip_instance_obj.container.padding:=New object:C1471
 End if 
@@ -238,7 +238,7 @@ End if
 If ($tip_instance_obj.container.padding.bottom=Null:C1517)
 	$tip_instance_obj.container.padding.bottom:=10
 End if 
-  // Container Shadow
+// Container Shadow
 If ($tip_instance_obj.container.shadowOn=Null:C1517)
 	$tip_instance_obj.container.shadowOn:=False:C215
 End if 
@@ -247,9 +247,9 @@ If ($tip_instance_obj.container.shadowOffset=Null:C1517)
 End if 
 
 
-  // ----------------------
-  // Arrow
-  // ----------------------
+// ----------------------
+// Arrow
+// ----------------------
 If ($tip_instance_obj.arrow=Null:C1517)
 	$tip_instance_obj.arrow:=New object:C1471
 End if 
@@ -283,9 +283,9 @@ End if
 
 
 
-  // ----------------------
-  // Close Box
-  // ----------------------
+// ----------------------
+// Close Box
+// ----------------------
 If ($tip_instance_obj.closeBox=Null:C1517)
 	$tip_instance_obj.closeBox:=New object:C1471
 End if 
@@ -295,14 +295,11 @@ End if
 If ($tip_instance_obj.closeBox.size=Null:C1517)
 	$tip_instance_obj.closeBox.size:=5
 End if 
-If ($tip_instance_obj.closeBox.onClick=Null:C1517)
-	$tip_instance_obj.closeBox.onClick:=False:C215
-End if 
 
 
-  // ----------------------
-  // SubForm
-  // ----------------------
+// ----------------------
+// SubForm
+// ----------------------
 If ($tip_instance_obj.subForm=Null:C1517)
 	$tip_instance_obj.subForm:=New object:C1471
 End if 
@@ -319,9 +316,9 @@ If ($tip_instance_obj.subForm.methodGetFormSize=Null:C1517)
 	$tip_instance_obj.subForm.methodGetFormSize:=0  // no method "AJUI_Tip_getSubFormSize" exists 
 End if 
 
-  // ----------------------
-  // debug
-  // ----------------------
+// ----------------------
+// debug
+// ----------------------
 If ($tip_instance_obj.debug=Null:C1517)
 	$tip_instance_obj.debug:=New object:C1471
 End if 

@@ -40,7 +40,7 @@ Case of
 			$currentFormWindow_l:=$tip_instance_obj.pu.refWindow
 			
 			//closebox operations on events
-			If ($closeBox_id_t="closebox") & ($tip_instance_obj.closeBox.onClick)
+			If ($closeBox_id_t="closebox")
 				CALL FORM:C1391($currentFormWindow_l;"AJUI_Tip_hide";$tip_instance_obj)
 			End if 
 		End if 
