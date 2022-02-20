@@ -4,6 +4,9 @@ Data
 DerivedData
 userPreferences.*
 buildApp.4DSettings
+/Project/DerivedData/*
+Libraries/*
+/Logs/*
 
 
 # Don't need the data file, indexes, symbols, or journal
@@ -11,6 +14,7 @@ buildApp.4DSettings
 *.4DIndx
 *symbols.txt
 *.journal
+*.match
 
 # OS generated files #
 ######################

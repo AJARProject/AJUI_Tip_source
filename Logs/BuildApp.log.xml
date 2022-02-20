@@ -1,1 +1,61 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><?xml-stylesheet type = "text/css" href="BuildLogStyleSheet.css"?><BuildApplicationLog>  <Log>    <MessageType>Comment</MessageType>    <Target>Component</Target>    <CodeDesc>NO_ERR</CodeDesc>    <CodeId>0</CodeId>    <Message>Début de compilation [2020-01-21T16:06:05]</Message>  </Log>  <Log>    <MessageType>Comment</MessageType>    <Target>Common</Target>    <CodeDesc>NO_ERR</CodeDesc>    <CodeId>0</CodeId>    <Message>Début de copie des fichiers : Macintosh HD:Users:gary:Documents:Ajar projet:AJUI Tip:v18:AJUI_Tip_Build:Components:AJUI_Tip.4dbase:AJUI_Tip.4DZ</Message>  </Log>  <Log>    <MessageType>Comment</MessageType>    <Target>Common</Target>    <CodeDesc>NO_ERR</CodeDesc>    <CodeId>0</CodeId>    <Message>Fin de copie des fichiers : Macintosh HD:Users:gary:Documents:Ajar projet:AJUI Tip:v18:AJUI_Tip_Build:Components:AJUI_Tip.4dbase:AJUI_Tip.4DZ</Message>  </Log>  <Log>    <MessageType>Comment</MessageType>    <Target>Component</Target>    <CodeDesc>NO_ERR</CodeDesc>    <CodeId>0</CodeId>    <Message>Fin de compilation [2020-01-21T16:06:05]</Message>  </Log></BuildApplicationLog>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type = "text/css" href="BuildLogStyleSheet.css"?>
+<BuildApplicationLog>
+
+  <Log>
+    <MessageType>Comment</MessageType>
+    <Target>Component</Target>
+    <CodeDesc>NO_ERR</CodeDesc>
+    <CodeId>0</CodeId>
+    <Message>Start compilation [2022-02-20T16:21:22]</Message>
+  </Log>
+
+  <Log>
+    <MessageType>Comment</MessageType>
+    <Target>Common</Target>
+    <CodeDesc>NO_ERR</CodeDesc>
+    <CodeId>0</CodeId>
+    <Message>Start copying files : Macintosh HD:Users:maurice:Documents:AJ_Suite:AJUI_Tip_Build:Components:AJUI_Tip.4dbase:AJUI_Tip.4DZ</Message>
+  </Log>
+
+  <Log>
+    <MessageType>Comment</MessageType>
+    <Target>Common</Target>
+    <CodeDesc>NO_ERR</CodeDesc>
+    <CodeId>0</CodeId>
+    <Message>End copying files : Macintosh HD:Users:maurice:Documents:AJ_Suite:AJUI_Tip_Build:Components:AJUI_Tip.4dbase:AJUI_Tip.4DZ</Message>
+  </Log>
+
+  <Log>
+    <MessageType>Comment</MessageType>
+    <Target>Component</Target>
+    <CodeDesc>NO_ERR</CodeDesc>
+    <CodeId>0</CodeId>
+    <Message>Launching code signing tool: ''/Applications/4D v19 R4/4D.app/Contents/Resources/SignApp.sh' '-' '/Users/maurice/Documents/AJ_Suite/AJUI_Tip_Build/Components/AJUI_Tip.4dbase' '/Applications/4D v19 R4/4D.app/Contents/Resources/4D.entitlements' '/Users/maurice/Documents/AJ_Suite/AJUI_Tip_source/Logs/logSign.txt''</Message>
+  </Log>
+
+  <Log>
+    <MessageType>Comment</MessageType>
+    <Target>Component</Target>
+    <CodeDesc>NO_ERR</CodeDesc>
+    <CodeId>0</CodeId>
+    <Message>Signing tool return status: 0</Message>
+  </Log>
+
+  <Log>
+    <MessageType>Comment</MessageType>
+    <Target>Component</Target>
+    <CodeDesc>NO_ERR</CodeDesc>
+    <CodeId>0</CodeId>
+    <Message>Signed file: /Users/maurice/Documents/AJ_Suite/AJUI_Tip_Build/Components/AJUI_Tip.4dbase/Libraries/lib4d-arm64.dylib: signed Mach-O thin (arm64) [lib4d-arm64-555549442c3968c9c70a380bb54d34e3aad35497]</Message>
+  </Log>
+
+  <Log>
+    <MessageType>Comment</MessageType>
+    <Target>Component</Target>
+    <CodeDesc>NO_ERR</CodeDesc>
+    <CodeId>0</CodeId>
+    <Message>End compilation [2022-02-20T16:21:23]</Message>
+  </Log>
+
+</BuildApplicationLog>
