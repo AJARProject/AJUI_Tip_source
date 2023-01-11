@@ -20,7 +20,7 @@ End if
 
 C_TEXT:C284($0)
 
-$version_t:="1.7.0+Build45"  // Sun, 20 Feb 2022 15:21:22 GMT
+$version_t:="1.7.2+Build47"  // Wed, 11 Jan 2023 09:48:30 GMT
 
-$0:="AJUI Tip (Builded on v19 R4): "+$version_t
+$0:="AJUI Tip (Builded on v19 R7): "+$version_t
 
