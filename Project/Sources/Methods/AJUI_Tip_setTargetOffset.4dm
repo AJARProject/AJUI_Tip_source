@@ -6,7 +6,9 @@
   //
   // Setter/Getter to the offset between the target and the border of the tipbox
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 23.01.19, 10:20:16
@@ -18,12 +20,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_LONGINT:C283($0;$1;$offset_l)
+var $offset_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.target.offset
+If (Count parameters=0)
+	$result:=This.target.offset
 Else 
-	$offset_l:=$1
-	This:C1470.target.offset:=$offset_l
-	This:C1470.CheckRebuild()
+	$offset_l:=$param1
+	This.target.offset:=$offset_l
+	This.CheckRebuild()
 End if 

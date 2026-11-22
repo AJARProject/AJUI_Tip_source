@@ -6,7 +6,9 @@
   //
   // Setter/Getter to activate/inactivate the curved arrow
 
-If (False:C215)
+#DECLARE($param1 : Boolean) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 28.08.19, 13:43:53
@@ -19,12 +21,12 @@ If (False:C215)
 End if 
 
 
-C_BOOLEAN:C305($0;$1;$curved_b)
+var $curved_b : Boolean
 
-If (Count parameters:C259#1)
-	$0:=This:C1470.arrow.curved
+If (Count parameters#1)
+	$result:=This.arrow.curved
 Else 
-	$curved_b:=$1
-	This:C1470.arrow.curved:=$curved_b
-	This:C1470.CheckRebuild()
+	$curved_b:=$param1
+	This.arrow.curved:=$curved_b
+	This.CheckRebuild()
 End if 

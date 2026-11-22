@@ -1,8 +1,9 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 
 Case of 
-	: ($evt=On Getting Focus:K2:7)
-		Form:C1466.tip.TargetName("var2")
-		Form:C1466.tip.TextLabel("Mon premier tip sur Var 2")
-		Form:C1466.tip.Show()
+	: ($evt=On Getting Focus)
+		Form.tip.TargetName("var2")
+		Form.tip.TextLabel("Mon premier tip sur Var 2")
+		Form.tip.Show()
 End case 

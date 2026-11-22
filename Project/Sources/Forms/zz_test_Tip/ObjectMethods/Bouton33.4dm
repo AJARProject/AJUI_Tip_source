@@ -1,10 +1,11 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
-		If (Form:C1466.tip.debug.showSvgArea)
-			Form:C1466.tip.debug.showSvgArea:=False:C215
+	: ($evt=On Clicked)
+		If (Form.tip.debug.showSvgArea)
+			Form.tip.debug.showSvgArea:=False
 		Else 
-			Form:C1466.tip.debug.showSvgArea:=True:C214
+			Form.tip.debug.showSvgArea:=True
 		End if 
-		Form:C1466.tip.Show()
+		Form.tip.Show()
 End case 

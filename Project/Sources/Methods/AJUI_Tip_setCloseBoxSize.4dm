@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the size of the closeBox
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 23.01.19, 17:04:22
@@ -18,15 +20,15 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_LONGINT:C283($0;$1;$size_l)
+var $size_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.closeBox.size
+If (Count parameters=0)
+	$result:=This.closeBox.size
 Else 
-	$size_l:=$1
+	$size_l:=$param1
 	If ($size_l>=2) | ($size_l<=20)
-		This:C1470.closeBox.size:=$size_l
-		This:C1470.CheckRebuild()
+		This.closeBox.size:=$size_l
+		This.CheckRebuild()
 		
 	End if 
 End if 

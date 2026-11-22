@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the arrow curve
 
-If (False:C215)
+#DECLARE($param1 : Real) -> $result : Real
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 02.09.19, 09:33:15
@@ -18,14 +20,14 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_REAL:C285($0;$1;$curve)
+var $curve : Real
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.arrow.arrowCurve
+If (Count parameters=0)
+	$result:=This.arrow.arrowCurve
 Else 
-	$curve:=$1
+	$curve:=$param1
 	If ($curve>=0)
-		This:C1470.arrow.arrowCurve:=$curve
-		This:C1470.CheckRebuild()
+		This.arrow.arrowCurve:=$curve
+		This.CheckRebuild()
 	End if 
 End if 

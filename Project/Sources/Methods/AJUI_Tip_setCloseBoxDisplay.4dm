@@ -6,7 +6,9 @@
 //
 // Setter/Getter to define is the closeBox will be displayed
 
-If (False:C215)
+#DECLARE($param1 : Boolean) -> $result : Boolean
+
+If (False)
 	// ----------------------------------------------------
 	// User name (OS): Gary Criblez
 	// Date and time: 23.01.19, 16:53:33
@@ -18,12 +20,12 @@ If (False:C215)
 	// ----------------------------------------------------
 End if 
 
-C_BOOLEAN:C305($0;$1;$display_b)
+var $display_b : Boolean
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.closeBox.display
+If (Count parameters=0)
+	$result:=This.closeBox.display
 Else 
-	$display_b:=$1
-	This:C1470.closeBox.display:=$display_b
-	This:C1470.CheckRebuild()
+	$display_b:=$param1
+	This.closeBox.display:=$display_b
+	This.CheckRebuild()
 End if 

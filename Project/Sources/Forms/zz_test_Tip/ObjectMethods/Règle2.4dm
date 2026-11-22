@@ -1,5 +1,5 @@
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		Form:C1466.tip.Show()
+	: (Form event code=On Clicked)
+		Form.tip.Show()
 End case 

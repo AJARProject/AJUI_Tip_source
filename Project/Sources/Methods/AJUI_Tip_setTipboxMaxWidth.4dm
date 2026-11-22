@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the max width of the tipbox (text container)
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 23.01.19, 10:41:49
@@ -18,15 +20,15 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_LONGINT:C283($0;$1;$maxWidth_l)
+var $maxWidth_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.container.maxWidth
+If (Count parameters=0)
+	$result:=This.container.maxWidth
 Else 
-	$maxWidth_l:=$1
+	$maxWidth_l:=$param1
 	If ($maxWidth_l>=0)
-		This:C1470.container.maxWidth:=$maxWidth_l
-		This:C1470.CheckRebuild()
+		This.container.maxWidth:=$maxWidth_l
+		This.CheckRebuild()
 		
 	End if 
 End if 

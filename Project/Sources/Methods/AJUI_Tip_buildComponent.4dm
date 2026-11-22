@@ -4,7 +4,7 @@
 //
 // This method generates a version of the component
 
-If (False:C215)
+If (False)
 	// ----------------------------------------------------
 	// User name (OS): Gary Criblez
 	// Date and time: 11.02.19, 15:23:23

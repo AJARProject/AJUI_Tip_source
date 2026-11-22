@@ -1,6 +1,7 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
-		Form:C1466.tip.BorderSize(Form:C1466.tip.container.borderSize-1)
-		Form:C1466.tip.Show()
+	: ($evt=On Clicked)
+		Form.tip.BorderSize(Form.tip.container.borderSize-1)
+		Form.tip.Show()
 End case 

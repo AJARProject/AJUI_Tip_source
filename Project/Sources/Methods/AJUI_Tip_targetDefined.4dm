@@ -6,7 +6,9 @@
   //
   // This method check if the target object exist in the current form
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 25.01.19, 09:20:56
@@ -19,20 +21,20 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($1;$target_name_t)
-C_BOOLEAN:C305($0;$isDefined_b;$tipExists)
+var $target_name_t : Text
+var $isDefined_b; $tipExists : Boolean
 
-$target_name_t:=$1
-$isDefined_b:=False:C215
+$target_name_t:=$param1
+$isDefined_b:=False
 
 
 If ($target_name_t#"")
-	ARRAY TEXT:C222($_objectNames_t;0)
-	FORM GET OBJECTS:C898($_objectNames_t;Form current page:K67:6)
-	$tipExists:=Find in array:C230($_objectNames_t;$target_name_t)>0
+	ARRAY TEXT($_objectNames_t;0)
+	FORM GET OBJECTS($_objectNames_t;Form current page)
+	$tipExists:=Find in array($_objectNames_t;$target_name_t)>0
 	If ($tipExists)  //target object exists
-		$isDefined_b:=True:C214
+		$isDefined_b:=True
 	End if 
 End if 
 
-$0:=$isDefined_b
+$result:=$isDefined_b

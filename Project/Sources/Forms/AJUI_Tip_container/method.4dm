@@ -1,6 +1,7 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Load:K2:1)
+	: ($evt=On Load)
 		
 	: ($evt=-14000)
 		

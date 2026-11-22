@@ -5,7 +5,9 @@
   //
   // This method runs the animations
 
-If (False:C215)
+#DECLARE($param1 : Object; $param2 : Boolean)
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Maurice Inzirillo
 	  // Date and time: 08.02.19, 09:27:16
@@ -20,14 +22,14 @@ If (False:C215)
 End if 
 
 
-C_OBJECT:C1216($1;$tip_instance_obj)
-C_BOOLEAN:C305($2;$displayed)
-C_LONGINT:C283($left_l;$top_l;$right_l;$bottom_l)
-C_TEXT:C284($tip_name_t)
-$tip_instance_obj:=$1
+var $tip_instance_obj : Object
+var $displayed : Boolean
+var $left_l; $top_l; $right_l; $bottom_l : Integer
+var $tip_name_t : Text
+$tip_instance_obj:=$param1
 
-If (Count parameters:C259=2)
-	$displayed:=$2
+If (Count parameters=2)
+	$displayed:=$param2
 End if 
 
 $tip_name_t:=$tip_instance_obj.instanceName_subform
@@ -35,7 +37,7 @@ $tip_name_t:=$tip_instance_obj.instanceName_subform
 If ($tip_instance_obj.pu.displayed)
 	Case of 
 		: ($tip_instance_obj.animation.blink.number>0)  //blink
-			OBJECT SET VISIBLE:C603(*;$tip_name_t;$displayed)
+			OBJECT SET VISIBLE(*;$tip_name_t;$displayed)
 			
 		: ($tip_instance_obj.animation.jump.number>0)  //jump
 			
@@ -43,7 +45,7 @@ If ($tip_instance_obj.pu.displayed)
 			$top_l:=$tip_instance_obj.animation.coordinate.top
 			$right_l:=$tip_instance_obj.animation.coordinate.right
 			$bottom_l:=$tip_instance_obj.animation.coordinate.bottom
-			OBJECT SET COORDINATES:C1248(*;$tip_name_t;$left_l;$top_l;$right_l;$bottom_l)
+			OBJECT SET COORDINATES(*;$tip_name_t;$left_l;$top_l;$right_l;$bottom_l)
 			
 	End case 
 End if 

@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the height size of the arrow
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 23.01.19, 16:20:16
@@ -18,14 +20,14 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_LONGINT:C283($0;$1;$size_l)
+var $size_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.arrow.height
+If (Count parameters=0)
+	$result:=This.arrow.height
 Else 
-	$size_l:=$1
+	$size_l:=$param1
 	If ($size_l>=0)
-		This:C1470.arrow.height:=$size_l
-		This:C1470.CheckRebuild()
+		This.arrow.height:=$size_l
+		This.CheckRebuild()
 	End if 
 End if 

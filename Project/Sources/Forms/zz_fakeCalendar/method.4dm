@@ -1,16 +1,16 @@
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
-		OBJECT Get pointer:C1124(Object named:K67:5;"title")->:="New event"
-		OBJECT Get pointer:C1124(Object named:K67:5;"place")->:="Enter a place"
-		OBJECT Get pointer:C1124(Object named:K67:5;"notes")->:="Notes"
+	: (Form event code=On Load)
+		OBJECT Get pointer(Object named;"title")->:="New event"
+		OBJECT Get pointer(Object named;"place")->:="Enter a place"
+		OBJECT Get pointer(Object named;"notes")->:="Notes"
 		
 		
-		OBJECT Get pointer:C1124(Object named:K67:5;"startDate")->:=Current date:C33
-		OBJECT Get pointer:C1124(Object named:K67:5;"endDate")->:=Current date:C33
-		OBJECT Get pointer:C1124(Object named:K67:5;"startHour")->:=Current time:C178
-		OBJECT Get pointer:C1124(Object named:K67:5;"endHour")->:=Current time:C178+3600
+		OBJECT Get pointer(Object named;"startDate")->:=Current date
+		OBJECT Get pointer(Object named;"endDate")->:=Current date
+		OBJECT Get pointer(Object named;"startHour")->:=Current time
+		OBJECT Get pointer(Object named;"endHour")->:=Current time+3600
 		
-		GOTO OBJECT:C206(*;"")
+		GOTO OBJECT(*;"")
 		
 End case 

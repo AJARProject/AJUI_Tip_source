@@ -6,7 +6,9 @@
   //
   // Setter/Getter to activate fade in animation
 
-If (False:C215)
+#DECLARE($param1 : Boolean) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 22.02.19, 09:03:37
@@ -19,12 +21,12 @@ If (False:C215)
 End if 
 
 
-C_BOOLEAN:C305($0;$1;$isActive_b)
+var $isActive_b : Boolean
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.animation.fade.in
+If (Count parameters=0)
+	$result:=This.animation.fade.in
 Else 
-	$isActive_b:=$1
-	This:C1470.animation.fade.in:=$isActive_b
-	This:C1470.pu.toRebuild:=True:C214
+	$isActive_b:=$param1
+	This.animation.fade.in:=$isActive_b
+	This.pu.toRebuild:=True
 End if 

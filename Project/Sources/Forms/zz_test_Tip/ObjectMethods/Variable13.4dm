@@ -1,5 +1,5 @@
 
 Case of 
-	: (Form event code:C388=On Data Change:K2:15)
-		Form:C1466.tip.Show()
+	: (Form event code=On Data Change)
+		Form.tip.Show()
 End case 

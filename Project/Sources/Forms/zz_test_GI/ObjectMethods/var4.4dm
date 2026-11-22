@@ -1,10 +1,11 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 
 Case of 
-	: ($evt=On Getting Focus:K2:7)
-		Form:C1466.tip.ActivateFadeIn(False:C215)
-		Form:C1466.tip.ActivateFadeOut(False:C215)
-		Form:C1466.tip.TargetName("var4")
-		Form:C1466.tip.TextLabel("Mon premier tip sur Var 3")
-		Form:C1466.tip.Show()
+	: ($evt=On Getting Focus)
+		Form.tip.ActivateFadeIn(False)
+		Form.tip.ActivateFadeOut(False)
+		Form.tip.TargetName("var4")
+		Form.tip.TextLabel("Mon premier tip sur Var 3")
+		Form.tip.Show()
 End case 

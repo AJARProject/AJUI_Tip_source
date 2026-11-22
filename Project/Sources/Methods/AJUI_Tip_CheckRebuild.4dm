@@ -4,7 +4,7 @@
   //
   // Put toRebuild to true and launch the show method if the tip is actually displayed
 
-If (False:C215)
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 24.01.19, 14:18:51
@@ -16,7 +16,7 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-This:C1470.pu.toRebuild:=True:C214
-If ((This:C1470.pu.displayed) & (This:C1470.global.autoRebuild))
-	This:C1470.Show()
+This.pu.toRebuild:=True
+If ((This.pu.displayed) & (This.global.autoRebuild))
+	This.Show()
 End if 

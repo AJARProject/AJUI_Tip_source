@@ -6,7 +6,9 @@
   //
   // Check if the form to use in the subform exist
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 28.01.19, 10:22:30
@@ -18,25 +20,25 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($1;$name_form_to_use_t)
-C_LONGINT:C283($pos_l)
-C_BOOLEAN:C305($exist_b)
+var $name_form_to_use_t : Text
+var $pos_l : Integer
+var $exist_b : Boolean
 
-$name_form_to_use_t:=$1
+$name_form_to_use_t:=$param1
 If ($name_form_to_use_t="")
-	$exist_b:=False:C215
+	$exist_b:=False
 Else 
-	ARRAY TEXT:C222($_form_names_t;0)
+	ARRAY TEXT($_form_names_t;0)
 	
-	FORM GET NAMES:C1167($_form_names_t;*)
+	FORM GET NAMES($_form_names_t;*)
 	
-	$pos_l:=Find in array:C230($_form_names_t;$name_form_to_use_t)
+	$pos_l:=Find in array($_form_names_t;$name_form_to_use_t)
 	
 	If ($pos_l>0)
-		$exist_b:=True:C214
+		$exist_b:=True
 	Else 
-		$exist_b:=False:C215
+		$exist_b:=False
 	End if 
 End if 
 
-$0:=$exist_b
+$result:=$exist_b

@@ -7,7 +7,9 @@
   //
   // short_description
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Maurice Inzirillo
 	  // Date and time: 28.02.19, 10:39:26
@@ -19,38 +21,39 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($1;$TargetName_t)
-C_BOOLEAN:C305($0)
+var $TargetName_t : Text
+var $leftTarget_l; $topTarget_l; $rightTarget_l; $bottomTarget_l; $leftTarget0_l; $topTarget0_l; $rightTarget0_l; $bottomTarget0_l : Real
+var $isSubform : Boolean
 
-If (Count parameters:C259>0)
-	$TargetName_t:=$1
+If (Count parameters>0)
+	$TargetName_t:=$param1
 Else 
 	$TargetName_t:=""
 End if 
 
-OBJECT GET COORDINATES:C663(*;$TargetName_t;$leftTarget_l;$topTarget_l;$rightTarget_l;$bottomTarget_l)
+OBJECT GET COORDINATES(*;$TargetName_t;$leftTarget_l;$topTarget_l;$rightTarget_l;$bottomTarget_l)
 
 $leftTarget0_l:=$leftTarget_l
 $topTarget0_l:=$topTarget_l
 $rightTarget0_l:=$rightTarget_l
 $bottomTarget0_l:=$bottomTarget_l
 
-CONVERT COORDINATES:C1365($leftTarget_l;$topTarget_l;XY Current form:K27:5;XY Current window:K27:6)
-CONVERT COORDINATES:C1365($rightTarget_l;$bottomTarget_l;XY Current form:K27:5;XY Current window:K27:6)
+CONVERT COORDINATES($leftTarget_l;$topTarget_l;XY Current form;XY Current window)
+CONVERT COORDINATES($rightTarget_l;$bottomTarget_l;XY Current form;XY Current window)
 
-$isSubform:=False:C215
+$isSubform:=False
 
 If ($leftTarget0_l#$leftTarget_l)
-	$isSubform:=True:C214
+	$isSubform:=True
 Else 
 	If ($topTarget0_l#$topTarget_l)
-		$isSubform:=True:C214
+		$isSubform:=True
 	Else 
 		If ($rightTarget0_l#$rightTarget_l)
-			$isSubform:=True:C214
+			$isSubform:=True
 		Else 
 			If ($bottomTarget0_l#$bottomTarget_l)
-				$isSubform:=True:C214
+				$isSubform:=True
 			End if 
 		End if 
 	End if 
@@ -58,4 +61,4 @@ End if
 
   // This will not work if the subform is EXACTLY the size of the Main Form
 
-$0:=$isSubform
+$result:=$isSubform

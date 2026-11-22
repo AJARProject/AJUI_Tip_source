@@ -6,7 +6,9 @@
   //
   // Setter/Getter to activate or desactivate the auto rebuild of the tip when displayed
 
-If (False:C215)
+#DECLARE($param1 : Boolean) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 24.01.19, 14:35:51
@@ -18,11 +20,11 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_BOOLEAN:C305($0;$1;$autoRebuild_b)
+var $autoRebuild_b : Boolean
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.global.autoRebuild
+If (Count parameters=0)
+	$result:=This.global.autoRebuild
 Else 
-	$autoRebuild_b:=$1
-	This:C1470.global.autoRebuild:=$autoRebuild_b
+	$autoRebuild_b:=$param1
+	This.global.autoRebuild:=$autoRebuild_b
 End if 

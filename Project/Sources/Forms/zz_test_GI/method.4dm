@@ -1,45 +1,46 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 
 Case of 
-	: ($evt=On Load:K2:1)
+	: ($evt=On Load)
 		
-		If (Form:C1466.name=Null:C1517)
-			Form:C1466.name:="SF"
+		If (Form.name=Null)
+			Form.name:="SF"
 		End if 
 		
-		Form:C1466.tip:=New AJUI_Tip 
-		Form:C1466.tip.TipName(Form:C1466.name+"_mainTip")
-		Form:C1466.tip.TipPosition("bottom-left")
-		Form:C1466.tip.TextFontSize(20)
-		Form:C1466.tip.TextFontName("Verdana")
-		Form:C1466.tip.TextFontColor("#FFFFFF")
-		Form:C1466.tip.TargetMargin(10)
+		Form.tip:=New AJUI_Tip 
+		Form.tip.TipName(Form.name+"_mainTip")
+		Form.tip.TipPosition("bottom-left")
+		Form.tip.TextFontSize(20)
+		Form.tip.TextFontName("Verdana")
+		Form.tip.TextFontColor("#FFFFFF")
+		Form.tip.TargetMargin(10)
 		  //Form.tip.TextOpacity(50)
 		
-		Form:C1466.tip.CornerRadius(0)
-		Form:C1466.tip.Padding(10)
+		Form.tip.CornerRadius(0)
+		Form.tip.Padding(10)
 		
-		Form:C1466.tip.BorderSize(3)
-		Form:C1466.tip.BorderColor("red")
+		Form.tip.BorderSize(3)
+		Form.tip.BorderColor("red")
 		  //Form.tip.BorderOpacity(25)
-		Form:C1466.tip.ActivateShadow(True:C214)
-		Form:C1466.tip.ShadowOffset(6)
-		Form:C1466.tip.BackgroundColor("#191970")
-		Form:C1466.tip.BackgroundOpacity(100)
+		Form.tip.ActivateShadow(True)
+		Form.tip.ShadowOffset(6)
+		Form.tip.BackgroundColor("#191970")
+		Form.tip.BackgroundOpacity(100)
 		
 		
 		
-		Form:C1466.tip.CloseBoxDisplay(True:C214)
+		Form.tip.CloseBoxDisplay(True)
 		  //Form.tip.CloseBoxSize(20)
-		Form:C1466.tip.TimerFadeIn(1000)
-		Form:C1466.tip.TimerFadeOut(1000)
+		Form.tip.TimerFadeIn(1000)
+		Form.tip.TimerFadeOut(1000)
 		  //Form.tip.AutoRebuild(True)
 		
-		Form:C1466.tip2:=New AJUI_Tip (Form:C1466.tip)
-		Form:C1466.tip2.TipName("tip2")
-		Form:C1466.tip2.ActivateFadeIn(True:C214)
-		Form:C1466.tip2.ActivateFadeOut(True:C214)
-	: ($evt=On Unload:K2:2)
+		Form.tip2:=New AJUI_Tip (Form.tip)
+		Form.tip2.TipName("tip2")
+		Form.tip2.ActivateFadeIn(True)
+		Form.tip2.ActivateFadeOut(True)
+	: ($evt=On Unload)
 		AJUI_Tip_clearCache 
 		
 End case 

@@ -1,17 +1,18 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
+	: ($evt=On Clicked)
 		
-		Form:C1466.tip.animation.blink.number:=0
+		Form.tip.animation.blink.number:=0
 		
-		Form:C1466.tip.animation.jump.number:=3
-		Form:C1466.tip.animation.jump.duration:=1000  // millisecond(s) /jump
+		Form.tip.animation.jump.number:=3
+		Form.tip.animation.jump.duration:=1000  // millisecond(s) /jump
 		
-		Form:C1466.tip.JumpNumber(3)
-		Form:C1466.tip.JumpDuration(1000)
-		Form:C1466.tip.JumpOn(50)
-		Form:C1466.tip.JumpOffset(20)
+		Form.tip.JumpNumber(3)
+		Form.tip.JumpDuration(1000)
+		Form.tip.JumpOn(50)
+		Form.tip.JumpOffset(20)
 		
-		Form:C1466.tip.Show()
+		Form.tip.Show()
 		
 End case 

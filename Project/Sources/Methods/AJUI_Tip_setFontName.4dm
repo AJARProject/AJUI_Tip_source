@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the font name for the text, you can ask one or more font e.g. "Arial,MS Sans Sherif,..." No space allowed between each font
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Text
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 22.01.19, 16:04:46
@@ -18,12 +20,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($0;$1;$name_t)
+var $name_t : Text
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.text.fontName
+If (Count parameters=0)
+	$result:=This.text.fontName
 Else 
-	$name_t:=$1
-	This:C1470.text.fontName:=$name_t
-	This:C1470.CheckRebuild()
+	$name_t:=$param1
+	This.text.fontName:=$name_t
+	This.CheckRebuild()
 End if 

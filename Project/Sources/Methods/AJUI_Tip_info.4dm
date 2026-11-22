@@ -5,7 +5,9 @@
 //
 // Show the version info of the component
 
-If (False:C215)
+#DECLARE() -> $result : Text
+
+If (False)
 	// ----------------------------------------------------
 	// User name (OS): Gary Criblez
 	// Date and time: 11.02.19, 15:24:13
@@ -18,9 +20,9 @@ If (False:C215)
 End if 
 
 
-C_TEXT:C284($0)
+var $version_t : Text
 
-$version_t:="1.7.2+Build47"  // Wed, 11 Jan 2023 09:48:30 GMT
+$version_t:="1.8.0"  // 22 Nov 2026 (4D 21 R4)
 
-$0:="AJUI Tip (Builded on v19 R7): "+$version_t
+$result:="AJUI_Tip (v21 R4) : "+$version_t
 

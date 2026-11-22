@@ -4,7 +4,9 @@
   // $tip_instance_obj : (object) Tip instance
   //
   // Translate the arrow postion to keep a coherence with the tip
-If (False:C215)
+#DECLARE($param1 : Object)
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 04.02.19, 11:01:28
@@ -15,17 +17,17 @@ If (False:C215)
 	  //
 	  // ----------------------------------------------------
 End if 
-C_OBJECT:C1216($1;$tip_instance_obj)
-C_TEXT:C284($arrowPostion_t;$tip_position_t)
+var $tip_instance_obj : Object
+var $arrowPostion_t; $tip_position_t : Text
 
-$tip_instance_obj:=$1
+$tip_instance_obj:=$param1
 $tip_position_t:=$tip_instance_obj.target.tipPosition
 $arrowPostion_t:=$tip_instance_obj.arrow.position
 
 Case of 
 		
 		
-	: (Position:C15("top";$tip_position_t)=1) | (Position:C15("bottom";$tip_position_t)=1)
+	: (Position("top";$tip_position_t)=1) | (Position("bottom";$tip_position_t)=1)
 		
 		If ($arrowPostion_t="top")
 			$arrowPostion_t:="left"
@@ -40,7 +42,7 @@ Case of
 		End if 
 		
 		
-	: (Position:C15("left";$tip_position_t)=1) | (Position:C15("right";$tip_position_t)=1)
+	: (Position("left";$tip_position_t)=1) | (Position("right";$tip_position_t)=1)
 		
 		If ($arrowPostion_t="left")
 			$arrowPostion_t:="top"

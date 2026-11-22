@@ -7,7 +7,9 @@
   //
   // Setter/Getter
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Maurice Inzirillo
 	  // Date and time: 15.03.19, 12:05:15
@@ -20,16 +22,16 @@ If (False:C215)
 End if 
 
 
-C_LONGINT:C283($0;$1;$level_l)
+var $level_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.currentLvl
+If (Count parameters=0)
+	$result:=This.currentLvl
 Else 
-	$level_l:=$1
+	$level_l:=$param1
 	If ($level_l>=0)
-		This:C1470.currentLvl:=$level_l
-		This:C1470.pu.toRebuild:=True:C214
+		This.currentLvl:=$level_l
+		This.pu.toRebuild:=True
 	Else 
-		ASSERT:C1129(False:C215;"The value must be 0 or over")
+		ASSERT(False;"The value must be 0 or over")
 	End if 
 End if 

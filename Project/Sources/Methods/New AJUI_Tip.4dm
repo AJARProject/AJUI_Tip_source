@@ -6,7 +6,9 @@
   //
   // Constructor of an AJUI_Tip type object. Return a new instance of AJUI_Tip object.
 
-If (False:C215)
+#DECLARE($param1 : Object) -> $result : Object
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): gabriel inzirillo
 	  // Date and time: 22.01.19, 13:29:32
@@ -18,11 +20,11 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_OBJECT:C1216($0;$1;$template_obj)
+var $template_obj; $instance_obj : Object
 
-If (Count parameters:C259=1)
-	$template_obj:=$1
-	If ($template_obj.templatePath=Null:C1517)
+If (Count parameters=1)
+	$template_obj:=$param1
+	If ($template_obj.templatePath=Null)
 		$instance_obj:=AJUI_Tip_templateImport ($template_obj.templateName)
 	Else 
 		$instance_obj:=AJUI_Tip_templateImport ($template_obj.templateName;$template_obj.templatePath)
@@ -30,10 +32,10 @@ If (Count parameters:C259=1)
 	
 	If ($instance_obj.failImport)
 		
-		$instance_obj:=New object:C1471
+		$instance_obj:=New object
 	End if 
 Else 
-	$instance_obj:=New object:C1471
+	$instance_obj:=New object
 End if 
 
 AJUI_Tip_init_attributes ($instance_obj)
@@ -42,4 +44,4 @@ AJUI_Tip_init_formulas ($instance_obj)
 AJUI_Tip_init_methods ($instance_obj)
 
 
-$0:=$instance_obj
+$result:=$instance_obj

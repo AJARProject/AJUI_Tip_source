@@ -6,7 +6,9 @@
   //
   // Setter/Getter to enter the number of time the tip must blink
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 11.02.19, 10:49:42
@@ -19,16 +21,16 @@ If (False:C215)
 End if 
 
 
-C_LONGINT:C283($0;$1;$number_l)
+var $number_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.animation.blink.number
+If (Count parameters=0)
+	$result:=This.animation.blink.number
 Else 
-	$number_l:=$1
+	$number_l:=$param1
 	If ($number_l>=0)
-		This:C1470.animation.blink.number:=$number_l
-		This:C1470.pu.toRebuild:=True:C214
+		This.animation.blink.number:=$number_l
+		This.pu.toRebuild:=True
 	Else 
-		ASSERT:C1129(False:C215;"The value can't be negative")
+		ASSERT(False;"The value can't be negative")
 	End if 
 End if 

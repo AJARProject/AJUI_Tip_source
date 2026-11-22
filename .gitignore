@@ -3,7 +3,7 @@
 Data
 DerivedData
 userPreferences.*
-buildApp.4DSettings
+# Settings/buildApp.4DSettings is versioned (4D 21 R4 component build settings)
 /Project/DerivedData/*
 Libraries/*
 /Logs/*

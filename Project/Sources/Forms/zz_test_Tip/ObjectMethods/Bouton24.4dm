@@ -1,6 +1,7 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
-		Form:C1466.tip.arrow.position:="top"
-		Form:C1466.tip.CheckRebuild()
+	: ($evt=On Clicked)
+		Form.tip.arrow.position:="top"
+		Form.tip.CheckRebuild()
 End case 

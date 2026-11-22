@@ -6,7 +6,9 @@
   //
   // setter/Getter for the fade in timer
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 22.02.19, 09:04:27
@@ -19,16 +21,16 @@ If (False:C215)
 End if 
 
 
-C_LONGINT:C283($0;$1;$milliseconds_l)
+var $milliseconds_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.animation.fade.timer.in
+If (Count parameters=0)
+	$result:=This.animation.fade.timer.in
 Else 
-	$milliseconds_l:=$1
+	$milliseconds_l:=$param1
 	If ($milliseconds_l>=0)
-		This:C1470.animation.fade.timer.in:=$milliseconds_l
-		This:C1470.pu.toRebuild:=True:C214
+		This.animation.fade.timer.in:=$milliseconds_l
+		This.pu.toRebuild:=True
 	Else 
-		ASSERT:C1129(False:C215;"The value can't be negative")
+		ASSERT(False;"The value can't be negative")
 	End if 
 End if 

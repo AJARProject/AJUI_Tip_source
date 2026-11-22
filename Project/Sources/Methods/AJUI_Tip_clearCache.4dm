@@ -3,7 +3,7 @@
   //
   // This method will clear all references to the current process tip instance in the global <>AJUI_Tip_Storage variable
 
-If (False:C215)
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): gabriel inzirillo
 	  // Date and time: 10.07.19, 14:44:28
@@ -15,10 +15,10 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($uuid)
+var $uuid : Text
 
-If (AJUI_Tip_instances_uuid#Null:C1517) & (<>AJUI_Tip_Storage#Null:C1517)
+If (AJUI_Tip_instances_uuid#Null) & (<>AJUI_Tip_Storage#Null)
 	For each ($uuid;AJUI_Tip_instances_uuid)
-		OB REMOVE:C1226(<>AJUI_Tip_Storage;$uuid)
+		OB REMOVE(<>AJUI_Tip_Storage;$uuid)
 	End for each 
 End if 

@@ -1,11 +1,12 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
-		If (Form:C1466.tip.closeBox.display)
-			Form:C1466.tip.CloseBoxDisplay(False:C215)
+	: ($evt=On Clicked)
+		If (Form.tip.closeBox.display)
+			Form.tip.CloseBoxDisplay(False)
 		Else 
-			Form:C1466.tip.CloseBoxSize(8)
-			Form:C1466.tip.CloseBoxDisplay(True:C214)
+			Form.tip.CloseBoxSize(8)
+			Form.tip.CloseBoxDisplay(True)
 		End if 
-		Form:C1466.tip.Show()
+		Form.tip.Show()
 End case 

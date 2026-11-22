@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the max height of the tipbox (text container)
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 23.01.19, 10:48:10
@@ -18,15 +20,15 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_LONGINT:C283($0;$1;$maxHeight_l)
+var $maxHeight_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.container.maxHeight
+If (Count parameters=0)
+	$result:=This.container.maxHeight
 Else 
-	$maxHeight_l:=$1
+	$maxHeight_l:=$param1
 	If ($maxHeight_l>=0)
-		This:C1470.container.maxHeight:=$maxHeight_l
-		This:C1470.CheckRebuild()
+		This.container.maxHeight:=$maxHeight_l
+		This.CheckRebuild()
 		
 	End if 
 End if 

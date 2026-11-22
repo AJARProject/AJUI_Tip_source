@@ -1,34 +1,39 @@
-Class constructor
+// Declared so the 21 R4 compiler accepts This.<property> (warning 550.26).
+// https://developer.4d.com/docs/21-R4/Concepts/classes
+property animation; arrow; closeBox; container; debug; global; pu; subForm; target; text : Object
+property failImport : Boolean
+
+Class constructor($param1 : Object)
 	
-	C_OBJECT:C1216($1;$template_obj)
 	
-	If (Count parameters:C259=1)
-		If ($1.templatePath=Null:C1517)
-			$template_obj:=AJUI_Tip_templateImport($1.templateName)
+	var $template_obj : Object
+	If (Count parameters=1)
+		If ($param1.templatePath=Null)
+			$template_obj:=AJUI_Tip_templateImport($param1.templateName)
 		Else 
-			$template_obj:=AJUI_Tip_templateImport($1.templateName;$1.templatePath)
+			$template_obj:=AJUI_Tip_templateImport($param1.templateName;$param1.templatePath)
 		End if 
 		
-		If (This:C1470.failImport)
+		If (This.failImport)
 			//nothing to do
 		Else 
-			This:C1470.animation:=$template_obj.animation
-			This:C1470.arrow:=$template_obj.arrow
-			This:C1470.closeBox:=$template_obj.closeBox
-			This:C1470.container:=$template_obj.container
-			This:C1470.debug:=$template_obj.debug
-			This:C1470.global:=$template_obj.global
-			This:C1470.pu:=$template_obj.pu
-			This:C1470.subForm:=$template_obj.subForm
-			This:C1470.target:=$template_obj.target
-			This:C1470.text:=$template_obj.text
+			This.animation:=$template_obj.animation
+			This.arrow:=$template_obj.arrow
+			This.closeBox:=$template_obj.closeBox
+			This.container:=$template_obj.container
+			This.debug:=$template_obj.debug
+			This.global:=$template_obj.global
+			This.pu:=$template_obj.pu
+			This.subForm:=$template_obj.subForm
+			This.target:=$template_obj.target
+			This.text:=$template_obj.text
 		End if 
 	End if 
 	
 	
-	AJUI_Tip_init_attributes(This:C1470)
-	AJUI_Tip_init_animation(This:C1470)
-	AJUI_Tip_init_methods(This:C1470)
+	AJUI_Tip_init_attributes(This)
+	AJUI_Tip_init_animation(This)
+	AJUI_Tip_init_methods(This)
 	
 Function checkRebuild
 	// ----------------------
@@ -38,7 +43,7 @@ Function checkRebuild
 	
 	AJUI_Tip_CheckRebuild
 	
-Function tipDuration
+Function tipDuration($param1 : Real) -> $result : Real
 	// ----------------------
 	// Global
 	// ----------------------
@@ -47,15 +52,14 @@ Function tipDuration
 	// $1 : (real) (optional) duration
 	// $0 : (real) (return) current duration
 	
-	C_REAL:C285($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTipDuration
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTipDuration
 	Else 
-		AJUI_Tip_setTipDuration($1)
+		AJUI_Tip_setTipDuration($param1)
 	End if 
 	
-Function name
+Function name($param1 : Text) -> $result : Text
 	// ----------------------
 	// Global
 	// ----------------------
@@ -64,15 +68,14 @@ Function name
 	// $1 : (text) (optional) name
 	// $0 : (text) (return) current name of the tip
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setName
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setName
 	Else 
-		AJUI_Tip_setName($1)
+		AJUI_Tip_setName($param1)
 	End if 
 	
-Function export
+Function export($param1 : Text; $param2 : Text)
 	// ----------------------
 	// Function
 	// ----------------------
@@ -81,15 +84,14 @@ Function export
 	// $1 : (text) template name
 	// $2 : (text) (optional) folder path
 	
-	C_TEXT:C284($1;$2)
 	
-	If (Count parameters:C259=2)
-		AJUI_Tip_templateExport($1;$2)
+	If (Count parameters=2)
+		AJUI_Tip_templateExport($param1;$param2)
 	Else 
-		AJUI_Tip_templateExport($1)
+		AJUI_Tip_templateExport($param1)
 	End if 
 	
-Function hide
+Function hide($param1 : Object)
 	// ----------------------
 	// Function
 	// ----------------------
@@ -97,12 +99,11 @@ Function hide
 	
 	// $1 : (object) (optional) tip instance
 	
-	C_OBJECT:C1216($1)
 	
-	If (Count parameters:C259=0)
+	If (Count parameters=0)
 		AJUI_Tip_hide
 	Else 
-		AJUI_Tip_hide($1)
+		AJUI_Tip_hide($param1)
 	End if 
 	
 Function show
@@ -113,7 +114,7 @@ Function show
 	
 	AJUI_Tip_show
 	
-Function fontColor
+Function fontColor($param1 : Text) -> $result : Text
 	// ----------------------
 	// Text
 	// ----------------------
@@ -122,15 +123,14 @@ Function fontColor
 	// $1 : (text) (optional) color
 	// $0 : (text) (return) current font color
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setFontColor
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setFontColor
 	Else 
-		AJUI_Tip_setFontColor($1)
+		AJUI_Tip_setFontColor($param1)
 	End if 
 	
-Function fontName
+Function fontName($param1 : Text) -> $result : Text
 	// ----------------------
 	// Text
 	// ----------------------
@@ -139,15 +139,14 @@ Function fontName
 	// $1 : (text) (optional) font name
 	// $0 : (text) (return) current font name
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setFontName
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setFontName
 	Else 
-		AJUI_Tip_setFontName($1)
+		AJUI_Tip_setFontName($param1)
 	End if 
 	
-Function fontSize
+Function fontSize($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Text
 	// ----------------------
@@ -156,15 +155,14 @@ Function fontSize
 	// $1 : (longint) (optional) font size
 	// $0 : (longint) (return) current font size
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setFontSize
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setFontSize
 	Else 
-		AJUI_Tip_setFontSize($1)
+		AJUI_Tip_setFontSize($param1)
 	End if 
 	
-Function label
+Function label($param1 : Text) -> $result : Text
 	// ----------------------
 	// Text
 	// ----------------------
@@ -173,15 +171,14 @@ Function label
 	// $1 : (text) (optional) label
 	// $0 : (text) (return) current label
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setText
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setText
 	Else 
-		AJUI_Tip_setText($1)
+		AJUI_Tip_setText($param1)
 	End if 
 	
-Function textOpacity
+Function textOpacity($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Text
 	// ----------------------
@@ -190,15 +187,14 @@ Function textOpacity
 	// $1 : (longint) (optional) opacity
 	// $0 : (longint) (return) current text opacity
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTextOpacity
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTextOpacity
 	Else 
-		AJUI_Tip_setTextOpacity($1)
+		AJUI_Tip_setTextOpacity($param1)
 	End if 
 	
-Function textRotation
+Function textRotation($param1 : Text) -> $result : Text
 	// ----------------------
 	// Text
 	// ----------------------
@@ -207,15 +203,14 @@ Function textRotation
 	// $1 : (text) (optional) rotation
 	// $0 : (text) (return) current rotation
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTextRotation
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTextRotation
 	Else 
-		AJUI_Tip_setTextRotation($1)
+		AJUI_Tip_setTextRotation($param1)
 	End if 
 	
-Function targetCoordinates
+Function targetCoordinates($param1 : Integer; $param2 : Integer; $param3 : Integer; $param4 : Integer) -> $result : Object
 	// ----------------------
 	// Target
 	// ----------------------
@@ -227,21 +222,19 @@ Function targetCoordinates
 	// $4 : (longint) (optional) bottom coordinate
 	// $0 : (object) (return) current target coordinates
 	
-	C_LONGINT:C283($1;$2;$3;$4)
-	C_OBJECT:C1216($0)
 	
 	Case of 
-		: (Count parameters:C259=0)
-			$0:=AJUI_Tip_setTargetCoordinates
-		: (Count parameters:C259=1)
-			AJUI_Tip_setTargetCoordinates($1)
-		: (Count parameters:C259=2)
-			AJUI_Tip_setTargetCoordinates($1;$2)
-		: (Count parameters:C259=4)
-			AJUI_Tip_setTargetCoordinates($1;$2;$3;$4)
+		: (Count parameters=0)
+			$result:=AJUI_Tip_setTargetCoordinates
+		: (Count parameters=1)
+			AJUI_Tip_setTargetCoordinates($param1)
+		: (Count parameters=2)
+			AJUI_Tip_setTargetCoordinates($param1;$param2)
+		: (Count parameters=4)
+			AJUI_Tip_setTargetCoordinates($param1;$param2;$param3;$param4)
 	End case 
 	
-Function targetMargin
+Function targetMargin($param1 : Integer; $param2 : Integer; $param3 : Integer; $param4 : Integer) -> $result : Object
 	// ----------------------
 	// Target
 	// ----------------------
@@ -253,21 +246,19 @@ Function targetMargin
 	// $4 : (longint) (optional) bottom margin size
 	// $0 : (object) (return) current margins
 	
-	C_LONGINT:C283($1;$2;$3;$4)
-	C_OBJECT:C1216($0)
 	
 	Case of 
-		: (Count parameters:C259=0)
-			$0:=AJUI_Tip_setMargin
-		: (Count parameters:C259=1)
-			AJUI_Tip_setMargin($1)
-		: (Count parameters:C259=2)
-			AJUI_Tip_setMargin($1;$2)
-		: (Count parameters:C259=4)
-			AJUI_Tip_setMargin($1;$2;$3;$4)
+		: (Count parameters=0)
+			$result:=AJUI_Tip_setMargin
+		: (Count parameters=1)
+			AJUI_Tip_setMargin($param1)
+		: (Count parameters=2)
+			AJUI_Tip_setMargin($param1;$param2)
+		: (Count parameters=4)
+			AJUI_Tip_setMargin($param1;$param2;$param3;$param4)
 	End case 
 	
-Function targetName
+Function targetName($param1 : Text) -> $result : Text
 	// ----------------------
 	// Target
 	// ----------------------
@@ -276,15 +267,14 @@ Function targetName
 	// $1 : (text) (optional) name
 	// $0 : (text) (return) current target name
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTargetName
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTargetName
 	Else 
-		AJUI_Tip_setTargetName($1)
+		AJUI_Tip_setTargetName($param1)
 	End if 
 	
-Function targetOffset
+Function targetOffset($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Target
 	// ----------------------
@@ -293,15 +283,14 @@ Function targetOffset
 	// $1 : (longint) (optional) offset
 	// $0 : (longint) (return) current offset
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTargetOffset
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTargetOffset
 	Else 
-		AJUI_Tip_setTargetOffset($1)
+		AJUI_Tip_setTargetOffset($param1)
 	End if 
 	
-Function position
+Function position($param1 : Text; $param2 : Boolean) -> $result : Text
 	// ----------------------
 	// Target
 	// ----------------------
@@ -311,19 +300,17 @@ Function position
 	// $2 : (boolean) (optional) default arrow position ?
 	// $0 : (text) (return) current target current position
 	
-	C_TEXT:C284($0;$1)
-	C_BOOLEAN:C305($2)
 	
 	Case of 
-		: (Count parameters:C259=0)
-			$0:=AJUI_Tip_setTipPosition
-		: (Count parameters:C259=1)
-			AJUI_Tip_setTipPosition($1)
-		: (Count parameters:C259=2)
-			AJUI_Tip_setTipPosition($1;$2)
+		: (Count parameters=0)
+			$result:=AJUI_Tip_setTipPosition
+		: (Count parameters=1)
+			AJUI_Tip_setTipPosition($param1)
+		: (Count parameters=2)
+			AJUI_Tip_setTipPosition($param1;$param2)
 	End case 
 	
-Function shadow
+Function shadow($param1 : Boolean) -> $result : Boolean
 	// ----------------------
 	// Container
 	// ----------------------
@@ -332,15 +319,14 @@ Function shadow
 	// $1 : (boolean) (optional) activate/inactivate
 	// $0 : (boolean) (return) shadow ?
 	
-	C_BOOLEAN:C305($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_activateShadow
+	If (Count parameters=0)
+		$result:=AJUI_Tip_activateShadow
 	Else 
-		AJUI_Tip_activateShadow($1)
+		AJUI_Tip_activateShadow($param1)
 	End if 
 	
-Function backgroundColor
+Function backgroundColor($param1 : Text) -> $result : Text
 	// ----------------------
 	// Container
 	// ----------------------
@@ -349,14 +335,13 @@ Function backgroundColor
 	// $1 : (text) (optional) color
 	// $0 : (text) (return) current BG color
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setBackgroundColor
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setBackgroundColor
 	Else 
-		AJUI_Tip_setBackgroundColor($1)
+		AJUI_Tip_setBackgroundColor($param1)
 	End if 
-Function bgColor
+Function bgColor($param1 : Text) -> $result : Text
 	// ----------------------
 	// Container
 	// ----------------------
@@ -365,15 +350,14 @@ Function bgColor
 	// $1 : (text) (optional) color
 	// $0 : (text) (return) current BG color
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setBackgroundColor
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setBackgroundColor
 	Else 
-		AJUI_Tip_setBackgroundColor($1)
+		AJUI_Tip_setBackgroundColor($param1)
 	End if 
 	
-Function backgroundOpacity
+Function backgroundOpacity($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -382,15 +366,14 @@ Function backgroundOpacity
 	// $1 : (longint) (optional) opacity
 	// $0 : (longint) (return) current BG opacity
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setBackgroundOpacity
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setBackgroundOpacity
 	Else 
-		AJUI_Tip_setBackgroundOpacity($1)
+		AJUI_Tip_setBackgroundOpacity($param1)
 	End if 
 	
-Function bgOpacity
+Function bgOpacity($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -399,15 +382,14 @@ Function bgOpacity
 	// $1 : (longint) (optional) opacity
 	// $0 : (longint) (return) current BG opacity
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setBackgroundOpacity
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setBackgroundOpacity
 	Else 
-		AJUI_Tip_setBackgroundOpacity($1)
+		AJUI_Tip_setBackgroundOpacity($param1)
 	End if 
 	
-Function borderColor
+Function borderColor($param1 : Text) -> $result : Text
 	// ----------------------
 	// Container
 	// ----------------------
@@ -416,15 +398,14 @@ Function borderColor
 	// $1 : (text) (optional) color
 	// $0 : (text) (return) current border color
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setBorderColor
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setBorderColor
 	Else 
-		AJUI_Tip_setBorderColor($1)
+		AJUI_Tip_setBorderColor($param1)
 	End if 
 	
-Function borderOpacity
+Function borderOpacity($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -433,15 +414,14 @@ Function borderOpacity
 	// $1 : (longint) (optional) opacity
 	// $0 : (longint) (return) current Border opacity
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setBorderOpacity
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setBorderOpacity
 	Else 
-		AJUI_Tip_setBorderOpacity($1)
+		AJUI_Tip_setBorderOpacity($param1)
 	End if 
 	
-Function borderSize
+Function borderSize($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -450,15 +430,14 @@ Function borderSize
 	// $1 : (longint) (optional) size
 	// $0 : (longint) (return) current Border size
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setBorderSize
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setBorderSize
 	Else 
-		AJUI_Tip_setBorderSize($1)
+		AJUI_Tip_setBorderSize($param1)
 	End if 
 	
-Function cornerRadius
+Function cornerRadius($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -467,15 +446,14 @@ Function cornerRadius
 	// $1 : (longint) (optional) corner radius
 	// $0 : (longint) (return) current corner radius
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setCornerRadius
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setCornerRadius
 	Else 
-		AJUI_Tip_setCornerRadius($1)
+		AJUI_Tip_setCornerRadius($param1)
 	End if 
 	
-Function globalOpacity
+Function globalOpacity($param1 : Integer)
 	// ----------------------
 	// Container
 	// ----------------------
@@ -483,11 +461,10 @@ Function globalOpacity
 	
 	// $1 : (longint) % of opacity
 	
-	C_LONGINT:C283($1)
 	
-	AJUI_Tip_setGlobalOpacity($1)
+	AJUI_Tip_setGlobalOpacity($param1)
 	
-Function padding
+Function padding($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -496,15 +473,14 @@ Function padding
 	// $1 : (longint) (optional) padding
 	// $0 : (longint) (return) current padding
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setPadding
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setPadding
 	Else 
-		AJUI_Tip_setPadding($1)
+		AJUI_Tip_setPadding($param1)
 	End if 
 	
-Function shadowOffset
+Function shadowOffset($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -513,15 +489,14 @@ Function shadowOffset
 	// $1 : (longint) (optional) offset
 	// $0 : (longint) (return) current offset
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setShadowOffset
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setShadowOffset
 	Else 
-		AJUI_Tip_setShadowOffset($1)
+		AJUI_Tip_setShadowOffset($param1)
 	End if 
 	
-Function maxHeight
+Function maxHeight($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -530,15 +505,14 @@ Function maxHeight
 	// $1 : (longint) (optional) max height
 	// $0 : (longint) (return) current max height
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTipboxMaxHeight
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTipboxMaxHeight
 	Else 
-		AJUI_Tip_setTipboxMaxHeight($1)
+		AJUI_Tip_setTipboxMaxHeight($param1)
 	End if 
 	
-Function maxWidth
+Function maxWidth($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Container
 	// ----------------------
@@ -547,15 +521,14 @@ Function maxWidth
 	// $1 : (longint) (optional) max width
 	// $0 : (longint) (return) current max width
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTipboxMaxWidth
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTipboxMaxWidth
 	Else 
-		AJUI_Tip_setTipboxMaxWidth($1)
+		AJUI_Tip_setTipboxMaxWidth($param1)
 	End if 
 	
-Function arrowCurve
+Function arrowCurve($param1 : Real) -> $result : Real
 	// ----------------------
 	// Arrow
 	// ----------------------
@@ -564,15 +537,14 @@ Function arrowCurve
 	// $1 : (real) (optional) curve
 	// $0 : (real) (return) current curve
 	
-	C_REAL:C285($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_GetSetArrowCurve
+	If (Count parameters=0)
+		$result:=AJUI_Tip_GetSetArrowCurve
 	Else 
-		AJUI_Tip_GetSetArrowCurve($1)
+		AJUI_Tip_GetSetArrowCurve($param1)
 	End if 
 	
-Function arrowHeight
+Function arrowHeight($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Arrow
 	// ----------------------
@@ -581,15 +553,14 @@ Function arrowHeight
 	// $1 : (longint) (optional) height
 	// $0 : (longint) (return) current arrow height
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setArrowHeight
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setArrowHeight
 	Else 
-		AJUI_Tip_setArrowHeight($1)
+		AJUI_Tip_setArrowHeight($param1)
 	End if 
 	
-Function arrowOffset
+Function arrowOffset($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Arrow
 	// ----------------------
@@ -598,15 +569,14 @@ Function arrowOffset
 	// $1 : (longint) (optional) offset
 	// $0 : (longint) (return) current arrow offset
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setArrowOffset
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setArrowOffset
 	Else 
-		AJUI_Tip_setArrowOffset($1)
+		AJUI_Tip_setArrowOffset($param1)
 	End if 
 	
-Function arrowPosition
+Function arrowPosition($param1 : Text) -> $result : Text
 	// ----------------------
 	// Arrow
 	// ----------------------
@@ -615,15 +585,14 @@ Function arrowPosition
 	// $1 : (text) (optional) position
 	// $0 : (text) (return) current arrow position
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setArrowPosition
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setArrowPosition
 	Else 
-		AJUI_Tip_setArrowPosition($1)
+		AJUI_Tip_setArrowPosition($param1)
 	End if 
 	
-Function arrowWidth
+Function arrowWidth($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Arrow
 	// ----------------------
@@ -632,15 +601,14 @@ Function arrowWidth
 	// $1 : (longint) (optional) width
 	// $0 : (longint) (return) current arrow width
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setArrowWidth
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setArrowWidth
 	Else 
-		AJUI_Tip_setArrowWidth($1)
+		AJUI_Tip_setArrowWidth($param1)
 	End if 
 	
-Function cornerCurveEnd
+Function cornerCurveEnd($param1 : Real) -> $result : Real
 	// ----------------------
 	// Arrow
 	// ----------------------
@@ -649,15 +617,14 @@ Function cornerCurveEnd
 	// $1 : (real) (optional) end curve
 	// $0 : (real) (return) current end curve
 	
-	C_REAL:C285($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_GetSetCornerCurveEnd
+	If (Count parameters=0)
+		$result:=AJUI_Tip_GetSetCornerCurveEnd
 	Else 
-		AJUI_Tip_GetSetCornerCurveEnd($1)
+		AJUI_Tip_GetSetCornerCurveEnd($param1)
 	End if 
 	
-Function cornerCurveStart
+Function cornerCurveStart($param1 : Real) -> $result : Real
 	// ----------------------
 	// Arrow
 	// ----------------------
@@ -666,15 +633,14 @@ Function cornerCurveStart
 	// $1 : (real) (optional) start curve
 	// $0 : (real) (return) current start curve
 	
-	C_REAL:C285($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_GetSetCornerCurveStart
+	If (Count parameters=0)
+		$result:=AJUI_Tip_GetSetCornerCurveStart
 	Else 
-		AJUI_Tip_GetSetCornerCurveStart($1)
+		AJUI_Tip_GetSetCornerCurveStart($param1)
 	End if 
 	
-Function curved
+Function curved($param1 : Boolean) -> $result : Boolean
 	// ----------------------
 	// Arrow
 	// ----------------------
@@ -683,15 +649,14 @@ Function curved
 	// $1 : (boolean) (optional) Activate/inactivate curve
 	// $0 : (boolean) (return) curved arrow ?
 	
-	C_BOOLEAN:C305($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_getsetCurved
+	If (Count parameters=0)
+		$result:=AJUI_Tip_getsetCurved
 	Else 
-		AJUI_Tip_getsetCurved($1)
+		AJUI_Tip_getsetCurved($param1)
 	End if 
 	
-Function closeBoxDisplay
+Function closeBoxDisplay($param1 : Boolean) -> $result : Boolean
 	// ----------------------
 	// Close box
 	// ----------------------
@@ -700,15 +665,14 @@ Function closeBoxDisplay
 	// $1 : (boolean) (optional) show/hide closebox
 	// $0 : (boolean) (return) closebox displayed ?
 	
-	C_BOOLEAN:C305($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setCloseBoxDisplay
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setCloseBoxDisplay
 	Else 
-		AJUI_Tip_setCloseBoxDisplay($1)
+		AJUI_Tip_setCloseBoxDisplay($param1)
 	End if 
 	
-Function closeBoxSize
+Function closeBoxSize($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Close box
 	// ----------------------
@@ -717,15 +681,14 @@ Function closeBoxSize
 	// $1 : (longint) (optional) size
 	// $0 : (longint) (return) current size
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setCloseBoxSize
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setCloseBoxSize
 	Else 
-		AJUI_Tip_setCloseBoxSize($1)
+		AJUI_Tip_setCloseBoxSize($param1)
 	End if 
 	
-Function subformName
+Function subformName($param1 : Text) -> $result : Text
 	// ----------------------
 	// Subform
 	// ----------------------
@@ -734,15 +697,14 @@ Function subformName
 	// $1 : (text) (optional) name
 	// $0 : (text) (return) current subform name
 	
-	C_TEXT:C284($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setSubformName
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setSubformName
 	Else 
-		AJUI_Tip_setSubformName($1)
+		AJUI_Tip_setSubformName($param1)
 	End if 
 	
-Function animated
+Function animated($param1 : Boolean) -> $result : Boolean
 	// ----------------------
 	// Animation
 	// ----------------------
@@ -751,15 +713,14 @@ Function animated
 	// $1 : (boolean) (optional) activate/inactive
 	// $0 : (boolean) (return) animation activated ?
 	
-	C_BOOLEAN:C305($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_activeAnimation
+	If (Count parameters=0)
+		$result:=AJUI_Tip_activeAnimation
 	Else 
-		AJUI_Tip_activeAnimation($1)
+		AJUI_Tip_activeAnimation($param1)
 	End if 
 	
-Function animationFrameRate
+Function animationFrameRate($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Animation
 	// ----------------------
@@ -768,15 +729,14 @@ Function animationFrameRate
 	// $1 : (longint) (optional) number of refresh
 	// $0 : (longint) (return) current number of refresh
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setAnimRefresh
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setAnimRefresh
 	Else 
-		AJUI_Tip_setAnimRefresh($1)
+		AJUI_Tip_setAnimRefresh($param1)
 	End if 
 	
-Function blinkDuration
+Function blinkDuration($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Blink
 	// ----------------------
@@ -785,15 +745,14 @@ Function blinkDuration
 	// $1 : (longint) (optional) duration
 	// $0 : (longint) (return) current duration
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setBlinkDuration
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setBlinkDuration
 	Else 
-		AJUI_Tip_setBlinkDuration($1)
+		AJUI_Tip_setBlinkDuration($param1)
 	End if 
 	
-Function blinkNumber
+Function blinkNumber($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Blink
 	// ----------------------
@@ -802,15 +761,14 @@ Function blinkNumber
 	// $1 : (longint) (optional) number
 	// $0 : (longint) (return) current number of blink
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_TIP_setBlinkNumber
+	If (Count parameters=0)
+		$result:=AJUI_TIP_setBlinkNumber
 	Else 
-		AJUI_TIP_setBlinkNumber($1)
+		AJUI_TIP_setBlinkNumber($param1)
 	End if 
 	
-Function blinkOn
+Function blinkOn($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Blink
 	// ----------------------
@@ -819,15 +777,14 @@ Function blinkOn
 	// $1 : (longint) (optional) percentage
 	// $0 : (longint) (return) current percentage
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_TIp_setBlinkOn
+	If (Count parameters=0)
+		$result:=AJUI_TIp_setBlinkOn
 	Else 
-		AJUI_TIp_setBlinkOn($1)
+		AJUI_TIp_setBlinkOn($param1)
 	End if 
 	
-Function jumpDuration
+Function jumpDuration($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Jump
 	// ----------------------
@@ -836,15 +793,14 @@ Function jumpDuration
 	// $1 : (longint) (optional) duration
 	// $0 : (longint) (return) current duration
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setJumpDuration
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setJumpDuration
 	Else 
-		AJUI_Tip_setJumpDuration($1)
+		AJUI_Tip_setJumpDuration($param1)
 	End if 
 	
-Function jumpNumber
+Function jumpNumber($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Jump
 	// ----------------------
@@ -853,15 +809,14 @@ Function jumpNumber
 	// $1 : (longint) (optional) number
 	// $0 : (longint) (return) current number of jump
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setJumpNumber
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setJumpNumber
 	Else 
-		AJUI_Tip_setJumpNumber($1)
+		AJUI_Tip_setJumpNumber($param1)
 	End if 
 	
-Function jumpOffset
+Function jumpOffset($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Jump
 	// ----------------------
@@ -870,15 +825,14 @@ Function jumpOffset
 	// $1 : (longint) (optional) offset
 	// $0 : (longint) (return) current offset
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_TIP_setJumpOffset
+	If (Count parameters=0)
+		$result:=AJUI_TIP_setJumpOffset
 	Else 
-		AJUI_TIP_setJumpOffset($1)
+		AJUI_TIP_setJumpOffset($param1)
 	End if 
 	
-Function jumpOn
+Function jumpOn($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Jump
 	// ----------------------
@@ -887,15 +841,14 @@ Function jumpOn
 	// $1 : (longint) (optional) percentage
 	// $0 : (longint) (return) current percentage
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setJumpOn
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setJumpOn
 	Else 
-		AJUI_Tip_setJumpOn($1)
+		AJUI_Tip_setJumpOn($param1)
 	End if 
 	
-Function fadeIn
+Function fadeIn($param1 : Boolean) -> $result : Boolean
 	// ----------------------
 	// Fade effect
 	// ----------------------
@@ -904,15 +857,14 @@ Function fadeIn
 	// $1 : (boolean) (optional) activate/inactivate
 	// $0 : (boolean) (return) Fade In activated ?
 	
-	C_BOOLEAN:C305($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_activeFadeIn
+	If (Count parameters=0)
+		$result:=AJUI_Tip_activeFadeIn
 	Else 
-		AJUI_Tip_activeFadeIn($1)
+		AJUI_Tip_activeFadeIn($param1)
 	End if 
 	
-Function fadeOut
+Function fadeOut($param1 : Boolean) -> $result : Boolean
 	// ----------------------
 	// Fade effect
 	// ----------------------
@@ -921,15 +873,14 @@ Function fadeOut
 	// $1 : (boolean) (optional) activate/inactivate
 	// $0 : (boolean) (return) Fade Out activated ?
 	
-	C_BOOLEAN:C305($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_activateFadeOut
+	If (Count parameters=0)
+		$result:=AJUI_Tip_activateFadeOut
 	Else 
-		AJUI_Tip_activateFadeOut($1)
+		AJUI_Tip_activateFadeOut($param1)
 	End if 
 	
-Function timerFadeIn
+Function timerFadeIn($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Fade effect
 	// ----------------------
@@ -938,15 +889,14 @@ Function timerFadeIn
 	// $1 : (longint) (optional) timer (ms)
 	// $0 : (longint) (return) current timer
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTimerFadeIn
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTimerFadeIn
 	Else 
-		AJUI_Tip_setTimerFadeIn($1)
+		AJUI_Tip_setTimerFadeIn($param1)
 	End if 
 	
-Function timerFadeOut
+Function timerFadeOut($param1 : Integer) -> $result : Integer
 	// ----------------------
 	// Fade effect
 	// ----------------------
@@ -955,10 +905,9 @@ Function timerFadeOut
 	// $1 : (longint) (optional) timer (ms)
 	// $0 : (longint) (return) current timer
 	
-	C_LONGINT:C283($0;$1)
 	
-	If (Count parameters:C259=0)
-		$0:=AJUI_Tip_setTimerFadeOut
+	If (Count parameters=0)
+		$result:=AJUI_Tip_setTimerFadeOut
 	Else 
-		AJUI_Tip_setTimerFadeOut($1)
+		AJUI_Tip_setTimerFadeOut($param1)
 	End if 

@@ -6,7 +6,9 @@
   //
   // Setter/Getter to activate the shadow effect with the tipbox
 
-If (False:C215)
+#DECLARE($param1 : Boolean) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 26.02.19, 11:57:17
@@ -18,12 +20,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_BOOLEAN:C305($0;$1;$isActive_b)
+var $isActive_b : Boolean
 
-If (Count parameters:C259#1)
-	$0:=This:C1470.container.shadowOn
+If (Count parameters#1)
+	$result:=This.container.shadowOn
 Else 
-	$isActive_b:=$1
-	This:C1470.container.shadowOn:=$isActive_b
-	This:C1470.CheckRebuild()
+	$isActive_b:=$param1
+	This.container.shadowOn:=$isActive_b
+	This.CheckRebuild()
 End if 

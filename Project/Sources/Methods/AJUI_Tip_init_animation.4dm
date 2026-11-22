@@ -5,7 +5,9 @@
   //
   // Initialize the animation settings of a tip instance
 
-If (False:C215)
+#DECLARE($param1 : Object)
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Maurice Inzirillo
 	  // Date and time: 08.02.19, 09:00:41
@@ -19,65 +21,65 @@ If (False:C215)
 End if 
 
 
-C_OBJECT:C1216($1;$tip_instance_obj)
-$tip_instance_obj:=$1
+var $tip_instance_obj : Object
+$tip_instance_obj:=$param1
 
-If (Storage:C1525.AJUI_Tip_Storage=Null:C1517)
-	Use (Storage:C1525)
-		Storage:C1525.AJUI_Tip_Storage:=New shared object:C1526
+If (Storage.AJUI_Tip_Storage=Null)
+	Use (Storage)
+		Storage.AJUI_Tip_Storage:=New shared object
 	End use 
 End if 
 
 
-If ($tip_instance_obj.animation=Null:C1517)
-	$tip_instance_obj.animation:=New object:C1471()
+If ($tip_instance_obj.animation=Null)
+	$tip_instance_obj.animation:=New object()
 End if 
-If ($tip_instance_obj.animation.isActive=Null:C1517)
-	$tip_instance_obj.animation.isActive:=True:C214
+If ($tip_instance_obj.animation.isActive=Null)
+	$tip_instance_obj.animation.isActive:=True
 End if 
-If ($tip_instance_obj.animation.refresh=Null:C1517)
+If ($tip_instance_obj.animation.refresh=Null)
 	$tip_instance_obj.animation.refresh:=20  // number of display by second
 End if 
-If ($tip_instance_obj.animation.coordinate=Null:C1517)
-	$tip_instance_obj.animation.coordinate:=New object:C1471()  // Will be extract of the tip dimension property
+If ($tip_instance_obj.animation.coordinate=Null)
+	$tip_instance_obj.animation.coordinate:=New object()  // Will be extract of the tip dimension property
 End if 
-$tip_instance_obj.animation.isTerminated:=True:C214
+$tip_instance_obj.animation.isTerminated:=True
 
   // ----------------------
   // Blink
   // ----------------------
-If ($tip_instance_obj.animation.blink=Null:C1517)
-	$tip_instance_obj.animation.blink:=New object:C1471()
+If ($tip_instance_obj.animation.blink=Null)
+	$tip_instance_obj.animation.blink:=New object()
 End if 
-If ($tip_instance_obj.animation.blink.number=Null:C1517)
+If ($tip_instance_obj.animation.blink.number=Null)
 	$tip_instance_obj.animation.blink.number:=0
 End if 
-If ($tip_instance_obj.animation.blink.duration=Null:C1517)
+If ($tip_instance_obj.animation.blink.duration=Null)
 	$tip_instance_obj.animation.blink.duration:=1000  // millisecond(s) // Blink
 End if 
-If ($tip_instance_obj.animation.blink.on=Null:C1517)
+If ($tip_instance_obj.animation.blink.on=Null)
 	$tip_instance_obj.animation.blink.on:=50  // time percentage ON
 End if 
 
   // ----------------------
   // Jump
   // ----------------------
-If ($tip_instance_obj.animation.jump=Null:C1517)
-	$tip_instance_obj.animation.jump:=New object:C1471()
+If ($tip_instance_obj.animation.jump=Null)
+	$tip_instance_obj.animation.jump:=New object()
 End if 
-If ($tip_instance_obj.animation.jump.number=Null:C1517)
+If ($tip_instance_obj.animation.jump.number=Null)
 	$tip_instance_obj.animation.jump.number:=0
 End if 
-If ($tip_instance_obj.animation.jump.on=Null:C1517)
+If ($tip_instance_obj.animation.jump.on=Null)
 	$tip_instance_obj.animation.jump.on:=50  // time percentage UP
 End if 
-If ($tip_instance_obj.animation.jump.duration=Null:C1517)
+If ($tip_instance_obj.animation.jump.duration=Null)
 	$tip_instance_obj.animation.jump.duration:=1000  // millisecond(s) // Jump
 End if 
-If ($tip_instance_obj.animation.jump.offset=Null:C1517)
+If ($tip_instance_obj.animation.jump.offset=Null)
 	$tip_instance_obj.animation.jump.offset:=20  // pixels
 End if 
-If ($tip_instance_obj.animation.jump.direction=Null:C1517)
+If ($tip_instance_obj.animation.jump.direction=Null)
 	$tip_instance_obj.animation.jump.direction:=""  // linked to tip position
 End if 
 
@@ -85,29 +87,29 @@ End if
   // ----------------------
   // Fade effect
   // ----------------------
-If ($tip_instance_obj.animation.fade=Null:C1517)
-	$tip_instance_obj.animation.fade:=New object:C1471()
+If ($tip_instance_obj.animation.fade=Null)
+	$tip_instance_obj.animation.fade:=New object()
 End if 
-If ($tip_instance_obj.animation.fade.in=Null:C1517)
-	$tip_instance_obj.animation.fade.in:=False:C215
+If ($tip_instance_obj.animation.fade.in=Null)
+	$tip_instance_obj.animation.fade.in:=False
 End if 
-If ($tip_instance_obj.animation.fade.out=Null:C1517)
-	$tip_instance_obj.animation.fade.out:=False:C215
+If ($tip_instance_obj.animation.fade.out=Null)
+	$tip_instance_obj.animation.fade.out:=False
 End if 
-If ($tip_instance_obj.animation.fade.timer=Null:C1517)
-	$tip_instance_obj.animation.fade.timer:=New object:C1471()
+If ($tip_instance_obj.animation.fade.timer=Null)
+	$tip_instance_obj.animation.fade.timer:=New object()
 End if 
-If ($tip_instance_obj.animation.fade.timer.in=Null:C1517)
+If ($tip_instance_obj.animation.fade.timer.in=Null)
 	$tip_instance_obj.animation.fade.timer.in:=500  // milliseconds
 End if 
-If ($tip_instance_obj.animation.fade.timer.out=Null:C1517)
+If ($tip_instance_obj.animation.fade.timer.out=Null)
 	$tip_instance_obj.animation.fade.timer.out:=500  // milliseconds
 End if 
 
-$tip_instance_obj.animation.fade.fadeInActive:=False:C215
-$tip_instance_obj.animation.fade.fadeInTerminated:=True:C214
-$tip_instance_obj.animation.fade.fadeOutActive:=False:C215
-$tip_instance_obj.animation.fade.fadeOutTerminated:=True:C214
+$tip_instance_obj.animation.fade.fadeInActive:=False
+$tip_instance_obj.animation.fade.fadeInTerminated:=True
+$tip_instance_obj.animation.fade.fadeOutActive:=False
+$tip_instance_obj.animation.fade.fadeOutTerminated:=True
 $tip_instance_obj.animation.fade.currentOpacity:=0
 
   // ----------------------

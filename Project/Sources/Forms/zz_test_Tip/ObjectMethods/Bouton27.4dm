@@ -1,9 +1,10 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
-		If (Form:C1466.tip.subForm.name="")
-			Form:C1466.tip.SubformName("zz_fakeCalendar")
+	: ($evt=On Clicked)
+		If (Form.tip.subForm.name="")
+			Form.tip.SubformName("zz_fakeCalendar")
 		Else 
-			Form:C1466.tip.SubformName("")
+			Form.tip.SubformName("")
 		End if 
 End case 

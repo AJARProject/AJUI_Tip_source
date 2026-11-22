@@ -1,8 +1,9 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 
 Case of 
-	: ($evt=On Load:K2:1)
+	: ($evt=On Load)
 		
-	: ($evt=On Unload:K2:2)
+	: ($evt=On Unload)
 		AJUI_Tip_clearCache 
 End case 
