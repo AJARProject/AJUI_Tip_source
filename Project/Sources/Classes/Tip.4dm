@@ -7,6 +7,7 @@ Class constructor($param1 : Object)
 	
 	
 	var $template_obj : Object
+	This.failImport:=False
 	If (Count parameters=1)
 		If ($param1.templatePath=Null)
 			$template_obj:=AJUI_Tip_templateImport($param1.templateName)
@@ -14,6 +15,7 @@ Class constructor($param1 : Object)
 			$template_obj:=AJUI_Tip_templateImport($param1.templateName;$param1.templatePath)
 		End if 
 		
+		This.failImport:=$template_obj.failImport
 		If (This.failImport)
 			//nothing to do
 		Else 
