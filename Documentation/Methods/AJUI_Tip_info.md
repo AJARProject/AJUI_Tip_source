@@ -18,5 +18,5 @@ Show the version info of the component.
 ```4d
   var $version : Text
 
-  $version:=AJUI_Tip_info()  // AJUI_Tip (v21 R4) : 1.8.0
+  $version:=AJUI_Tip_info()  // AJUI_Tip (v21 R4) : 1.8.1
 ```
