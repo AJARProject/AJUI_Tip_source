@@ -17,14 +17,10 @@ L'hôte crée une instance avec `New AJUI_Tip` (objet dont les membres sont des 
 | `Project/AJUI_Tip.4DProject` | Projet du composant. Avant migration : seulement le commentaire 4D. Maintenant `compatibilityVersion` 2140 et `tokenizedText` false. |
 | `Project/Sources/Methods` | 95 méthodes projet. |
 | `Project/Sources/Classes/Tip.4dm` | Classe `Tip` (setters/getters qui appellent les méthodes `AJUI_Tip_set*`). |
-| `Project/Sources/Forms` | `AJUI_Tip_container` (sous-formulaire de la bulle) et cinq formulaires de test `zz_*`. |
+| `Project/Sources/Forms` | `AJUI_Tip_container` (sous-formulaire de la bulle). Les cinq formulaires de test `zz_*` ont été retirés (voir Nettoyage / Cleanup). |
 | `Project/Sources/dependencies.json` | **Nouveau.** Déclare 4D SVG (`github: 4d/4D-SVG`). |
 | `Settings/buildApp.4DSettings` | **Nouveau.** Construction du composant (`BuildComponent` True, nom `AJUI_Tip`). Le `.gitignore` ignorait ce fichier ; la ligne a été retirée. |
 | `Documentation/Methods` | Fiches markdown des 5 méthodes partagées. |
-| `Components/AJ_Tools_4D_Doc.4dbase` | Ancien composant binaire (`.4DB` + données). Utilisé nulle part dans le code (seulement cité dans deux commentaires « TODO »). |
-| `Components/Cache`, `Logs/`, `Resources/Cache`, `Resources/Preferences`, `Project/DerivedData` | Fichiers générés, commités par le passé. |
-
-Ces fichiers générés, `AJ_Tools_4D_Doc.4dbase` et les formulaires `zz_*` ne sont **pas** retirés par cette migration : ce sera une PR de nettoyage séparée. `Project/DerivedData` contient encore le code compilé 19 R7 commité à l'époque ; il n'a pas été mis à jour pour garder la PR lisible.
 
 ## API partagée
 
@@ -59,7 +55,18 @@ Ce qui a été fait :
 ## Risques et points non testés
 
 1. **Affichage non testé.** Le test tourne sans interface (`--headless`) : `Show`, `Hide`, le dessin SVG, les animations et les workers n'ont pas été exécutés. La compilation garantit les types et les appels, pas le rendu.
-2. **Formulaires `zz_*`** : convertis (jetons, `var`) mais non ouverts.
-3. Dans `Class constructor`, le code d'origine teste `This.failImport`, qui n'est jamais renseigné (le résultat de l'import est dans `$template_obj.failImport`). Comportement d'origine conservé, à corriger éventuellement dans une PR dédiée.
-4. `menus.json` référence `dial_AnotherTipLab` et `unit_EXECUTE_ALL`, qui n'existent pas dans le projet (déjà le cas avant la migration).
-5. `AJ_Tools_4D_Doc.4dbase` (binaire) reste dans `Components/` jusqu'à la PR de nettoyage.
+2. Dans `Class constructor`, le code d'origine teste `This.failImport`, qui n'est jamais renseigné (le résultat de l'import est dans `$template_obj.failImport`). Comportement d'origine conservé, à corriger éventuellement dans une PR dédiée.
+3. `menus.json` référence `dial_AnotherTipLab` et `unit_EXECUTE_ALL`, qui n'existent pas dans le projet (déjà le cas avant la migration). Les barres de menus par défaut n'ont pas été modifiées.
+
+## Nettoyage / Cleanup
+
+**FR.** Fichiers inutiles retirés, chacun vérifié comme non référencé dans les sources de production (`Project/Sources` : méthodes, classe, formulaires restants, `menus.json`, `folders.json`, réglages, `Settings/buildApp.4DSettings`, README) :
+
+- `Components/AJ_Tools_4D_Doc.4dbase` (13 fichiers) : ancien composant binaire de documentation, jamais appelé. Les deux commentaires « TODO » qui y faisaient allusion (`AJUI_Tip_objectToShared`, `AJUI_Tip_collectionToShared`) ont été retirés ; les méthodes restent.
+- `Components/Cache` (2), `Logs/` (3), `Resources/Cache` (4), `Resources/Preferences` (2 : anciens `Backup.xml` / `BuildApp.xml` ; le réglage de construction actuel est `Settings/buildApp.4DSettings`), `Project/DerivedData` (100 : code compilé 19 R7 commité à l'époque).
+- Formulaires de test `zz_fakeCalendar`, `zz_subformContentTest`, `zz_test_GI`, `zz_test_GI_main`, `zz_test_Tip` (84 fichiers) : absents de `menus.json` et de `folders.json`, non cités par les méthodes, la classe ou `AJUI_Tip_container`. Ils ne se référaient qu'entre eux.
+- `.gitignore` : ajout de `/Components/Cache/` et `/Resources/Cache/`. `DerivedData`, `/Logs/*`, `userPreferences.*` et `.DS_Store` y figuraient déjà.
+
+Conservés : `Settings/buildApp.4DSettings`, `Project/Sources/dependencies.json`, le formulaire `AJUI_Tip_container`, `menus.json` (voir le point 3 ci-dessus).
+
+**EN.** Unused files were removed after a reference check in production sources. The binary `AJ_Tools_4D_Doc` component (and the two TODO comments that mentioned AJ_Tools), generated caches, logs, the old `Resources/Preferences` build/backup XML, committed 19 R7 `Project/DerivedData`, and the unreferenced `zz_*` test forms are gone. Cache folders were added to `.gitignore`. `Settings/buildApp.4DSettings` and `dependencies.json` are unchanged. `menus.json` is kept: it still points at methods that were already missing before the 4D 21 R4 migration.

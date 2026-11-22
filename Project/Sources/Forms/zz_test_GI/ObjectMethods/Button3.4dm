@@ -1,2 +1,0 @@
-
-Form.tip.ActivateFadeOut(True)

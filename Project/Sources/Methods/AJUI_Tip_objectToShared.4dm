@@ -16,7 +16,6 @@ If (False)
 	  // ----------------------------------------------------
 	  // Method: AJUI_Tip_objectToShared
 	  // Description
-	  // TODO : Mode to AJ_Tools
 	  //
 	  // ----------------------------------------------------
 End if 
