@@ -21,18 +21,6 @@
 			"picture": "pictlib:5",
 			"items": [
 				{
-					"link": 32005
-				},
-				{
-					"link": 32006
-				},
-				{
-					"link": 32005
-				},
-				{
-					"link": 32006
-				},
-				{
 					"link": 32007
 				}
 			]
@@ -49,12 +37,6 @@
 					"link": 32009
 				},
 				{
-					"link": 32010
-				},
-				{
-					"link": 32011
-				},
-				{
 					"link": 32012
 				}
 			]
@@ -69,12 +51,6 @@
 				},
 				{
 					"link": 32014
-				},
-				{
-					"link": 32015
-				},
-				{
-					"link": 32016
 				},
 				{
 					"link": 32017
@@ -232,27 +208,6 @@
 			]
 		},
 		{
-			"link": 32006,
-			"title": "Another Tip Lab",
-			"items": [
-				{
-					"title": "Launch...",
-					"method": "dial_AnotherTipLab",
-					"startNewProcess": true
-				}
-			]
-		},
-		{
-			"link": 32005,
-			"title": "Menu 4",
-			"items": [
-				{
-					"title": "Item 1",
-					"method": "unit_EXECUTE_ALL"
-				}
-			]
-		},
-		{
 			"link": 32009,
 			"title": ":xliff:CommonMenuEdit",
 			"items": [
@@ -315,16 +270,6 @@
 			]
 		},
 		{
-			"link": 32010,
-			"title": "Menu 4",
-			"items": [
-				{
-					"title": "Item 1",
-					"method": "unit_EXECUTE_ALL"
-				}
-			]
-		},
-		{
 			"link": 32008,
 			"title": ":xliff:CommonMenuFile",
 			"items": [
@@ -333,17 +278,6 @@
 					"shortcutAccel": true,
 					"shortcutKey": "Q",
 					"action": "quit"
-				}
-			]
-		},
-		{
-			"link": 32011,
-			"title": "Another Tip Lab",
-			"items": [
-				{
-					"title": "Launch...",
-					"method": "dial_AnotherTipLab",
-					"startNewProcess": true
 				}
 			]
 		},
@@ -408,27 +342,6 @@
 					"shortcutAccel": true,
 					"shortcutKey": "Q",
 					"action": "quit"
-				}
-			]
-		},
-		{
-			"link": 32016,
-			"title": "Another Tip Lab",
-			"items": [
-				{
-					"title": "Launch...",
-					"method": "dial_AnotherTipLab",
-					"startNewProcess": true
-				}
-			]
-		},
-		{
-			"link": 32015,
-			"title": "Menu 4",
-			"items": [
-				{
-					"title": "Item 1",
-					"method": "unit_EXECUTE_ALL"
 				}
 			]
 		},

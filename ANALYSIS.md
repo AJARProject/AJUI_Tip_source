@@ -56,7 +56,7 @@ Ce qui a été fait :
 
 1. **Affichage non testé.** Le test tourne sans interface (`--headless`) : `Show`, `Hide`, le dessin SVG, les animations et les workers n'ont pas été exécutés. La compilation garantit les types et les appels, pas le rendu.
 2. Dans `Class constructor`, le code d'origine teste `This.failImport`, qui n'est jamais renseigné (le résultat de l'import est dans `$template_obj.failImport`). Comportement d'origine conservé, à corriger éventuellement dans une PR dédiée.
-3. `menus.json` référence `dial_AnotherTipLab` et `unit_EXECUTE_ALL`, qui n'existent pas dans le projet (déjà le cas avant la migration). Les barres de menus par défaut n'ont pas été modifiées.
+3. `menus.json` ne référence plus `dial_AnotherTipLab` ni `unit_EXECUTE_ALL` (corrigé après le nettoyage). Les menus Fichier/Édition 32000 et 32004 restent présents mais non liés à une barre. La barre 2 ne contient plus que le menu Mode.
 
 ## Nettoyage / Cleanup
 
@@ -67,6 +67,10 @@ Ce qui a été fait :
 - Formulaires de test `zz_fakeCalendar`, `zz_subformContentTest`, `zz_test_GI`, `zz_test_GI_main`, `zz_test_Tip` (84 fichiers) : absents de `menus.json` et de `folders.json`, non cités par les méthodes, la classe ou `AJUI_Tip_container`. Ils ne se référaient qu'entre eux.
 - `.gitignore` : ajout de `/Components/Cache/` et `/Resources/Cache/`. `DerivedData`, `/Logs/*`, `userPreferences.*` et `.DS_Store` y figuraient déjà.
 
-Conservés : `Settings/buildApp.4DSettings`, `Project/Sources/dependencies.json`, le formulaire `AJUI_Tip_container`, `menus.json` (voir le point 3 ci-dessus).
+Conservés : `Settings/buildApp.4DSettings`, `Project/Sources/dependencies.json`, le formulaire `AJUI_Tip_container`.
 
-**EN.** Unused files were removed after a reference check in production sources. The binary `AJ_Tools_4D_Doc` component (and the two TODO comments that mentioned AJ_Tools), generated caches, logs, the old `Resources/Preferences` build/backup XML, committed 19 R7 `Project/DerivedData`, and the unreferenced `zz_*` test forms are gone. Cache folders were added to `.gitignore`. `Settings/buildApp.4DSettings` and `dependencies.json` are unchanged. `menus.json` is kept: it still points at methods that were already missing before the 4D 21 R4 migration.
+- `menus.json` : retrait des commandes de labo/test « Another Tip Lab / Launch... » (`dial_AnotherTipLab`) et « Menu 4 / Item 1 » (`unit_EXECUTE_ALL`), déjà orphelines au premier commit ; les menus devenus vides et leurs liens dans les barres 2, 3 et 4 ont été retirés. La barre 1 (Fichier / Édition / Mode) est inchangée.
+
+**EN.** Unused files were removed after a reference check in production sources. The binary `AJ_Tools_4D_Doc` component (and the two TODO comments that mentioned AJ_Tools), generated caches, logs, the old `Resources/Preferences` build/backup XML, committed 19 R7 `Project/DerivedData`, and the unreferenced `zz_*` test forms are gone. Cache folders were added to `.gitignore`. `Settings/buildApp.4DSettings` and `dependencies.json` are unchanged.
+
+- `menus.json`: removed the leftover lab/test items "Another Tip Lab / Launch..." (`dial_AnotherTipLab`) and "Menu 4 / Item 1" (`unit_EXECUTE_ALL`), already missing at the first commit; the now-empty menus and their links in bars 2, 3 and 4 were dropped. Menu Bar #1 (File / Edit / Mode) is unchanged.
