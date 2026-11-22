@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the label in the tip
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Text
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 22.01.19, 15:33:46
@@ -18,12 +20,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($0;$1;$label_t)
+var $label_t : Text
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.text.value
+If (Count parameters=0)
+	$result:=This.text.value
 Else 
-	$label_t:=$1
-	This:C1470.text.value:=$label_t
-	This:C1470.CheckRebuild()
+	$label_t:=$param1
+	This.text.value:=$label_t
+	This.CheckRebuild()
 End if 

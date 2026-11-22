@@ -6,7 +6,9 @@
   //
   // Setter/Getter for the offset of the shadow
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 26.02.19, 11:57:50
@@ -18,15 +20,15 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_LONGINT:C283($0;$1;$offset_l)
+var $offset_l : Integer
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.container.shadowOffset
+If (Count parameters=0)
+	$result:=This.container.shadowOffset
 Else 
-	$offset_l:=$1
+	$offset_l:=$param1
 	If ($offset_l>=0)
-		This:C1470.container.shadowOffset:=$offset_l
-		This:C1470.CheckRebuild()
+		This.container.shadowOffset:=$offset_l
+		This.CheckRebuild()
 		
 	End if 
 End if 

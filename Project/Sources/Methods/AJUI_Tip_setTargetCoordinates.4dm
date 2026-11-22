@@ -9,7 +9,9 @@
   //
   // Setter/Getter to defined the coordinates of the target
 
-If (False:C215)
+#DECLARE($param1 : Integer; $param2 : Integer; $param3 : Integer; $param4 : Integer) -> $result : Object
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 25.01.19, 15:04:00
@@ -21,50 +23,46 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_LONGINT:C283($1;$left_l)
-C_LONGINT:C283($2;$top_l)
-C_LONGINT:C283($3;$right_l)
-C_LONGINT:C283($4;$bottom_l)
-C_OBJECT:C1216($0)
+var $left_l; $top_l; $right_l; $bottom_l : Integer
 
 
 Case of 
-	: (Count parameters:C259=0)
-		$0:=OB Copy:C1225(This:C1470.target.coordinate)
-	: (Count parameters:C259=1)
-		$left_l:=$1
+	: (Count parameters=0)
+		$result:=OB Copy(This.target.coordinate)
+	: (Count parameters=1)
+		$left_l:=$param1
 		If ($left_l>0)
-			This:C1470.target.coordinate.left:=$left_l
-			This:C1470.target.coordinate.top:=$left_l
-			This:C1470.target.coordinate.right:=$left_l
-			This:C1470.target.coordinate.bottom:=$left_l
-			This:C1470.CheckRebuild()
+			This.target.coordinate.left:=$left_l
+			This.target.coordinate.top:=$left_l
+			This.target.coordinate.right:=$left_l
+			This.target.coordinate.bottom:=$left_l
+			This.CheckRebuild()
 			
 		End if 
 		
-	: (Count parameters:C259=2)
-		$left_l:=$1
-		$top_l:=$2
+	: (Count parameters=2)
+		$left_l:=$param1
+		$top_l:=$param2
 		If (($left_l>=0) & ($top_l>=0))
-			This:C1470.target.coordinate.left:=$left_l
-			This:C1470.target.coordinate.top:=$top_l
-			This:C1470.target.coordinate.right:=$left_l
-			This:C1470.target.coordinate.bottom:=$top_l
-			This:C1470.CheckRebuild()
+			This.target.coordinate.left:=$left_l
+			This.target.coordinate.top:=$top_l
+			This.target.coordinate.right:=$left_l
+			This.target.coordinate.bottom:=$top_l
+			This.CheckRebuild()
 			
 		End if 
 		
-	: (Count parameters:C259=4)
-		$left_l:=$1
-		$top_l:=$2
-		$right_l:=$3
-		$bottom_l:=$4
+	: (Count parameters=4)
+		$left_l:=$param1
+		$top_l:=$param2
+		$right_l:=$param3
+		$bottom_l:=$param4
 		If (($left_l>=0) & ($top_l>=0) & ($right_l>=0) & ($bottom_l>=0))
-			This:C1470.target.coordinate.left:=$left_l
-			This:C1470.target.coordinate.top:=$top_l
-			This:C1470.target.coordinate.right:=$right_l
-			This:C1470.target.coordinate.bottom:=$bottom_l
-			This:C1470.CheckRebuild()
+			This.target.coordinate.left:=$left_l
+			This.target.coordinate.top:=$top_l
+			This.target.coordinate.right:=$right_l
+			This.target.coordinate.bottom:=$bottom_l
+			This.CheckRebuild()
 			
 		End if 
 	Else 

@@ -5,7 +5,9 @@
   //
   // Build the tip object
 
-If (False:C215)
+#DECLARE($param1 : Object)
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 24.01.19, 15:18:59
@@ -18,14 +20,13 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_OBJECT:C1216($1;$tip_instance_obj)
-C_TEXT:C284($tipbox_t;$tip_instance_name_sf_t;$TargetName_t;$tip_position_t)
-C_LONGINT:C283($topTarget_l;$leftTarget_l;$rightTarget_l;$bottomTarget_l)
-C_LONGINT:C283($ContainerHeigh_l;$ContainerWidth)
-C_LONGINT:C283($positionTip_left_l;$positionTip_top_l;$positionTip_bottom_l;$position_tip_right_l)
-C_LONGINT:C283($Target_offset_l;$marginTop_l;$marginLeft_l;$marginBottom_l;$marginRight_l)
+var $tip_instance_obj : Object
+var $tipbox_t; $tip_instance_name_sf_t; $TargetName_t; $tip_position_t : Text
+var $topTarget_l; $leftTarget_l; $rightTarget_l; $bottomTarget_l; $ContainerHeigh_l; $ContainerWidth; $positionTip_left_l; $positionTip_top_l; $positionTip_bottom_l; $position_tip_right_l; $Target_offset_l; $marginTop_l; $marginLeft_l; $marginBottom_l; $marginRight_l : Integer
+var $page_l; $ref_process; $durationToAdd : Real
+var $anyAnimationActivated : Boolean
 
-$tip_instance_obj:=$1
+$tip_instance_obj:=$param1
 
 
   //check original tipbox exist in the current form
@@ -33,9 +34,9 @@ If (AJUI_Tip_tipBoxDefined )
 	
 	  // *************
 	  // Set the name of the current instance of the tip and the worker used for animations
-	$page_l:=FORM Get current page:C276
+	$page_l:=FORM Get current page
 	If ($page_l>1)
-		$tip_instance_name_sf_t:="AJUI_Tip_sf_"+"page"+String:C10($page_l)+"_"+$tip_instance_obj.global.name
+		$tip_instance_name_sf_t:="AJUI_Tip_sf_"+"page"+String($page_l)+"_"+$tip_instance_obj.global.name
 	Else 
 		$tip_instance_name_sf_t:="AJUI_Tip_sf_"+$tip_instance_obj.global.name
 	End if 
@@ -44,23 +45,23 @@ If (AJUI_Tip_tipBoxDefined )
 	  // *************
 	  // Check if we have to generate the tip the first time and duplicate the initial tip subform
 	If (AJUI_Tip_generateTipbox ($tip_instance_name_sf_t))
-		$ref_process:=New process:C317("AJUI_Tip_firstGeneration_proc";0;"$AJUI_Tip_firstGeneration_proc";$tip_instance_obj.global.UUID)
+		$ref_process:=New process("AJUI_Tip_firstGeneration_proc";0;"$AJUI_Tip_firstGeneration_proc";$tip_instance_obj.global.UUID)
 	Else 
 		  // Duration to add in case of a fadein
 		$durationToAdd:=0
 		
 		  // Rebuild if the toRebuild is set to true OR
 		  // If we have the fade in or fade out set and (that the tip is not displayed or fade out is currently active)
-		If (($tip_instance_obj.pu.toRebuild=True:C214) | \
-			((($tip_instance_obj.pu.displayed=False:C215) | ($tip_instance_obj.animation.fade.fadeOutActive=True:C214)) & \
+		If (($tip_instance_obj.pu.toRebuild=True) | \
+			((($tip_instance_obj.pu.displayed=False) | ($tip_instance_obj.animation.fade.fadeOutActive=True)) & \
 			(($tip_instance_obj.animation.fade.in | $tip_instance_obj.animation.fade.out) & ($tip_instance_obj.pu.isPictureTip)))\
 			)
 			
 			  // *************
 			  // Get target coordinates
 			$TargetName_t:=$tip_instance_obj.target.name
-			If (AJUI_Tip_targetDefined ($TargetName_t)) & ($tip_instance_obj.pu.subformContext=False:C215)
-				OBJECT GET COORDINATES:C663(*;$TargetName_t;$leftTarget_l;$topTarget_l;$rightTarget_l;$bottomTarget_l)
+			If (AJUI_Tip_targetDefined ($TargetName_t)) & ($tip_instance_obj.pu.subformContext=False)
+				OBJECT GET COORDINATES(*;$TargetName_t;$leftTarget_l;$topTarget_l;$rightTarget_l;$bottomTarget_l)
 				$tip_instance_obj.target.coordinate.left:=$leftTarget_l
 				$tip_instance_obj.target.coordinate.top:=$topTarget_l
 				$tip_instance_obj.target.coordinate.right:=$rightTarget_l
@@ -80,25 +81,25 @@ If (AJUI_Tip_tipBoxDefined )
 			  // *************
 			  // Set the type of tip flag -> Picture or Subform
 			If (($tip_instance_obj.subForm.name#"") & (AJUI_Tip_formToUseExist ($tip_instance_obj.subForm.name)))
-				$tip_instance_obj.pu.isPictureTip:=False:C215
+				$tip_instance_obj.pu.isPictureTip:=False
 			Else 
-				$tip_instance_obj.pu.isPictureTip:=True:C214
+				$tip_instance_obj.pu.isPictureTip:=True
 			End if 
 			
 			  // *************
 			  // Fade in handler
-			If ($tip_instance_obj.animation.fade.in) & ($tip_instance_obj.pu.isPictureTip) & ($tip_instance_obj.animation.fade.fadeInActive=False:C215) & \
-				(($tip_instance_obj.pu.displayed=False:C215) | ($tip_instance_obj.animation.fade.fadeOutActive=True:C214))
+			If ($tip_instance_obj.animation.fade.in) & ($tip_instance_obj.pu.isPictureTip) & ($tip_instance_obj.animation.fade.fadeInActive=False) & \
+				(($tip_instance_obj.pu.displayed=False) | ($tip_instance_obj.animation.fade.fadeOutActive=True))
 				  // Only do fadein if it is not already active and it is not displayed and if we have the tip type as a picture and also if the fadeout is currently active
-				$tip_instance_obj.animation.fade.fadeInActive:=True:C214
-				$tip_instance_obj.animation.fade.fadeInTerminated:=False:C215
-				CALL WORKER:C1389($tip_instance_obj.pu.worker;"AJUI_Tip_fadeInHandler";$tip_instance_obj.global.UUID)
+				$tip_instance_obj.animation.fade.fadeInActive:=True
+				$tip_instance_obj.animation.fade.fadeInTerminated:=False
+				CALL WORKER($tip_instance_obj.pu.worker;"AJUI_Tip_fadeInHandler";$tip_instance_obj.global.UUID)
 				$durationToAdd:=$tip_instance_obj.animation.fade.timer.in
 			Else 
-				$tip_instance_obj.animation.fade.fadeInActive:=False:C215
+				$tip_instance_obj.animation.fade.fadeInActive:=False
 				$tip_instance_obj.animation.fade.currentOpacity:=AJUI_Tip_higherOpacity ($tip_instance_obj.text.opacity;$tip_instance_obj.container.backgroundOpacity;$tip_instance_obj.container.borderOpacity)
 			End if 
-			$tip_instance_obj.animation.fade.fadeOutActive:=False:C215  // Fadeout is inactive when we do a show
+			$tip_instance_obj.animation.fade.fadeOutActive:=False  // Fadeout is inactive when we do a show
 			
 			  // *************
 			  // Draw Tip
@@ -196,7 +197,7 @@ If (AJUI_Tip_tipBoxDefined )
 			End case 
 			
 			  //set tip coordinates
-			OBJECT SET COORDINATES:C1248(*;$tip_instance_name_sf_t;$positionTip_left_l;$positionTip_top_l;$position_tip_right_l;$positionTip_bottom_l)
+			OBJECT SET COORDINATES(*;$tip_instance_name_sf_t;$positionTip_left_l;$positionTip_top_l;$position_tip_right_l;$positionTip_bottom_l)
 			$tip_instance_obj.container.coordinate.left:=$positionTip_left_l
 			$tip_instance_obj.container.coordinate.top:=$positionTip_top_l
 			$tip_instance_obj.container.coordinate.right:=$position_tip_right_l
@@ -214,26 +215,26 @@ If (AJUI_Tip_tipBoxDefined )
 		  // Handle the tip duration 
 		If ($tip_instance_obj.global.tipDuration>0)
 			  // Reset the end duration each call to show
-			Use (Storage:C1525.AJUI_Tip_Storage)
-				Storage:C1525.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_endDuration"]:=Milliseconds:C459+$tip_instance_obj.global.tipDuration+$durationToAdd
+			Use (Storage.AJUI_Tip_Storage)
+				Storage.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_endDuration"]:=Milliseconds+$tip_instance_obj.global.tipDuration+$durationToAdd
 			End use 
 			
-			If ($tip_instance_obj.global.tipDurationHandlerActive=False:C215)
+			If ($tip_instance_obj.global.tipDurationHandlerActive=False)
 				  //clear flag
-				Use (Storage:C1525.AJUI_Tip_Storage)
-					Storage:C1525.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimation"]:=False:C215
-					Storage:C1525.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimationFrom"]:=""
+				Use (Storage.AJUI_Tip_Storage)
+					Storage.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimation"]:=False
+					Storage.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimationFrom"]:=""
 				End use 
-				$tip_instance_obj.global.tipDurationHandlerActive:=True:C214
-				CALL WORKER:C1389($tip_instance_obj.pu.worker;"AJUI_Tip_durationHandler";$tip_instance_obj.global.UUID)
+				$tip_instance_obj.global.tipDurationHandlerActive:=True
+				CALL WORKER($tip_instance_obj.pu.worker;"AJUI_Tip_durationHandler";$tip_instance_obj.global.UUID)
 			End if 
 		End if 
 		
 		
 		  // *************
 		  // Display the tip
-		OBJECT SET VISIBLE:C603(*;$tip_instance_name_sf_t;True:C214)
-		$tip_instance_obj.pu.toRebuild:=False:C215
-		$tip_instance_obj.pu.displayed:=True:C214
+		OBJECT SET VISIBLE(*;$tip_instance_name_sf_t;True)
+		$tip_instance_obj.pu.toRebuild:=False
+		$tip_instance_obj.pu.displayed:=True
 	End if 
 End if 

@@ -1,1 +1,1 @@
-Form:C1466.tip.Show()
+Form.tip.Show()

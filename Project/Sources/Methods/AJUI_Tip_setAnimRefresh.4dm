@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the number of display by seconde for a jump
 
-If (False:C215)
+#DECLARE($param1 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 11.02.19, 11:23:07
@@ -18,14 +20,14 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_LONGINT:C283($0;$1;$number_l)
+var $number_l : Integer
 
-If (Count parameters:C259#1)
-	$0:=This:C1470.animation.refresh
+If (Count parameters#1)
+	$result:=This.animation.refresh
 Else 
-	$number_l:=$1
+	$number_l:=$param1
 	If ($number_l>=0)
-		This:C1470.animation.refresh:=$number_l
-		This:C1470.pu.toRebuild:=True:C214
+		This.animation.refresh:=$number_l
+		This.pu.toRebuild:=True
 	End if 
 End if 

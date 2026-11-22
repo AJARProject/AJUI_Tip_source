@@ -6,7 +6,9 @@
   //
   // Setter/Getter to activate animations
 
-If (False:C215)
+#DECLARE($param1 : Boolean) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 11.02.19, 10:44:39
@@ -18,12 +20,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_BOOLEAN:C305($0;$1;$isActive_b)
+var $isActive_b : Boolean
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.animation.isActive
+If (Count parameters=0)
+	$result:=This.animation.isActive
 Else 
-	$isActive_b:=$1
-	This:C1470.animation.isActive:=$isActive_b
-	This:C1470.pu.toRebuild:=True:C214
+	$isActive_b:=$param1
+	This.animation.isActive:=$isActive_b
+	This.pu.toRebuild:=True
 End if 

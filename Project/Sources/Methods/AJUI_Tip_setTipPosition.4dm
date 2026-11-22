@@ -7,7 +7,9 @@
   //
   // Setter/Getter of the position of the tipbox, will also set the arrow position accordind to the tip position
 
-If (False:C215)
+#DECLARE($param1 : Text; $param2 : Boolean) -> $result : Text
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 23.01.19, 10:04:09
@@ -20,133 +22,133 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($0;$1;$tipPosition_t)
-C_BOOLEAN:C305($2;$defaut_arrow_b)
+var $tipPosition_t : Text
+var $defaut_arrow_b : Boolean
 
 
 
-If (Count parameters:C259=2)
-	$defaut_arrow_b:=$2
+If (Count parameters=2)
+	$defaut_arrow_b:=$param2
 Else 
-	$defaut_arrow_b:=True:C214
+	$defaut_arrow_b:=True
 End if 
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.target.tipPosition
+If (Count parameters=0)
+	$result:=This.target.tipPosition
 Else 
-	$tipPosition_t:=$1
+	$tipPosition_t:=$param1
 	Case of 
 		: ($tipPosition_t="top")
-			This:C1470.target.tipPosition:="top-center"
+			This.target.tipPosition:="top-center"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="center"
+				This.arrow.position:="center"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="top-left")
-			This:C1470.target.tipPosition:="top-left"
+			This.target.tipPosition:="top-left"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="left"
+				This.arrow.position:="left"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="top-center")
-			This:C1470.target.tipPosition:="top-center"
+			This.target.tipPosition:="top-center"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="center"
+				This.arrow.position:="center"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="top-right")
-			This:C1470.target.tipPosition:="top-right"
+			This.target.tipPosition:="top-right"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="right"
+				This.arrow.position:="right"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="left")
-			This:C1470.target.tipPosition:="left-middle"
+			This.target.tipPosition:="left-middle"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="middle"
+				This.arrow.position:="middle"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="left-top")
-			This:C1470.target.tipPosition:="left-top"
+			This.target.tipPosition:="left-top"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="top"
+				This.arrow.position:="top"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="left-middle")
-			This:C1470.target.tipPosition:="left-middle"
+			This.target.tipPosition:="left-middle"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="middle"
+				This.arrow.position:="middle"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="left-bottom")
-			This:C1470.target.tipPosition:="left-bottom"
+			This.target.tipPosition:="left-bottom"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="bottom"
+				This.arrow.position:="bottom"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="bottom")
-			This:C1470.target.tipPosition:="bottom-center"
+			This.target.tipPosition:="bottom-center"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="center"
+				This.arrow.position:="center"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="bottom-left")
-			This:C1470.target.tipPosition:="bottom-left"
+			This.target.tipPosition:="bottom-left"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="left"
+				This.arrow.position:="left"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="bottom-center")
-			This:C1470.target.tipPosition:="bottom-center"
+			This.target.tipPosition:="bottom-center"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="center"
+				This.arrow.position:="center"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="bottom-right")
-			This:C1470.target.tipPosition:="bottom-right"
+			This.target.tipPosition:="bottom-right"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="right"
+				This.arrow.position:="right"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="right")
-			This:C1470.target.tipPosition:="right-middle"
+			This.target.tipPosition:="right-middle"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="middle"
+				This.arrow.position:="middle"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="right-top")
-			This:C1470.target.tipPosition:="right-top"
+			This.target.tipPosition:="right-top"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="top"
+				This.arrow.position:="top"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="right-middle")
-			This:C1470.target.tipPosition:="right-middle"
+			This.target.tipPosition:="right-middle"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="middle"
+				This.arrow.position:="middle"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 		: ($tipPosition_t="right-bottom")
-			This:C1470.target.tipPosition:="right-bottom"
+			This.target.tipPosition:="right-bottom"
 			If ($defaut_arrow_b)
-				This:C1470.arrow.position:="bottom"
+				This.arrow.position:="bottom"
 			End if 
-			This:C1470.CheckRebuild()
+			This.CheckRebuild()
 			
 	End case 
 End if 

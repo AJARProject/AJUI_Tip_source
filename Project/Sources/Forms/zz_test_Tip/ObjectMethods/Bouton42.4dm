@@ -1,10 +1,11 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
-		If (Form:C1466.tip.container.shadowOn)
-			Form:C1466.tip.container.shadowOn:=False:C215
+	: ($evt=On Clicked)
+		If (Form.tip.container.shadowOn)
+			Form.tip.container.shadowOn:=False
 		Else 
-			Form:C1466.tip.container.shadowOn:=True:C214
+			Form.tip.container.shadowOn:=True
 		End if 
-		Form:C1466.tip.Show()
+		Form.tip.Show()
 End case 

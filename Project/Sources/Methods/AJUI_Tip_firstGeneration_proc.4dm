@@ -5,7 +5,9 @@
   //
   // Call the buildTip method in the case of a first generation
 
-If (False:C215)
+#DECLARE($param1 : Text)
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 20.02.19, 09:12:40
@@ -19,12 +21,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($1;$tip_instance_UUID)
-C_OBJECT:C1216($tip_instance_obj)
+var $tip_instance_UUID : Text
+var $tip_instance_obj : Object
 
-$tip_instance_UUID:=$1
+$tip_instance_UUID:=$param1
 $tip_instance_obj:=<>AJUI_Tip_Storage[$tip_instance_UUID]
 
-DELAY PROCESS:C323(Current process:C322;2)
+DELAY PROCESS(Current process;2)
 
-CALL FORM:C1391($tip_instance_obj.pu.refWindow;"AJUI_Tip_show";$tip_instance_obj)
+CALL FORM($tip_instance_obj.pu.refWindow;"AJUI_Tip_show";$tip_instance_obj)

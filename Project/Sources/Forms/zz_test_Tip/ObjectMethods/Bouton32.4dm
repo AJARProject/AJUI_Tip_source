@@ -1,9 +1,10 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
-		If (Form:C1466.tip.debug.showSVGViewer)
-			Form:C1466.tip.debug.showSVGViewer:=False:C215
+	: ($evt=On Clicked)
+		If (Form.tip.debug.showSVGViewer)
+			Form.tip.debug.showSVGViewer:=False
 		Else 
-			Form:C1466.tip.debug.showSVGViewer:=True:C214
+			Form.tip.debug.showSVGViewer:=True
 		End if 
 End case 

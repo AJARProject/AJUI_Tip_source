@@ -1,2 +1,2 @@
 
-Form:C1466.tip.ActivateFadeIn(True:C214)
+Form.tip.ActivateFadeIn(True)

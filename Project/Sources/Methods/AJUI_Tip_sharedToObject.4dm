@@ -6,7 +6,9 @@
   //
   // This method converts a shared object into an object
 
-If (False:C215)
+#DECLARE($param1 : Object; $param2 : Object)
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 06.02.19, 09:19:37
@@ -18,24 +20,23 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_OBJECT:C1216($1;$sharedObject_to_convert_obj)
-C_OBJECT:C1216($2;$converted_obj)
-C_LONGINT:C283($Type_l;$counter_l)
+var $sharedObject_to_convert_obj; $converted_obj : Object
+var $Type_l; $counter_l : Integer
 
-$sharedObject_to_convert_obj:=$1
-$converted_obj:=$2
+$sharedObject_to_convert_obj:=$param1
+$converted_obj:=$param2
 
-ARRAY TEXT:C222($_property_t;0)
+ARRAY TEXT($_property_t;0)
 
-OB GET PROPERTY NAMES:C1232($sharedObject_to_convert_obj;$_property_t)
-For ($counter_l;1;Size of array:C274($_property_t))
-	$Type_l:=OB Get type:C1230($sharedObject_to_convert_obj;$_property_t{$counter_l})
+OB GET PROPERTY NAMES($sharedObject_to_convert_obj;$_property_t)
+For ($counter_l;1;Size of array($_property_t))
+	$Type_l:=OB Get type($sharedObject_to_convert_obj;$_property_t{$counter_l})
 	Case of 
-		: ($Type_l=Is object:K8:27)
-			$converted_obj[$_property_t{$counter_l}]:=New object:C1471
+		: ($Type_l=Is object)
+			$converted_obj[$_property_t{$counter_l}]:=New object
 			AJUI_Tip_sharedToObject ($sharedObject_to_convert_obj[$_property_t{$counter_l}];$converted_obj[$_property_t{$counter_l}])
-		: ($Type_l=Is collection:K8:32)
-			$converted_obj[$_property_t{$counter_l}]:=New collection:C1472
+		: ($Type_l=Is collection)
+			$converted_obj[$_property_t{$counter_l}]:=New collection
 			AJUI_Tip_sharedToCollection ($sharedObject_to_convert_obj[$_property_t{$counter_l}];$converted_obj[$_property_t{$counter_l}])
 		Else 
 			$converted_obj[$_property_t{$counter_l}]:=$sharedObject_to_convert_obj[$_property_t{$counter_l}]

@@ -5,7 +5,9 @@
   //
   // This method calculate and execute the fade out effect
 
-If (False:C215)
+#DECLARE($param1 : Text)
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 15.02.19, 09:05:07
@@ -17,17 +19,17 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($1;$tip_instance_UUID)
-C_OBJECT:C1216($tip_instance_obj)
-C_LONGINT:C283($higherOpacity_l)
+var $tip_instance_UUID : Text
+var $tip_instance_obj; $delay_result : Object
+var $higherOpacity_l : Integer
 
-$tip_instance_UUID:=$1
+$tip_instance_UUID:=$param1
 $tip_instance_obj:=<>AJUI_Tip_Storage[$tip_instance_UUID]
 
   //clear flag
-Use (Storage:C1525.AJUI_Tip_Storage)
-	Storage:C1525.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimation"]:=False:C215
-	Storage:C1525.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimationFrom"]:=""
+Use (Storage.AJUI_Tip_Storage)
+	Storage.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimation"]:=False
+	Storage.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimationFrom"]:=""
 End use 
 
   //fade out
@@ -38,18 +40,18 @@ If ($tip_instance_obj.animation.fade.out) & ($tip_instance_obj.pu.isPictureTip)
 	
 	Repeat 
 		$tip_instance_obj.animation.fade.currentOpacity:=$tip_instance_obj.animation.fade.currentOpacity-($higherOpacity_l/$delay_result.totalSteps)
-		CALL FORM:C1391($tip_instance_obj.pu.refWindow;"AJUI_Tip_draw";$tip_instance_obj.global.UUID)
-		DELAY PROCESS:C323(Current process:C322;$delay_result.delay)
-	Until ($tip_instance_obj.animation.fade.currentOpacity<=0) | (Storage:C1525.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimation"]=True:C214)
+		CALL FORM($tip_instance_obj.pu.refWindow;"AJUI_Tip_draw";$tip_instance_obj.global.UUID)
+		DELAY PROCESS(Current process;$delay_result.delay)
+	Until ($tip_instance_obj.animation.fade.currentOpacity<=0) | (Storage.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimation"]=True)
 	
-	$tip_instance_obj.animation.fade.fadeOutTerminated:=True:C214
-	If (Storage:C1525.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimation"]=True:C214)
+	$tip_instance_obj.animation.fade.fadeOutTerminated:=True
+	If (Storage.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimation"]=True)
 		  // Cancel the animation is done by a show or a hide
-		If (Storage:C1525.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimationFrom"]="hide")
+		If (Storage.AJUI_Tip_Storage[$tip_instance_obj.global.name+"_stopAnimationFrom"]="hide")
 			$tip_instance_obj.animation.fade.currentOpacity:=0
 		End if 
 	Else 
 		  // Only call the hide if we didnt' cancel the animation
-		CALL FORM:C1391($tip_instance_obj.pu.refWindow;"AJUI_Tip_hide";$tip_instance_obj)
+		CALL FORM($tip_instance_obj.pu.refWindow;"AJUI_Tip_hide";$tip_instance_obj)
 	End if 
 End if 

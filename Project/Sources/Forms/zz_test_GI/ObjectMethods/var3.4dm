@@ -1,6 +1,7 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 
 Case of 
-	: ($evt=On Getting Focus:K2:7)
-		Form:C1466.tip.Hide()
+	: ($evt=On Getting Focus)
+		Form.tip.Hide()
 End case 

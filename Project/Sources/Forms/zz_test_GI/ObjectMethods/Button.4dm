@@ -1,1 +1,1 @@
-Form:C1466.tip.Hide()
+Form.tip.Hide()

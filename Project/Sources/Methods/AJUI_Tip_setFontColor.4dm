@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the font color for the text
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Text
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 22.01.19, 16:12:29
@@ -18,12 +20,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($0;$1;$color_t)
+var $color_t : Text
 
-If (Count parameters:C259#1)
-	$0:=This:C1470.text.fontColor
+If (Count parameters#1)
+	$result:=This.text.fontColor
 Else 
-	$color_t:=$1
-	This:C1470.text.fontColor:=$color_t
-	This:C1470.CheckRebuild()
+	$color_t:=$param1
+	This.text.fontColor:=$color_t
+	This.CheckRebuild()
 End if 

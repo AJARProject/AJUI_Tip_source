@@ -6,7 +6,9 @@
   //
   // Geneterate the tipbox (subform) related to the tip instance name if not exist
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 25.01.19, 10:02:19
@@ -19,34 +21,32 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($1;$tip_instance_name_t)
-C_BOOLEAN:C305($0;$isFirstGeneration)
-C_BOOLEAN:C305($tipExists)
-C_LONGINT:C283($page_l)
-C_TEXT:C284($tipbox_name_t)
+var $tip_instance_name_t; $tipbox_name_t : Text
+var $isFirstGeneration; $tipExists : Boolean
+var $page_l : Integer
 
-$tip_instance_name_t:=$1
+$tip_instance_name_t:=$param1
 
-$page_l:=FORM Get current page:C276
+$page_l:=FORM Get current page
 
 $tipbox_name_t:="AJUI_Tip_sf"
 If ($page_l>1)
-	$tipbox_name_t:=$tipbox_name_t+"_page"+String:C10($page_l)
+	$tipbox_name_t:=$tipbox_name_t+"_page"+String($page_l)
 End if 
 
-ARRAY TEXT:C222($_objectNames_t;0)
-FORM GET OBJECTS:C898($_objectNames_t;Form all pages:K67:7)
-$tipExists:=Find in array:C230($_objectNames_t;$tip_instance_name_t)>0
+ARRAY TEXT($_objectNames_t;0)
+FORM GET OBJECTS($_objectNames_t;Form all pages)
+$tipExists:=Find in array($_objectNames_t;$tip_instance_name_t)>0
 If ($tipExists)  //tipbox suform exists
 	  //do nothing
-	$isFirstGeneration:=False:C215
+	$isFirstGeneration:=False
 Else 
-	C_OBJECT:C1216(Form_temp)
-	Form_temp:=Form:C1466
-	OBJECT DUPLICATE:C1111(*;$tipbox_name_t;$tip_instance_name_t;->Form_temp)
-	OBJECT SET SUBFORM:C1138(*;$tip_instance_name_t;"AJUI_Tip_container")
+	var Form_temp : Object
+	Form_temp:=Form
+	OBJECT DUPLICATE(*;$tipbox_name_t;$tip_instance_name_t;->Form_temp)
+	OBJECT SET SUBFORM(*;$tip_instance_name_t;"AJUI_Tip_container")
 	
-	$isFirstGeneration:=True:C214
+	$isFirstGeneration:=True
 End if 
 
-$0:=$isFirstGeneration
+$result:=$isFirstGeneration

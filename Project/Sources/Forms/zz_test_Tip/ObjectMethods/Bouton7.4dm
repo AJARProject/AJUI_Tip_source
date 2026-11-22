@@ -1,5 +1,6 @@
-$evt:=Form event code:C388
+var $evt : Real
+$evt:=Form event code
 Case of 
-	: ($evt=On Clicked:K2:4)
-		Form:C1466.tip.ArrowOffset(Form:C1466.tip.arrow.offset-1)
+	: ($evt=On Clicked)
+		Form.tip.ArrowOffset(Form.tip.arrow.offset-1)
 End case 

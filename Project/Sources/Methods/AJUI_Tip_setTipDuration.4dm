@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the tip duration
 
-If (False:C215)
+#DECLARE($param1 : Real) -> $result : Real
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 22.02.19, 10:29:43
@@ -19,16 +21,16 @@ If (False:C215)
 End if 
 
 
-C_REAL:C285($0;$1;$duration_r)
+var $duration_r : Real
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.global.tipDuration
+If (Count parameters=0)
+	$result:=This.global.tipDuration
 Else 
-	$duration_r:=$1
+	$duration_r:=$param1
 	If ($duration_r>=0)
-		This:C1470.global.tipDuration:=$duration_r
-		This:C1470.pu.toRebuild:=True:C214
+		This.global.tipDuration:=$duration_r
+		This.pu.toRebuild:=True
 	Else 
-		ASSERT:C1129(False:C215;"The value can't be negative")
+		ASSERT(False;"The value can't be negative")
 	End if 
 End if 

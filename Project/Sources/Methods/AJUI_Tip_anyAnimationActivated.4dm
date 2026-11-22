@@ -4,7 +4,9 @@
   //
   // Return true if one animation is activated
 
-If (False:C215)
+#DECLARE($param1 : Object) -> $result : Boolean
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): gabriel inzirillo
 	  // Date and time: 11.07.19, 15:32:02
@@ -16,9 +18,8 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_BOOLEAN:C305($0)
-C_OBJECT:C1216($1;$tip_instance_obj)
+var $tip_instance_obj : Object
 
-$tip_instance_obj:=$1
+$tip_instance_obj:=$param1
 
-$0:=($tip_instance_obj.animation.jump.number>0) | ($tip_instance_obj.animation.blink.number>0)
+$result:=($tip_instance_obj.animation.jump.number>0) | ($tip_instance_obj.animation.blink.number>0)

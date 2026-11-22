@@ -5,7 +5,9 @@
   // $textArea_pict : (picture) (return) picture of the text area
   //
   // This method will create the picture of the text area, so we can receive the content size
-If (False:C215)
+#DECLARE($param1 : Object) -> $result : Picture
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 31.01.19, 10:55:46
@@ -18,16 +20,15 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_OBJECT:C1216($1;$tip_instance_obj)
-C_PICTURE:C286($0;$textArea_pict)
-C_LONGINT:C283($maxWidht_l;$maxHeight_l;$fontSize_l)
-C_TEXT:C284($fontName_t)
+var $tip_instance_obj : Object
+var $textArea_pict : Picture
+var $maxWidht_l; $maxHeight_l; $fontSize_l : Integer
+var $fontName_t; $Dom_svg_t; $Dom_text_t; $Txt_buffer_t : Text
 
-$tip_instance_obj:=$1
+$tip_instance_obj:=$param1
 
 $textArea_pict:=$textArea_pict*0  //init
 
-C_TEXT:C284($Dom_svg_t;$Dom_text_t;$Txt_buffer_t)
 
 $Txt_buffer_t:=$tip_instance_obj.text.value
 
@@ -47,8 +48,8 @@ End if
   //create text area
 $Dom_text_t:=SVG_New_textArea ($Dom_svg_t;$Txt_buffer_t;0;0;$maxWidht_l;$maxHeight_l;AJUI_Tip_getStyleForTextArea ($tip_instance_obj))  //priority depending of the tipbox position
 
-$textArea_pict:=SVG_Export_to_picture ($Dom_svg_t;Copy XML data source:K45:17)
+$textArea_pict:=SVG_Export_to_picture ($Dom_svg_t;Copy XML data source)
 
-$0:=$textArea_pict
+$result:=$textArea_pict
 
 SVG_CLEAR ($Dom_svg_t)

@@ -6,7 +6,9 @@
   //
   // Setter/Getter of the border color
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Text
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 23.01.19, 16:49:37
@@ -18,12 +20,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($0;$1;$color_t)
+var $color_t : Text
 
-If (Count parameters:C259#1)
-	$0:=This:C1470.container.borderColor
+If (Count parameters#1)
+	$result:=This.container.borderColor
 Else 
-	$color_t:=$1
-	This:C1470.container.borderColor:=$color_t
-	This:C1470.CheckRebuild()
+	$color_t:=$param1
+	This.container.borderColor:=$color_t
+	This.CheckRebuild()
 End if 

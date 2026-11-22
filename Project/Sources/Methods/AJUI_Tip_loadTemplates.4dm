@@ -6,7 +6,9 @@
   //
   // This method load all the tip templates from a folder into a collection of objects.
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Collection
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 12.02.19, 16:09:20
@@ -19,43 +21,43 @@ If (False:C215)
 End if 
 
 
-C_COLLECTION:C1488($0;$templates_col)
-C_TEXT:C284($1;$folderTargetPath)
-C_TEXT:C284($filePath)
-C_OBJECT:C1216($file)
-ARRAY TEXT:C222($_files;0)
+var $templates_col : Collection
+var $folderTargetPath; $filePath; $json_t : Text
+var $file; $btn_instance_obj : Object
+var $testPathName; $i : Real
+ARRAY TEXT($_files;0)
 
-$templates_col:=New collection:C1472
+$templates_col:=New collection
 $json_t:=""
 
-If (Count parameters:C259=1)
-	$folderTargetPath:=$1
+If (Count parameters=1)
+	$folderTargetPath:=$param1
 	If ($folderTargetPath="#@")
-		$folderTargetPath:=Replace string:C233($folderTargetPath;"#";Get 4D folder:C485(Current resources folder:K5:16;*))
+		$folderTargetPath:=Replace string($folderTargetPath;"#";Get 4D folder(Current resources folder;*))
 	End if 
 Else 
-	$folderTargetPath:=Get 4D folder:C485(Current resources folder:K5:16;*)+"AJUI_Tip_Templates"+Folder separator:K24:12
+	$folderTargetPath:=Get 4D folder(Current resources folder;*)+"AJUI_Tip_Templates"+Folder separator
 End if 
 
 
-$testPathName:=Test path name:C476($folderTargetPath)
+$testPathName:=Test path name($folderTargetPath)
 
 If ($testPathName=0)  //check folder
-	DOCUMENT LIST:C474($folderTargetPath;$_files;Absolute path:K24:14+Recursive parsing:K24:13)
+	DOCUMENT LIST($folderTargetPath;$_files;Absolute path+Recursive parsing)
 	
-	For ($i;1;Size of array:C274($_files))
+	For ($i;1;Size of array($_files))
 		$filePath:=$_files{$i}
 		
 		If ($filePath="@.json")
-			$json_t:=Document to text:C1236($filePath)
+			$json_t:=Document to text($filePath)
 			If ($json_t="")
 				  //do nothing
 			Else 
-				$btn_instance_obj:=New object:C1471
-				$btn_instance_obj:=JSON Parse:C1218($json_t)
-				$file:=File:C1566($filePath;fk platform path:K87:2)
+				$btn_instance_obj:=New object
+				$btn_instance_obj:=JSON Parse($json_t)
+				$file:=File($filePath;fk platform path)
 				$btn_instance_obj.templateName:=$file.name
-				$btn_instance_obj.templatePath:=Replace string:C233($file.platformPath;$file.name+".json";"")
+				$btn_instance_obj.templatePath:=Replace string($file.platformPath;$file.name+".json";"")
 				$btn_instance_obj:=New AJUI_Tip ($btn_instance_obj)  //add missing properties and reset calc properties
 				$templates_col.push($btn_instance_obj)
 			End if 
@@ -63,7 +65,7 @@ If ($testPathName=0)  //check folder
 	End for 
 	
 Else 
-	ALERT:C41("folder not found")
+	ALERT("folder not found")
 End if 
 
-$0:=$templates_col
+$result:=$templates_col

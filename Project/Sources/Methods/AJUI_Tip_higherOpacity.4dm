@@ -8,7 +8,9 @@
   //
   // Return the higher between each opacity properties
 
-If (False:C215)
+#DECLARE($param1 : Integer; $param2 : Integer; $param3 : Integer) -> $result : Integer
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 14.02.19, 11:34:55
@@ -19,14 +21,11 @@ If (False:C215)
 	  //
 	  // ----------------------------------------------------
 End if 
-C_LONGINT:C283($1;$textOpa_l)
-C_LONGINT:C283($2;$backgroundOpa_l)
-C_LONGINT:C283($3;$borderOpa_l)
-C_LONGINT:C283($0;$higherOpa_l)
+var $textOpa_l; $backgroundOpa_l; $borderOpa_l; $higherOpa_l : Integer
 
-$textOpa_l:=$1
-$backgroundOpa_l:=$2
-$textOpa_l:=$3
+$textOpa_l:=$param1
+$backgroundOpa_l:=$param2
+$textOpa_l:=$param3
 
 If ($textOpa_l>$backgroundOpa_l)
 	$higherOpa_l:=$textOpa_l
@@ -38,4 +37,4 @@ If ($borderOpa_l>$higherOpa_l)
 	$higherOpa_l:=$borderOpa_l
 End if 
 
-$0:=$higherOpa_l
+$result:=$higherOpa_l

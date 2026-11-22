@@ -6,7 +6,9 @@
   //
   // Setter/Getter of name of the subform object
 
-If (False:C215)
+#DECLARE($param1 : Text) -> $result : Text
+
+If (False)
 	  // ----------------------------------------------------
 	  // User name (OS): Gary Criblez
 	  // Date and time: 23.01.19, 16:59:21
@@ -18,12 +20,12 @@ If (False:C215)
 	  // ----------------------------------------------------
 End if 
 
-C_TEXT:C284($0;$1;$name_t)
+var $name_t : Text
 
-If (Count parameters:C259=0)
-	$0:=This:C1470.subForm.name
+If (Count parameters=0)
+	$result:=This.subForm.name
 Else 
-	$name_t:=$1
-	This:C1470.subForm.name:=$name_t
-	This:C1470.CheckRebuild()
+	$name_t:=$param1
+	This.subForm.name:=$name_t
+	This.CheckRebuild()
 End if 
