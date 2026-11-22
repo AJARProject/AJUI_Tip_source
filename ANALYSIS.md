@@ -55,8 +55,15 @@ Ce qui a été fait :
 ## Risques et points non testés
 
 1. **Affichage non testé.** Le test tourne sans interface (`--headless`) : `Show`, `Hide`, le dessin SVG, les animations et les workers n'ont pas été exécutés. La compilation garantit les types et les appels, pas le rendu.
-2. Dans `Class constructor`, le code d'origine teste `This.failImport`, qui n'est jamais renseigné (le résultat de l'import est dans `$template_obj.failImport`). Comportement d'origine conservé, à corriger éventuellement dans une PR dédiée.
+2. `This.failImport` dans le constructeur de `cs.Tip` : corrigé (voir ci-dessous).
 3. `menus.json` ne référence plus `dial_AnotherTipLab` ni `unit_EXECUTE_ALL` (corrigé après le nettoyage). Les menus Fichier/Édition 32000 et 32004 restent présents mais non liés à une barre. La barre 2 ne contient plus que le menu Mode.
+
+
+## Correction de failImport / failImport fix
+
+**FR.** Dans le constructeur de la classe `Tip`, `This.failImport` était lu mais jamais renseigné : le résultat de `AJUI_Tip_templateImport` est dans `$template_obj.failImport` (`True` si le fichier est introuvable ou vide, `False` si l'import a réussi). Le constructeur initialise `This.failImport` à `False`, puis recopie le drapeau de `$template_obj.failImport` (si un modèle est demandé) avant de décider s'il l'applique. Même sémantique que `New AJUI_Tip`. La propriété était déjà déclarée : `property failImport : Boolean`.
+
+**EN.** In the `Tip` class constructor, `This.failImport` was read but never set: the import result lives on `$template_obj.failImport` (`True` if the file is missing or empty, `False` on success). The constructor now initializes `This.failImport` to `False`, then copies the flag from `$template_obj.failImport` (when a template is requested) before applying the template. Same meaning as `New AJUI_Tip`. The property was already declared.
 
 ## Nettoyage / Cleanup
 
