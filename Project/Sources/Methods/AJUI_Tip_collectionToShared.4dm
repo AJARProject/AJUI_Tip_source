@@ -14,7 +14,6 @@ If (False)
 	  // ----------------------------------------------------
 	  // Method: AJUI_Tip_collectionToShared
 	  // Description
-	  // TODO : Export in AJ_Tools
 	  //
 	  // ----------------------------------------------------
 End if 
