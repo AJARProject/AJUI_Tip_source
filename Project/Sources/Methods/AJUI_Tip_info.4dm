@@ -22,7 +22,7 @@ End if
 
 var $version_t : Text
 
-$version_t:="1.8.0"  // 22 Nov 2026 (4D 21 R4)
+$version_t:="1.8.1"  // 22 Nov 2026 (4D 21 R4)
 
 $result:="AJUI_Tip (v21 R4) : "+$version_t
 

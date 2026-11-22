@@ -4,7 +4,7 @@ Composant 4D d'AJAR SA qui affiche des bulles d'aide (« tips ») dessinées en 
 
 Sources du composant [AJUI_Tip](https://github.com/AJARProject/AJUI_Tip). La documentation d'origine reste sur le [wiki](https://github.com/AJARProject/AJUI_Tip/wiki) et dans `Documentation/Methods`. Ce dépôt n'est pas maintenu activement ; une proposition de correction peut passer par une [pull request](https://github.com/AJARProject/AJUI_Tip_source/pulls).
 
-**4D 21 R4**, mode projet, `compatibilityVersion` 2140. Version **1.8.0** : `AJUI_Tip_info` renvoie `AJUI_Tip (v21 R4) : 1.8.0`. Licence MIT (`license`).
+**4D 21 R4**, mode projet, `compatibilityVersion` 2140. Version **1.8.1** : `AJUI_Tip_info` renvoie `AJUI_Tip (v21 R4) : 1.8.1`. La 1.8.1 corrige `failImport` dans `cs.Tip` (PR #4). Licence MIT (`license`).
 
 Cette nouvelle version a été réalisée avec l'aide de Cursor et de Grok Bot. Analyse du dépôt et détail de la migration : [ANALYSIS.md](ANALYSIS.md).
 
@@ -49,7 +49,7 @@ Réalisé avec Cursor / Grok Bot (Codesky) pour Maurice Inzirillo.
 
 Sources of the [AJUI_Tip](https://github.com/AJARProject/AJUI_Tip) component. The original documentation is on the [wiki](https://github.com/AJARProject/AJUI_Tip/wiki) and in `Documentation/Methods`. This repository is not actively maintained; fixes can be proposed with a [pull request](https://github.com/AJARProject/AJUI_Tip_source/pulls).
 
-**4D 21 R4**, project mode, `compatibilityVersion` 2140. Version **1.8.0**: `AJUI_Tip_info` returns `AJUI_Tip (v21 R4) : 1.8.0`. MIT licence (`license`).
+**4D 21 R4**, project mode, `compatibilityVersion` 2140. Version **1.8.1**: `AJUI_Tip_info` returns `AJUI_Tip (v21 R4) : 1.8.1`. 1.8.1 fixes `failImport` in `cs.Tip` (PR #4). MIT licence (`license`).
 
 This new version was built with the help of Cursor and Grok Bot. Analysis of the repository and migration details (in French): [ANALYSIS.md](ANALYSIS.md).
 
